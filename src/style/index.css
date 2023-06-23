@@ -346,7 +346,7 @@ body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font: inherit;
   background-color: #fff;
-  max-width: 64rem;
+  max-width: 120rem;
 }
 
 /* 유연한 미디어 */
@@ -363,6 +363,167 @@ video {
 iframe {
   width: 100%;
   height: 100%;
+}
+
+.footer {
+  border-top: 100px solid #F9F9F9;
+  color: #333333;
+}
+
+.footer .divider {
+  margin: 0 4px;
+}
+
+.footer .primaryColor {
+  color: #5f0080;
+}
+
+.footer__inner {
+  width: 65.625rem;
+  margin: 0 auto;
+}
+
+.footer__innerTop {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 1.75rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #898989;
+}
+
+.footer_customerService {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+
+.footer__customerServiceTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0;
+  text-align: start;
+  line-height: normal;
+}
+
+.footer__customerServiceInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 1rem;
+  padding: 6px 0;
+}
+
+.footer__customerServiceNumber {
+  font-size: 1.6875rem;
+  font-weight: 700;
+  width: 8.75rem;
+}
+
+.footer__customerServiceTime {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.footer__inquiryList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__inquiryItem {
+  display: flex;
+  gap: 1rem;
+  padding: 6px 0;
+  font-size: 0.9375rem;
+}
+
+.footer__inquiryItemButton {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c4c4c4;
+  width: 8.75rem;
+  height: 2.5rem;
+  font-size: 1rem;
+}
+
+.footer__mail {
+  font-size: 0.5rem;
+}
+
+.footer__about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 50%;
+}
+
+.footer__navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: 0.875rem;
+  gap: 1rem;
+}
+
+.footer__address {
+  font-size: 0.75rem;
+}
+
+.footer__snsList {
+  display: flex;
+}
+
+.footer__snsItem {
+  margin-right: 1.25rem;
+}
+
+.footer__snsImg {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.footer__innerMiddle {
+  padding-top: 1.5rem;
+  padding-bottom: 2.25rem;
+  font-size: 0.625rem;
+}
+
+.footer__certifiedList {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  word-break: keep-all;
+}
+
+.footer__certifiedItem {
+  display: flex;
+}
+
+.footer__certifiedImg {
+  margin-right: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__certifiedInfo {
+  white-space: nowrap;
+}
+
+.footer__bottom {
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+  background-color: #F9F9F9;
+  text-align: center;
+  font-size: 0.625rem;
+  color: #898989;
 }
 
 .productTitle {
@@ -385,10 +546,6 @@ iframe {
 .recommend__item {
   background: violet;
   position: relative;
-}
-
-.footer {
-  border-top: 1px solid #F9F9F9;
 }
 
 /*# sourceMappingURL=index.css.map */
