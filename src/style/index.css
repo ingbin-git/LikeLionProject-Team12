@@ -387,4 +387,8 @@ iframe {
   position: relative;
 }
 
+.footer {
+  border-top: 1px solid #F9F9F9;
+}
+
 /*# sourceMappingURL=index.css.map */
