@@ -7,7 +7,7 @@
 .footer .divider {
   margin: 0 4px;
 }
-.footer .primary-color {
+.footer .primaryColor {
   color: $primary-color;
 }
 
@@ -17,10 +17,9 @@
 }
 
 .footer__innerTop {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 28px;
-  padding-bottom: 32px;
+  @include flexbox($justify: space-between);
+  padding-top: rem(28px);
+  padding-bottom: rem(32px);
   border-bottom: 1px solid $gray-400;
 }
 
@@ -32,7 +31,7 @@
 }
 
 .footer__customerServiceTitle {
-  font-size: rem(24px);
+  font-size: rem(20px);
   font-weight: 700;
   padding: 0;
   text-align: start;
@@ -40,20 +39,20 @@
 }
 
 .footer__customerServiceInfo {
-  display: flex;
+  @include flexbox($items:flex-end);
   gap: rem(16px);
   padding: 6px 0;
-  align-items: flex-end;
 }
 
 .footer__customerServiceNumber {
-  font-size: rem(24px);
+  font-size: rem(27px);
   font-weight: 700;
   width: rem(140px);
 }
 
 .footer__customerServiceTime {
   font-weight: 600;
+  font-size: rem(16px);
 }
 
 .footer__inquiryList {
@@ -66,15 +65,15 @@
   display: flex;
   gap: rem(16px);
   padding: 6px 0;
+  font-size: rem(15px);
 }
 
 .footer__inquiryItemButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexbox($items:center, $justify:center);
   border: 1px solid $gray-200;
   width: rem(140px);
   height: rem(40px);
+  font-size: rem(16px);
 }
 
 .footer__mail {
@@ -89,8 +88,9 @@
 }
 
 .footer__navigation {
-  display: flex;
-  justify-content: space-between;
+  @include flexbox($justify:space-between);
+  // display: flex;
+  // justify-content: space-between;
   font-size: rem(14px);
   gap: rem(16px);
 }
@@ -110,4 +110,38 @@
 .footer__snsImg {
   width: rem(30px);
   height: rem(30px);
+}
+
+.footer__innerMiddle {
+  padding-top: rem(24px);
+  padding-bottom: rem(36px);
+  font-size: rem(10px);
+}
+
+.footer__certifiedList {
+  @include flexbox($justify:space-between);
+  word-break: keep-all;
+}
+
+.footer__certifiedItem {
+  display: flex;
+}
+
+.footer__certifiedImg {
+  margin-right: rem(8px);
+  width: 100%;
+  height: 100%;
+}
+
+.footer__certifiedInfo {
+  white-space: nowrap;
+}
+
+.footer__bottom {
+  padding-top: rem(20px);
+  padding-bottom: rem(32px);
+  background-color: $gray-50;
+  text-align: center;
+  font-size: rem(10px);
+  color: $gray-400;
 }

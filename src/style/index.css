@@ -346,7 +346,7 @@ body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font: inherit;
   background-color: #fff;
-  max-width: 64rem;
+  max-width: 120rem;
 }
 
 /* 유연한 미디어 */
@@ -374,7 +374,7 @@ iframe {
   margin: 0 4px;
 }
 
-.footer .primary-color {
+.footer .primaryColor {
   color: #5f0080;
 }
 
@@ -385,9 +385,11 @@ iframe {
 
 .footer__innerTop {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
-  padding-top: 28px;
-  padding-bottom: 32px;
+  align-items: stretch;
+  padding-top: 1.75rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid #898989;
 }
 
@@ -399,7 +401,7 @@ iframe {
 }
 
 .footer__customerServiceTitle {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   padding: 0;
   text-align: start;
@@ -408,19 +410,22 @@ iframe {
 
 .footer__customerServiceInfo {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-end;
   gap: 1rem;
   padding: 6px 0;
-  align-items: flex-end;
 }
 
 .footer__customerServiceNumber {
-  font-size: 1.5rem;
+  font-size: 1.6875rem;
   font-weight: 700;
   width: 8.75rem;
 }
 
 .footer__customerServiceTime {
   font-weight: 600;
+  font-size: 1rem;
 }
 
 .footer__inquiryList {
@@ -433,15 +438,18 @@ iframe {
   display: flex;
   gap: 1rem;
   padding: 6px 0;
+  font-size: 0.9375rem;
 }
 
 .footer__inquiryItemButton {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   border: 1px solid #c4c4c4;
   width: 8.75rem;
   height: 2.5rem;
+  font-size: 1rem;
 }
 
 .footer__mail {
@@ -457,7 +465,9 @@ iframe {
 
 .footer__navigation {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: stretch;
   font-size: 0.875rem;
   gap: 1rem;
 }
@@ -477,6 +487,43 @@ iframe {
 .footer__snsImg {
   width: 1.875rem;
   height: 1.875rem;
+}
+
+.footer__innerMiddle {
+  padding-top: 1.5rem;
+  padding-bottom: 2.25rem;
+  font-size: 0.625rem;
+}
+
+.footer__certifiedList {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  word-break: keep-all;
+}
+
+.footer__certifiedItem {
+  display: flex;
+}
+
+.footer__certifiedImg {
+  margin-right: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__certifiedInfo {
+  white-space: nowrap;
+}
+
+.footer__bottom {
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+  background-color: #F9F9F9;
+  text-align: center;
+  font-size: 0.625rem;
+  color: #898989;
 }
 
 .productTitle {
