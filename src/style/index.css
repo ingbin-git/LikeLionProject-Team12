@@ -333,10 +333,20 @@ a {
   text-decoration: none;
 }
 
+.a11y,
+legend {
+  overflow: hidden;
+  position: absolute !important;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+}
+
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font: inherit;
   background-color: #fff;
+  max-width: 64rem;
 }
 
 /* 유연한 미디어 */
@@ -355,13 +365,26 @@ iframe {
   height: 100%;
 }
 
-.a11y,
-legend {
-  overflow: hidden;
-  position: absolute !important;
-  clip-path: inset(50%);
-  width: 1px;
-  height: 1px;
+.productTitle {
+  background: yellow;
+  color: #333333;
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.product__wrapper {
+  background: lightgreen;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.recommend__item {
+  background: violet;
+  position: relative;
 }
 
 /*# sourceMappingURL=index.css.map */
