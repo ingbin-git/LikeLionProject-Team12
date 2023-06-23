@@ -1,0 +1,24 @@
+@use "./../utils/" as *;
+
+.productTitle {
+  background: yellow;
+  color: $content-color;
+  font-size: rem(28px);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: rem(28px);
+}
+
+.product__wrapper {
+  background: lightgreen;
+  @include flexbox;
+}
+
+.recommend__item {
+  background: violet;
+  position: relative;
+}
+
+.accentCart {
+  
+}
