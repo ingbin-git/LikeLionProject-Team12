@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,22 +9,149 @@
   <meta name="description" content="마켓칼리 메인 페이지입니다." />
   <title>칼리 - 마켓칼리</title>
   <link rel="shortcut icon" href="https://res.kurly.com/favicon.ico" type="res/ico" />
-  <link rel="stylesheet" as="style" crossorigin
-    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.7/dist/web/static/pretendard-dynamic-subset.css" />
+  <link rel="preload" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard-dynamic-subset.css" />
   <link rel="stylesheet" href="/style/index.css" />
 </head>
+
 <body>
   <header>
 
   </header>
   <nav>
-
+    <h3 class="a11y">메뉴 상세보기</h3>
+    <ul>
+      <li><span class="sprite"></span><a href="#">선물하기</a></li>
+      <li><span class="sprite"></span><a href="#">채소</a></li>
+      <li><span class="sprite"></span><a href="#">과일&bull;견과&bull;쌀</a></li>
+      <li><span class="sprite"></span><a href="#">수산&bull;해산&bull;건어물</a></li>
+      <li><span class="sprite"></span><a href="#">정육&bull;계란</a></li>
+      <li><span class="sprite"></span><a href="#">국&bull;반찬&bull;메인요리</a></li>
+      <li><span class="sprite"></span><a href="#">샐러드&bull;간편식</a></li>
+      <li><span class="sprite"></span><a href="#">면&bull;양념&bull;오일</a></li>
+      <li><span class="sprite"></span><a href="#">생수&bull;음료&bull;우유&bull;커피</a></li>
+      <li><span class="sprite"></span><a href="#">간식&bull;과자&bull;떡</a></li>
+      <li><span class="sprite"></span><a href="#">베이커리&bull;치즈&bull;델리</a></li>
+      <li><span class="sprite"></span><a href="#">건강식품</a></li>
+      <li><span class="sprite"></span><a href="#">와인</a></li>
+      <li><span class="sprite"></span><a href="#">전통주</a></li>
+      <li><span class="sprite"></span><a href="#">생활용품&bull;리빙&bull;캠핑</a></li>
+      <li><span class="sprite"></span><a href="#">스킨케어&bull;메이크업</a></li>
+      <li><span class="sprite"></span><a href="#">헤어&bull;바디&bull;구강</a></li>
+      <li><span class="sprite"></span><a href="#">주방용품</a></li>
+      <li><span class="sprite"></span><a href="#">가전제품</a></li>
+      <li><span class="sprite"></span><a href="#">반려동물</a></li>
+      <li><span class="sprite"></span><a href="#">베이비&bull;키즈&bull;완구</a></li>
+      <li><span class="sprite"></span><a href="#">여행&bull;티켓</a></li>
+    </ul>
   </nav>
   <main>
+    <h2>이 상품 어때요?</h2>
+    <div class="recommend">
+      <a href="#">
+        <figure class="recommend__item">
+          <img src="/assets/product/tangtang/thumbnail.svg" alt="" aria-labelledby="recommendTangtang" />
+          <figcaption>
+            <span id="recommendTangtang">[풀무원] 탱탱쫄면(4개입)</span>
+            <span>4,980원</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#" class="accentCart"><img src="./assets/main/ic-add-cart.svg" alt="장바구니에 담기" /></a>
+
+      <a href="#">
+        <figure class="recommend__item">
+          <img src="/assets/product/suncushion/thumbnail.svg" alt="" aria-labelledby="recommendSuncushion" />
+          <figcaption>
+            <span id="recommendSuncushion">[온더바디] 죠르디 시카 자석 선쿠션</span>
+            <span>32,500원</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#"><img src="./assets/main/ic-add-cart.svg" alt="장바구니에 담기" /></a>
+
+      <a href="#">
+        <figure class="recommend__item">
+          <img src="assets/product/brownrice/thumbnail.svg" alt="" aria-labelledby="recommendBrownrice" />
+          <figcaption>
+            <span id="recommendBrownrice">유기농 밀키퀸 현미 4kg</span>
+            <span>25,000원</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#" class="accentCart"><img src="./assets/main/ic-add-cart.svg" alt="장바구니에 담기" /></a>
+
+      <a href="#">
+        <figure class="recommend__item">
+          <img src="./assets/product/detergent/thumbnail.svg" alt="" aria-labelledby="recommendDetergent" />
+          <figcaption>
+            <span id="recommendDetergent">[프로쉬] 베이비 세탁세제</span>
+            <del aria-label="정상가격 24000원">24,000원</del>
+            <span aria-label="할인율 24%">24%</span>
+            <ins aria-label="할인가격 18900원">18,900원</ins>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#" class="accentCart"><img src="./assets/main/ic-add-cart.svg" alt="장바구니에 담기" /></a>
+
+      <button type="button" title="상품 더보기"></button>
+    </div>
+
+    <a href="#"><img src="./assets/main/line-banner.svg" alt="칼리 10월의 퍼플 위크 광고" /></a>
+
+    <h2>놓치면 후회할 가격</h2>
+    <div class="surprise">
+      <a href="#">
+        <figure class="surprise__item">
+          <img src="/assets/product/tangtang/thumbnail.svg" alt="" aria-labelledby="tangtang" />
+          <figcaption>
+            <span id="tangtang">[풀무원] 탱탱쫄면(4개입)</span>
+            <span>4,980원</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#" class="accentCart"><img src="./assets/main/ic-add-cart.svg" alt="장바구니에 담기" /></a>
+
+      <a href="#">
+        <figure class="surprise__item">
+          <img src="/assets/product/suncushion/thumbnail.svg" alt="" aria-labelledby="suncushion" />
+          <figcaption>
+            <span id="suncushion">[온더바디] 죠르디 시카 자석 선쿠션</span>
+            <span>32,500원</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#" class="accentCart"><img src="./assets/main/ic-add-cart.svg" alt="장바구니에 담기" /></a>
+
+      <a href="#">
+        <figure class="surprise__item">
+          <img src="assets/product/brownrice/thumbnail.svg" alt="" aria-labelledby="brownrice" />
+          <figcaption>
+            <span id="brownrice">유기농 밀키퀸 현미 4kg</span>
+            <span>25,000원</span>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#" class="accentCart"><img src="./assets/main/ic-add-cart.svg" alt="장바구니에 담기" /></a>
+
+      <a href="#">
+        <figure class="surprise__item">
+          <img src="./assets/product/detergent/thumbnail.svg" alt="" aria-labelledby="detergent" />
+          <figcaption>
+            <span id="detergent">[프로쉬] 베이비 세탁세제</span>
+            <del aria-label="정상가격 24000원">24,000원</del>
+            <span aria-label="할인율 24%">24%</span>
+            <ins aria-label="할인가격 18900원">18,900원</ins>
+          </figcaption>
+        </figure>
+      </a>
+      <a href="#" class="accentCart"><img src="./assets/main/ic-add-cart.svg" alt="장바구니에 담기" /></a>
+    </div>
 
   </main>
   <footer>
 
   </footer>
 </body>
+
 </html>
