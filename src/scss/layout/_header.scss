@@ -1,1 +1,5 @@
-// header.scss
+@use "./../utils/" as *;
+
+.primary-color {
+  color: $primary-color;
+}
