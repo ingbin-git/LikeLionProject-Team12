@@ -365,6 +365,120 @@ iframe {
   height: 100%;
 }
 
+.footer {
+  border-top: 100px solid #F9F9F9;
+  color: #333333;
+}
+
+.footer .divider {
+  margin: 0 4px;
+}
+
+.footer .primary-color {
+  color: #5f0080;
+}
+
+.footer__inner {
+  width: 65.625rem;
+  margin: 0 auto;
+}
+
+.footer__innerTop {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #898989;
+}
+
+.footer_customerService {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+
+.footer__customerServiceTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0;
+  text-align: start;
+  line-height: normal;
+}
+
+.footer__customerServiceInfo {
+  display: flex;
+  gap: 1rem;
+  padding: 6px 0;
+  align-items: flex-end;
+}
+
+.footer__customerServiceNumber {
+  font-size: 1.5rem;
+  font-weight: 700;
+  width: 8.75rem;
+}
+
+.footer__customerServiceTime {
+  font-weight: 600;
+}
+
+.footer__inquiryList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__inquiryItem {
+  display: flex;
+  gap: 1rem;
+  padding: 6px 0;
+}
+
+.footer__inquiryItemButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c4c4c4;
+  width: 8.75rem;
+  height: 2.5rem;
+}
+
+.footer__mail {
+  font-size: 0.5rem;
+}
+
+.footer__about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  width: 50%;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  gap: 1rem;
+}
+
+.footer__address {
+  font-size: 0.75rem;
+}
+
+.footer__snsList {
+  display: flex;
+}
+
+.footer__snsItem {
+  margin-right: 1.25rem;
+}
+
+.footer__snsImg {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
 .productTitle {
   background: yellow;
   color: #333333;
@@ -385,10 +499,6 @@ iframe {
 .recommend__item {
   background: violet;
   position: relative;
-}
-
-.footer {
-  border-top: 1px solid #F9F9F9;
 }
 
 /*# sourceMappingURL=index.css.map */

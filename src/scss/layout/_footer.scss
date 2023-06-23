@@ -1,5 +1,113 @@
 @use "./../utils" as *;
 
 .footer {
-  border-top: 1px solid $gray-50;
+  border-top: 100px solid $gray-50;
+  color: $content-color;
+}
+.footer .divider {
+  margin: 0 4px;
+}
+.footer .primary-color {
+  color: $primary-color;
+}
+
+.footer__inner {
+  width: rem(1050px);
+  margin: 0 auto;
+}
+
+.footer__innerTop {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid $gray-400;
+}
+
+.footer_customerService {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+  width: 50%;
+}
+
+.footer__customerServiceTitle {
+  font-size: rem(24px);
+  font-weight: 700;
+  padding: 0;
+  text-align: start;
+  line-height: normal;
+}
+
+.footer__customerServiceInfo {
+  display: flex;
+  gap: rem(16px);
+  padding: 6px 0;
+  align-items: flex-end;
+}
+
+.footer__customerServiceNumber {
+  font-size: rem(24px);
+  font-weight: 700;
+  width: rem(140px);
+}
+
+.footer__customerServiceTime {
+  font-weight: 600;
+}
+
+.footer__inquiryList {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+}
+
+.footer__inquiryItem {
+  display: flex;
+  gap: rem(16px);
+  padding: 6px 0;
+}
+
+.footer__inquiryItemButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $gray-200;
+  width: rem(140px);
+  height: rem(40px);
+}
+
+.footer__mail {
+  font-size: rem(8px);
+}
+
+.footer__about {
+  display: flex;
+  flex-direction: column;
+  gap: rem(28px);
+  width: 50%;
+}
+
+.footer__navigation {
+  display: flex;
+  justify-content: space-between;
+  font-size: rem(14px);
+  gap: rem(16px);
+}
+
+.footer__address {
+  font-size: rem(12px);
+}
+
+.footer__snsList {
+  display: flex;
+}
+
+.footer__snsItem {
+  margin-right: rem(20px);
+}
+
+.footer__snsImg {
+  width: rem(30px);
+  height: rem(30px);
 }
