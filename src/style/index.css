@@ -345,8 +345,11 @@ legend {
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   font: inherit;
+  color: #333333;
   background-color: #fff;
-  max-width: 64rem;
+  max-width: 120rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* 유연한 미디어 */
@@ -366,25 +369,92 @@ iframe {
 }
 
 .productTitle {
-  background: yellow;
-  color: #333333;
   font-size: 1.75rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 1.75rem;
 }
 
-.product__wrapper {
-  background: lightgreen;
+.product {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
+  justify-content: center;
 }
 
-.recommend__item {
-  background: violet;
+.product__wrapper {
   position: relative;
+}
+
+.product__item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
+}
+
+.product__name {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.product__price {
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.accentCart {
+  position: absolute;
+  right: 25px;
+  bottom: 100px;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: transparent url(./../../assets/main/ic-add-cart.svg);
+}
+
+.product__sale {
+  height: 80px;
+}
+
+.product__regularPrice {
+  color: #898989;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  position: absolute;
+  bottom: 0;
+}
+
+.product__discountPercent {
+  display: inline-flex;
+  color: #fa622f;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding-right: 0.5rem;
+}
+
+.product__discountPrice {
+  text-decoration: none;
+}
+
+.product__more {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: -15px;
+  top: 129px;
+  border: none;
+  background: transparent url(./../../assets/main/ic-product-swiper-arrow.svg) no-repeat;
+}
+
+.middleBanner {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  display: block;
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
