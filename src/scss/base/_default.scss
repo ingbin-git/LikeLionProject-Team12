@@ -5,9 +5,10 @@ body {
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
-  font: inherit;
+  color: $content-color;
   background-color: #fff;
-  max-width: rem(1024px);
+  max-width: rem(1920px);
+  @include autoMarginX;
 }
 
 /* 유연한 미디어 */
