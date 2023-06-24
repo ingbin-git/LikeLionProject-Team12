@@ -266,7 +266,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -344,7 +343,6 @@ legend {
 
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  font: inherit;
   color: #333333;
   background-color: #fff;
   max-width: 120rem;
@@ -616,6 +614,23 @@ iframe {
   margin-bottom: 2.5rem;
   display: block;
   text-align: center;
+}
+
+.best {
+  background: yellow;
+}
+
+.best-text {
+  background: salmon;
+}
+
+.detail {
+  background: pink;
+  font-size: 50px;
+}
+
+.detail-text {
+  background: greenyellow;
 }
 
 /*# sourceMappingURL=index.css.map */
