@@ -22,3 +22,106 @@
 .accentCart {
   
 }
+
+
+// 메인 배너 영역
+.banner{
+  height: 370px;
+  max-width: 1920px;
+  margin-bottom: 40px;  
+}
+
+.banner__list{
+  position: relative;
+}
+
+.banner button{
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.left__btn{
+  @include pos;
+  top: rem(146px);
+  left: rem(350px);
+}
+
+.right__btn{
+  @include pos;
+  top: rem(146px);
+  right: rem(350px);
+  transform: scaleX(-1);
+}
+
+.banner__list img{
+  height: 100%; 
+}
+
+// 최근 본 상품 영역
+.sideBar{
+  display: block;
+  width: rem(74px);
+  height: rem(223px);
+  border: 1px solid var(--gray-200, #C4C4C4);
+  @include padding(8px);
+  text-align: center;
+  @include pos;
+  right: rem(39px);
+  bottom: rem(185px);
+}
+
+.up__btn,
+.down__btn{
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: rem(18px);
+  height: rem(18px);
+}
+
+.up__btn{
+  transform: scaleY(-1);
+}
+
+.down__btn{
+  @include marginY(8px);
+}
+
+.resently{
+  display: inline-block;
+  width: 58px;
+  font-size: rem(10px);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.myView{
+  height: rem(129px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.myView__list img{
+  width: rem(40px);
+  height: rem(51.406px);
+}
+
+.myView__wrapper{
+  gap: 4px;
+}
+
+.myView__list  a{
+    display: block;
+}
+
+
+
+
+
+
+
+
