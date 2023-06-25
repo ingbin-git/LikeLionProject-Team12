@@ -920,14 +920,12 @@ nav {
 
 .product__name {
   font-size: 1rem;
-  line-height: 1.6;
 }
 
 .product__price {
   display: inline-block;
   font-size: 1.25rem;
   font-weight: 600;
-  line-height: 1.5;
 }
 
 .accentCart {
@@ -947,7 +945,6 @@ nav {
 .product__regularPrice {
   color: #898989;
   font-size: 0.75rem;
-  line-height: 1.6;
   position: absolute;
   bottom: 0;
 }
@@ -957,7 +954,6 @@ nav {
   color: #fa622f;
   font-size: 1.25rem;
   font-weight: 600;
-  line-height: 1.5;
   padding-right: 0.5rem;
 }
 
@@ -982,12 +978,81 @@ nav {
   text-align: center;
 }
 
-.best {
-  background: yellow;
+.filter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  background: skyblue;
+  width: 13.75rem;
+  border: none;
+  border-bottom: 1px solid #e1e1e1;
 }
 
-.best-text {
-  background: salmon;
+.filter__title {
+  font-weight: 600;
+}
+
+.filter__reset {
+  border: none;
+  background: transparent;
+  font-size: 0.625rem;
+  color: #a6a6a6;
+}
+
+.fiter__mark {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.fiter__mark::after {
+  content: "1";
+  font-size: 0.625rem;
+  color: #a6a6a6;
+  padding-left: 8px;
+}
+
+.filter__markFold {
+  padding-right: 4px;
+}
+
+.filter__label {
+  display: block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.filter__checkbox {
+  position: absolute;
+  appearance: none;
+}
+
+.filter__label .filter__brand {
+  display: block;
+  background: url(./../../assets/product-list/ic-unchecked.svg) no-repeat 0 0/24px;
+  height: 25px;
+  padding-left: 30px;
+  line-height: 25px;
+}
+
+.filter__checkbox:checked + .filter__label .filter__brand {
+  background-image: url(/assets/product-list/ic-checked.svg);
+}
+
+.filter__brandPlus {
+  width: 13.75rem;
+  border: none;
+  background: transparent;
+  font-size: 0.75rem;
+  color: #a6a6a6;
+  font-weight: 600;
+  padding-top: 0.5rem;
+  padding-bottom: 0.75rem;
+  text-align: center;
 }
 
 .detail {

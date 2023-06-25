@@ -1,9 +1,73 @@
 @use "./../utils/" as *;
 
-.best {
-  background: yellow;
+
+
+.filter {
+  @include flexbox($justify: space-between);
+  @include paddingY(14px);
+  background: skyblue;
+  width: rem(220px);
+  border: none;
+  border-bottom: 1px solid $gray-100;
 }
 
-.best-text {
-  background: salmon;
+.filter__title {
+  font-weight: 600;
+}
+
+.filter__reset {
+  border: none;
+  background: transparent;
+  font-size: rem(10px);
+  color: $gray-300;
+}
+
+.fiter__mark {
+  @include flexbox($items: center);
+}
+
+.fiter__mark::after {
+  content: "1";
+  font-size: rem(10px);
+  color: $gray-300;
+  padding-left: 8px;
+}
+
+.filter__markFold {
+  padding-right: 4px;
+}
+
+.filter__label {
+  display: block;
+  padding-top: rem(8px);
+  padding-bottom: rem(12px);
+}
+
+.filter__checkbox {
+  @include pos;
+  appearance: none;
+}
+
+.filter__label .filter__brand {
+  display: block;
+  background: url(./../../assets/product-list/ic-unchecked.svg) no-repeat 0 0 / 24px;
+  height: 25px;
+  padding-left: 30px;  
+  line-height: 25px;
+}
+
+.filter__checkbox:checked+.filter__label .filter__brand {
+  background-image: url(/assets/product-list/ic-checked.svg);
+}
+
+.filter__brandPlus {
+  width: rem(220px);
+  border: none;
+  background: transparent;
+  font-size: rem(12px);
+  color: $gray-300;
+  font-weight: 600;
+  padding-top: rem(8px);
+  padding-bottom: rem(12px);
+  text-align: center;
 }
