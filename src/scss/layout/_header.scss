@@ -151,3 +151,91 @@ nav {
   }
 }
 
+// 메뉴 카테고리 일단 숨겨둠
+.category {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.category__list {
+  padding: rem(8px) 0 rem(8px) rem(12px); 
+  @include flexbox($items: center);
+}
+
+.sprite {
+  background: url(/assets/header/ic-menuIcon.svg) no-repeat;
+  width: rem(24px);
+  height: rem(24px);
+  padding-left: rem(8px);
+}
+
+.sprite__gift {
+  background-position: -5px -4px;
+}
+
+.sprite__vegetable {
+  background-position: -5px -219px;
+}
+
+.sprite__friut {
+  background-position: -2px -389px;
+}
+
+.sprite__fish {
+  background-position: -4px -507px;
+}
+.sprite__meat {
+  background-position: -3px -77px;
+}
+.sprite__soup {
+  background-position: -3px -173px;
+}
+.sprite__salad {
+  background-position: -3px -341px;
+}
+.sprite__noodles {
+  background-position: -4px -244px;
+}
+.sprite__water {
+  background-position: -3px -125px;
+}
+.sprite__snack {
+  background-position: -3px -291px;
+}
+.sprite__bakery {
+  background-position: -3px -50px;
+}
+.sprite__health {
+  background-position: -3px -484px;
+}
+.sprite__wine {
+  background-position: -5px -435px;
+}
+.sprite__tradition {
+  background-position: -5px -27px;
+}
+.sprite__living {
+  background-position: -6px -98px;
+}
+.sprite__skin {
+  background-position: -3px -147px;
+}
+.sprite__hair {
+  background-position: -3px -411px;
+}
+.sprite__kitchen {
+  background-position: -3px -196px;
+}
+.sprite__appliances {
+  background-position: -5px -267px;
+}
+.sprite__pet {
+  background-position: -5px -316px;
+}
+.sprite__baby {
+  background-position: -5px -363px;
+}
+.sprite__travel {
+  background-position: -4px -460px;
+}
