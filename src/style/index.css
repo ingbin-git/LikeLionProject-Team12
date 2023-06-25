@@ -990,13 +990,97 @@ nav {
   background: salmon;
 }
 
-.detail {
-  background: pink;
-  font-size: 50px;
+.productWrapper {
+  width: 65.625rem;
+  background: skyblue;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
 }
 
-.detail-text {
-  background: greenyellow;
+.prod__detail {
+  background: darkcyan;
+  display: flex;
+  flex-direction: row;
+}
+
+.prod__info {
+  background: salmon;
+}
+
+.navTitles {
+  margin-top: 3rem;
+  display: flex;
+  margin-bottom: 2.5rem;
+}
+
+.navTitles li {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 16.4375rem;
+  height: 3.375rem;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: #F9F9F9;
+  border: 1px solid #a6a6a6;
+}
+
+.navTitles li:first-child {
+  color: #5f0080;
+  border-top: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+  border-bottom: none;
+}
+
+.navTitles li:nth-child(2),
+.navTitles li:nth-child(3),
+.navTitles li:last-child {
+  border-left: none;
+  cursor: pointer;
+}
+
+.review span {
+  padding-left: 0.5rem;
+  font-size: 0.7501875rem;
+  font-weight: 400;
+}
+
+.productContents {
+  background: tan;
+}
+
+.contents__info img {
+  width: 65.625rem;
+  height: 41.875rem;
+  margin-bottom: 4.75rem;
+}
+
+.contents__info p {
+  font-size: 1.776875rem;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+}
+
+.contents__info figcaption {
+  font-size: 3.1573125rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.25rem;
+  line-height: 140%;
+}
+
+.prod__description {
+  padding-top: 1.75rem;
+  font-size: 1rem;
+  border-top: 1px solid #e1e1e1;
+  line-height: 160%;
 }
 
 /*# sourceMappingURL=index.css.map */
