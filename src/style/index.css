@@ -814,6 +814,102 @@ nav {
   position: relative;
 }
 
+.banner {
+  height: 370px;
+  max-width: 1920px;
+  margin-bottom: 40px;
+}
+
+.banner__list {
+  position: relative;
+}
+
+.banner button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.left__btn {
+  position: absolute;
+  top: 9.125rem;
+  left: 21.875rem;
+}
+
+.right__btn {
+  position: absolute;
+  top: 9.125rem;
+  right: 21.875rem;
+  transform: scaleX(-1);
+}
+
+.banner__list img {
+  height: 100%;
+}
+
+.sideBar {
+  display: block;
+  width: 4.625rem;
+  height: 13.9375rem;
+  border: 1px solid var(--gray-200, #C4C4C4);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  position: absolute;
+  right: 2.4375rem;
+  bottom: 11.5625rem;
+}
+
+.up__btn,
+.down__btn {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.up__btn {
+  transform: scaleY(-1);
+}
+
+.down__btn {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.resently {
+  display: inline-block;
+  width: 58px;
+  font-size: 0.625rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.myView {
+  height: 8.0625rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.myView__list img {
+  width: 2.5rem;
+  height: 3.212875rem;
+}
+
+.myView__wrapper {
+  gap: 4px;
+}
+
+.myView__list a {
+  display: block;
+}
+
 .product__name {
   font-size: 1rem;
   line-height: 1.6;
