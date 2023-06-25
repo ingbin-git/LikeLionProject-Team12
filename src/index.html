@@ -130,21 +130,23 @@
     <div class="banner">
       <ul class="banner__wrapper">
         <li class="banner__list">
-          <a href="/"><img src="/assets/main/banner01.jpg" alt="이 주의 특가" /></a>
-        </li>
-        <li class="banner__list">
-          <a href="/"><img src="/assets/main/banner02.jpg" alt="이 달의 카드 혜택" /></a>
-        </li>
-        <li class="banner__list">
-          <a href="/"><img src="/assets/main/banner03.jpg" alt="과일 보러가기" /></a>
+          <button type="button" class="left__btn">
+            <img src="assets/main/ic-banner-button.svg" alt="왼쪽 배너로 이동"/>
+          </button>
+          <a href="/">
+            <img src="/assets/main/banner05.svg" alt="이 주의 특가" />
+          </a>
+          <button type="button" class="right__btn">
+            <img src="assets/main/ic-banner-button.svg" alt="오른쪽 배너로 이동"/>
+          </button>
         </li>
       </ul>
     </div>
 
     <!-- 최근 본 상품 영역 -->
     <article class="sideBar">
-      <button type="button"><img src="/assets/product-list/ic-arrow-down.svg" alt="위로 가기" /></button>
-      <strong>최근 본 상품</strong>
+      <button type="button" class="up__btn"><img src="/assets/product-list/ic-arrow-down.svg" alt="위로 가기" /></button>
+      <strong class="resently">최근 본 상품</strong>
       <div class="myView">
         <ul class="myView__wrapper">
           <li class=" myView__list"><a href="/"><img src="/assets/product/tangtang/thumbnail.svg" alt="" /></a></li>
@@ -152,16 +154,9 @@
           <li class="myView__list"><a href="/"><img src="/assets/product/suncushion/thumbnail.svg" alt="" /></a></li>
         </ul>
       </div>
-      <button type="button"><img src="/assets/product-list/ic-arrow-down.svg" alt="아래로 가기" /></button>
+      <button type="button" class="down__btn"><img src="/assets/product-list/ic-arrow-down.svg" alt="아래로 가기" /></button>
     </article>
 
-    <!-- 장바구니 버튼 클릭 시 모달창 -->
-    <article class="add_cart">
-      <div></div>
-      <div></div>
-      <button></button>
-      <button></button>
-    </article>
 
     <h2 class="productTitle">이 상품 어때요?</h2>
     <section class="product">
