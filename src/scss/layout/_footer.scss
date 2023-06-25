@@ -3,6 +3,7 @@
 .footer {
   border-top: 100px solid $gray-50;
   color: $content-color;
+  line-height: 130%;
 }
 .footer .divider {
   margin: 0 4px;
@@ -78,6 +79,7 @@
 
 .footer__mail {
   font-size: rem(8px);
+  padding-top: rem(16px);
 }
 
 .footer__about {
