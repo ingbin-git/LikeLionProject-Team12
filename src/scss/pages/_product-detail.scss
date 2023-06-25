@@ -1,10 +1,106 @@
 @use "./../utils/" as *;
 
-.detail {
-  background: pink;
-  font-size: 50px;
+
+// 제품 디테일 전체 영역
+.productWrapper{
+  width: rem(1050px);
+  background: skyblue;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include flexbox($justify: center);
+  margin: 0 auto;
+ 
 }
 
-.detail-text {
-  background: greenyellow;
+.productArea{
+  
+}
+
+// 상품 정보
+.prod__detail{
+  background: darkcyan;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+.prod__info{
+  background: salmon;
+}
+
+
+// 제품 디테일 nav 영역
+.navTitles{ 
+  margin-top: rem(48px); 
+  display:flex;
+  // width: 100%;
+  margin-bottom: rem(40px);
+}
+
+.navTitles li{
+  font-size: rem(16px);
+  font-weight: 600; 
+  width: rem(263px);
+  height: rem(54px);
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background: $gray-50;
+  border: 1px solid $gray-300;
+}
+
+.navTitles li:first-child{
+  color: $primary-color;
+  border-top: 1px solid $gray-100;
+  border-right: 1px solid $gray-100;
+  border-left: 1px solid $gray-100;
+  border-bottom: none;
+}
+
+.navTitles li:nth-child(2),
+.navTitles li:nth-child(3),
+.navTitles li:last-child{
+  border-left: none;
+  cursor: pointer;
+}
+
+.review span{
+  padding-left: rem(8px);
+  font-size: rem(12.003px);
+  font-weight: 400;
+}
+
+
+// 제품 디테일 영역 컨텐츠
+.productContents{
+  background: tan;
+}
+
+.contents__info img{
+  width: rem(1050px);
+  height: rem(670px);
+  margin-bottom: rem(76px);
+}
+
+.contents__info p{
+  font-size: rem(28.43px);
+  font-weight: 600;
+  text-align: center;
+  color: $black;
+}
+
+.contents__info figcaption{
+  font-size: rem(50.517px);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: rem(36px);
+  line-height: 140%;
+}
+
+.prod__description{
+  padding-top: rem(28px);
+  font-size: rem(16px);
+  border-top: 1px solid $gray-100;
+  line-height: 160%;
 }
