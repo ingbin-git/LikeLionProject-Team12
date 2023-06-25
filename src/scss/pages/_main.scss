@@ -117,23 +117,14 @@
     display: block;
 }
 
-
-
-
-
-
-
-
 .product__name {
   font-size: rem(16px);
-  line-height: 1.6;
 }
 
 .product__price {
   display: inline-block;
   font-size: rem(20px);
   font-weight: 600;
-  line-height: 1.5;
 }
 
 .accentCart {
@@ -150,7 +141,6 @@
 .product__regularPrice {
   color: $gray-400;
   font-size: rem(12px);
-  line-height: 1.6;
   position: absolute;
   bottom: 0;
 }
@@ -160,7 +150,6 @@
   color: $accent-color;
   font-size: rem(20px);
   font-weight: 600;
-  line-height: 1.5;
   padding-right: rem(8px);
 }
 
