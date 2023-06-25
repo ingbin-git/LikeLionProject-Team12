@@ -65,9 +65,10 @@
   border: 1px solid var(--gray-200, #C4C4C4);
   @include padding(8px);
   text-align: center;
-  @include pos;
+  position: fixed;
   right: rem(39px);
-  bottom: rem(185px);
+  bottom: rem(30px);
+  // margin-top: 300px;
 }
 
 .up__btn,
