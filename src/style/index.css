@@ -952,6 +952,10 @@ nav {
   padding-right: 1rem;
   position: relative;
 }
+.product__img {
+  width: 249px;
+  height: 320px;
+}
 .product__caption {
   margin-top: 1rem;
 }
@@ -1160,6 +1164,10 @@ nav {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
+}
+.best__img {
+  width: 249px;
+  height: 320px;
 }
 .best__caption {
   margin-top: 0.25rem;
