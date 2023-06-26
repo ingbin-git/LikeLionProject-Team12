@@ -34,37 +34,29 @@
 
 
 .prod__delivery{
-  font-size: rem(21.328px);
-  font-weight: 700;
+  @include textStyle(21.328px, 700, $gray-500);
   line-height: 140%;
-  color: $gray-500;
 }
 
-.header__title,
+.head__title,
 .prod__price{
-  font-size: rem(28.43px);
-  font-weight: 600;
+  @include textStyle(28.43px, 600, $content-color);
   line-height: 150%;
 }
 
 .prod-header__title p{
-  font-size: rem(16px);
-  line-height: 160%;
-  color: $gray-400;
+  @include textStyle(16px, 400, $gray-400);  
+  line-height: 160%;  
 }
 
 .prod__price span{
-  font-size: rem(16px);
-  font-weight: 700;
+  @include textStyle(16px, 700, $content-color);
   padding-left: rem(4px);
   vertical-align: middle;
 }
 
 .prod__benefit{
-  font-size: rem(16px);
-  font-weight: 600;
-  line-height: 150%;
-  color: $primary-color;
+  @include textStyle(16px, 600, $content-color);
 }
 
 // 상품 구매 정보
@@ -91,10 +83,8 @@
 .itemDescription__contetnts,
 .prod__select,
 .select__name{
-  font-size: rem(12.003px);
-  font-weight: 600;
+  @include textStyle(12.003px, 600, $gray-500);
   line-height: 150%;
-  color: $gray-500;
 }
 
 .itemDescription:last-child{
@@ -102,9 +92,7 @@
 }
 
 .itemDescription__info{
-  font-size: rem(12.003px);
-  font-weight: 600;
-  color: $gray-400;
+  @include textStyle(12.003px, 600, $gray-400);
   line-height: 150%;
 }
 
@@ -142,13 +130,9 @@
 }
 
 .select__price{
-  font-size: rem(12.003px);
-  font-weight: 600;
+  @include textStyle(12.003px, 600, $content-color);
   line-height: 150%;
-  color: $content-color;
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
+  @include posRightBottom($r: 12px, $b: 12px);
 }
 
 .count__btn button{
@@ -166,10 +150,8 @@
 }
 
 .count{
+  @include textStyle(16px, 600, $black);
   @include marginX(8px);
-  font-weight: 600;
-  font-size: rem(16px);
-  color: $black;
 }
 
 .select__total{
@@ -183,39 +165,32 @@
 
 .select__totalprice,
 .login__benefit{
-  font-size: rem(16px);
-  font-weight: 600;
-  color: $black;
+  @include textStyle(16px, 600, $black);
 }
 
 .select__totalprice span{
+@include textStyle(28.43px, 600, $content-color);
  margin-left: rem(17px);
- color: $content-color;
- font-size: rem(28.43px);
- font-weight: 600;
  line-height: 150%;
 }
 
 .select__totalprice::after{
  content: '원';
  color: $content-color;
- font-size: rem(16px);
- font-weight: 700;
+ @include textStyle(16px, 700, $content-color);
  line-height: 140%;
 }
 
 .mileage{
+  @include textStyle(10px, normal, $white);
   border-radius: 12px;
   background: $accent-color;
   width: 34px;
   height: 24px;
   @include paddingX(8px);
-  @include paddingY(4px);
-  color: $white;
-  font-size: rem(10px);
+  @include paddingY(4px);  
   line-height: 160%;
   margin-right: 6px;
-  font-weight: normal;
 }
 
 .productBuy{
@@ -237,15 +212,13 @@
 }
 
 .prod__cart{
+  @include textStyle(16px, 600, $white);
   border: 0;
   @include padding(0);
   cursor: pointer;
   width: rem(424px);
   height: rem(54px);
   background: $primary-color;
-  color: $white;
-  font-weight: 600;
-  font-size: rem(16px);
   border-radius: 4px;
 }
 
@@ -257,8 +230,7 @@
 }
 
 .navTitles li{
-  font-size: rem(16px);
-  font-weight: 600; 
+  @include textStyle(16px, 600, $content-color);
   width: rem(263px);
   height: rem(54px);
   text-align: center;
@@ -272,9 +244,7 @@
   border-top: 1px solid $gray-100;
   border-right: 1px solid $gray-100;
   border-left: 1px solid $gray-100;
-  border-bottom: none;
-
-  
+  border-bottom: none;  
 }
 
 .navTitles li:nth-child(2),
@@ -285,9 +255,8 @@
 }
 
 .review span{
+  @include textStyle(12.003px, 400, $content-color);
   padding-left: rem(8px);
-  font-size: rem(12.003px);
-  font-weight: 400;
 }
 
 
@@ -299,23 +268,20 @@
 }
 
 .contents__info p{
-  font-size: rem(28.43px);
-  font-weight: 600;
-  text-align: center;
-  color: $black;
+  @include textStyle(28.43px, 600, $black);
+  text-align: center;  
 }
 
 .contents__info figcaption{
-  font-size: rem(50.517px);
-  font-weight: 700;
+  @include textStyle(50.517px, 700, $content-color);
   text-align: center;
   margin-bottom: rem(36px);
   line-height: 140%;
 }
 
 .prod__description{
+  @include textStyle(16px, normal, $content-color);
   padding-top: rem(28px);
-  font-size: rem(16px);
   border-top: 1px solid $gray-100;
   line-height: 160%;
   margin-bottom: rem(96px);
@@ -332,13 +298,13 @@
 }
 
 .checkPoint span{
+  @include textStyle(50.517px, 700, $content-color);
   position: relative;
-  font-size: rem(50.517px);
-  font-weight: 700;
   line-height: 140%;
-  z-index: 10;
-  padding: 0 16px;
+  z-index: 40;
   background: $white;
+  @include paddingX(16px);
+  @include paddingY(0); 
 }
 
 .checkPoint::before{
@@ -346,7 +312,7 @@
   @include posLeftTop($l: 0, $t: 37px);
   content: '';
   height: 1px;
-  z-index: 1;
+  z-index: -1;
   background: #D9D9D9;
 }
 

@@ -1035,26 +1035,29 @@ nav {
 .prod__delivery {
   font-size: 1.333rem;
   font-weight: 700;
-  line-height: 140%;
   color: #6b6b6b;
+  line-height: 140%;
 }
 
-.header__title,
+.head__title,
 .prod__price {
   font-size: 1.776875rem;
   font-weight: 600;
+  color: #333333;
   line-height: 150%;
 }
 
 .prod-header__title p {
   font-size: 1rem;
-  line-height: 160%;
+  font-weight: 400;
   color: #898989;
+  line-height: 160%;
 }
 
 .prod__price span {
   font-size: 1rem;
   font-weight: 700;
+  color: #333333;
   padding-left: 0.25rem;
   vertical-align: middle;
 }
@@ -1062,8 +1065,7 @@ nav {
 .prod__benefit {
   font-size: 1rem;
   font-weight: 600;
-  line-height: 150%;
-  color: #5f0080;
+  color: #333333;
 }
 
 .itemDescription {
@@ -1094,8 +1096,8 @@ nav {
 .select__name {
   font-size: 0.7501875rem;
   font-weight: 600;
-  line-height: 150%;
   color: #6b6b6b;
+  line-height: 150%;
 }
 
 .itemDescription:last-child {
@@ -1154,8 +1156,8 @@ nav {
 .select__price {
   font-size: 0.7501875rem;
   font-weight: 600;
-  line-height: 150%;
   color: #333333;
+  line-height: 150%;
   position: absolute;
   right: 12px;
   bottom: 12px;
@@ -1179,11 +1181,11 @@ nav {
 }
 
 .count {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #000000;
 }
 
 .select__total {
@@ -1204,10 +1206,10 @@ nav {
 }
 
 .select__totalprice span {
-  margin-left: 1.0625rem;
-  color: #333333;
   font-size: 1.776875rem;
   font-weight: 600;
+  color: #333333;
+  margin-left: 1.0625rem;
   line-height: 150%;
 }
 
@@ -1216,10 +1218,14 @@ nav {
   color: #333333;
   font-size: 1rem;
   font-weight: 700;
+  color: #333333;
   line-height: 140%;
 }
 
 .mileage {
+  font-size: 0.625rem;
+  font-weight: normal;
+  color: #ffffff;
   border-radius: 12px;
   background: #fa622f;
   width: 34px;
@@ -1228,11 +1234,8 @@ nav {
   padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  color: #ffffff;
-  font-size: 0.625rem;
   line-height: 160%;
   margin-right: 6px;
-  font-weight: normal;
 }
 
 .productBuy {
@@ -1257,6 +1260,9 @@ nav {
 }
 
 .prod__cart {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
   border: 0;
   padding-left: 0rem;
   padding-right: 0rem;
@@ -1266,9 +1272,6 @@ nav {
   width: 26.5rem;
   height: 3.375rem;
   background: #5f0080;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 1rem;
   border-radius: 4px;
 }
 
@@ -1284,6 +1287,7 @@ nav {
 .navTitles li {
   font-size: 1rem;
   font-weight: 600;
+  color: #333333;
   width: 16.4375rem;
   height: 3.375rem;
   text-align: center;
@@ -1309,9 +1313,10 @@ nav {
 }
 
 .review span {
-  padding-left: 0.5rem;
   font-size: 0.7501875rem;
   font-weight: 400;
+  color: #333333;
+  padding-left: 0.5rem;
 }
 
 .contents__info img {
@@ -1323,21 +1328,24 @@ nav {
 .contents__info p {
   font-size: 1.776875rem;
   font-weight: 600;
-  text-align: center;
   color: #000000;
+  text-align: center;
 }
 
 .contents__info figcaption {
   font-size: 3.1573125rem;
   font-weight: 700;
+  color: #333333;
   text-align: center;
   margin-bottom: 2.25rem;
   line-height: 140%;
 }
 
 .prod__description {
-  padding-top: 1.75rem;
   font-size: 1rem;
+  font-weight: normal;
+  color: #333333;
+  padding-top: 1.75rem;
   border-top: 1px solid #e1e1e1;
   line-height: 160%;
   margin-bottom: 6rem;
@@ -1353,13 +1361,17 @@ nav {
 }
 
 .checkPoint span {
-  position: relative;
   font-size: 3.1573125rem;
   font-weight: 700;
+  color: #333333;
+  position: relative;
   line-height: 140%;
-  z-index: 10;
-  padding: 0 16px;
+  z-index: 40;
   background: #ffffff;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
 }
 
 .checkPoint::before {
@@ -1369,7 +1381,7 @@ nav {
   top: 37px;
   content: "";
   height: 1px;
-  z-index: 1;
+  z-index: -1;
   background: #D9D9D9;
 }
 
