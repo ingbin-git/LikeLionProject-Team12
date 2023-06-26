@@ -1005,14 +1005,62 @@ nav {
   position: relative;
 }
 
-.prod__detail {
+.productDetail {
   background: darkcyan;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
-.prod__info {
+.prod__img img {
+  width: 25rem;
+  height: 32.125rem;
+  margin-right: 85px;
+}
+
+.productInfo {
   background: salmon;
+}
+
+.prod__buy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 0 20px 0;
+}
+
+.prod__delivery {
+  font-size: 1.333rem;
+  font-weight: 700;
+  line-height: 140%;
+  color: #6b6b6b;
+}
+
+.header__title,
+.prod__price {
+  font-size: 1.776875rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.prod-header__title p {
+  font-size: 1rem;
+  line-height: 160%;
+  color: #898989;
+}
+
+.prod__price span {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-left: 0.25rem;
+  vertical-align: middle;
+}
+
+.prod__benefit {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #5f0080;
 }
 
 .navTitles {
