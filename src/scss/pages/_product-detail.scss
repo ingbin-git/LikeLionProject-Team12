@@ -4,7 +4,7 @@
 // 제품 디테일 전체 영역
 .productWrapper{
   width: rem(1050px);
-  background: skyblue;
+  // background: skyblue;
   padding-top: 40px;
   padding-bottom: 40px;
   @include flexbox($justify: center);
@@ -13,7 +13,7 @@
 }
 
 .productArea{
-  
+  position: relative;
 }
 
 // 상품 정보
@@ -74,7 +74,7 @@
 
 // 제품 디테일 영역 컨텐츠
 .productContents{
-  background: tan;
+  // background: tan;
 }
 
 .contents__info img{
@@ -103,4 +103,36 @@
   font-size: rem(16px);
   border-top: 1px solid $gray-100;
   line-height: 160%;
+  margin-bottom: rem(96px);
+}
+
+// 칼리 체크포인트 영역
+.checkPoint{
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  margin-bottom: rem(63px);
+}
+
+.checkPoint span{
+  position: relative;
+  font-size: rem(50.517px);
+  font-weight: 700;
+  line-height: 140%;
+  z-index: 10;
+  padding: 0 16px;
+  background: $white;
+}
+
+.checkPoint::before{
+  width: 100%;
+  position: absolute;
+  top: 37px;
+  left: 0;
+  content: '';
+  height: 1px;
+  z-index: 1;
+  background: #D9D9D9;
 }

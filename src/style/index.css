@@ -992,7 +992,6 @@ nav {
 
 .productWrapper {
   width: 65.625rem;
-  background: skyblue;
   padding-top: 40px;
   padding-bottom: 40px;
   display: flex;
@@ -1000,6 +999,10 @@ nav {
   justify-content: center;
   align-items: stretch;
   margin: 0 auto;
+}
+
+.productArea {
+  position: relative;
 }
 
 .prod__detail {
@@ -1051,10 +1054,6 @@ nav {
   font-weight: 400;
 }
 
-.productContents {
-  background: tan;
-}
-
 .contents__info img {
   width: 65.625rem;
   height: 41.875rem;
@@ -1081,6 +1080,37 @@ nav {
   font-size: 1rem;
   border-top: 1px solid #e1e1e1;
   line-height: 160%;
+  margin-bottom: 6rem;
+}
+
+.checkPoint {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 3.9375rem;
+}
+
+.checkPoint span {
+  position: relative;
+  font-size: 3.1573125rem;
+  font-weight: 700;
+  line-height: 140%;
+  z-index: 10;
+  padding: 0 16px;
+  background: #ffffff;
+}
+
+.checkPoint::before {
+  width: 100%;
+  position: absolute;
+  top: 37px;
+  left: 0;
+  content: "";
+  height: 1px;
+  z-index: 1;
+  background: #D9D9D9;
 }
 
 /*# sourceMappingURL=index.css.map */
