@@ -105,8 +105,6 @@
   grid-column-gap: rem($column-gap);
 }
 
-
-//폰트 믹스인
 @mixin textStyle($size, $weight, $color) {
   font-size: rem($size);
   font-weight: $weight;
