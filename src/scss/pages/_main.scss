@@ -1,32 +1,9 @@
 @use "./../utils/" as *;
 
-.productTitle {
-  font-size: rem(28px);
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: rem(28px);
-}
-
-.product {
-  @include flexbox;
-  justify-content: center;
-}
-
-.product__wrapper {
-  position: relative;
-}
-
-.product__item {
-  @include paddingX(16px);
-  position: relative;
-}
-
-
-// 메인 배너 영역
 .banner{
-  height: 370px;
-  max-width: 1920px;
-  margin-bottom: 40px;  
+  height: rem(370px);  
+  max-width: rem(1920px);
+  margin-bottom: rem(40px);  
 }
 
 .banner__list{
@@ -41,15 +18,11 @@
 }
 
 .left__btn{
-  @include pos;
-  top: rem(146px);
-  left: rem(350px);
+  @include posLeftTop(350px, 146px);
 }
 
 .right__btn{
-  @include pos;
-  top: rem(146px);
-  right: rem(350px);
+  @include posRightTop(350px, 146px);
   transform: scaleX(-1);
 }
 
@@ -59,26 +32,24 @@
 
 // 최근 본 상품 영역
 .sideBar{
-  display: block;
-  width: rem(74px);
-  height: rem(223px);
-  border: 1px solid var(--gray-200, #C4C4C4);
+  @include wh(74px, 223px);
+  display: block;  
+  border: 1px solid $gray-200;
   @include padding(8px);
   text-align: center;
   position: fixed;
   right: rem(39px);
   bottom: rem(30px);
-  // margin-top: 300px;
+  
 }
 
 .up__btn,
 .down__btn{
+  @include wh(18px, 18px);
   border: 0;
   padding: 0;
   background-color: transparent;
-  cursor: pointer;
-  width: rem(18px);
-  height: rem(18px);
+  cursor: pointer;  
 }
 
 .up__btn{
@@ -98,15 +69,13 @@
 }
 
 .myView{
+  @include flexbox($direction: column);
   height: rem(129px);
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 .myView__list img{
-  width: rem(40px);
-  height: rem(51.406px);
+  @include wh(40px, 52px);
 }
 
 .myView__wrapper{
@@ -114,7 +83,31 @@
 }
 
 .myView__list  a{
-    display: block;
+  display: block;
+}
+
+.productTitle {
+  font-size: rem(28px);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: rem(28px);
+}
+
+.product {
+  @include flexbox($justify: center);
+}
+
+.product__wrapper {
+  position: relative;
+}
+
+.product__item {
+  @include paddingX(16px);
+  position: relative;
+}
+
+.product__caption {
+  margin-top: rem(16px);
 }
 
 .product__name {
@@ -128,14 +121,15 @@
 }
 
 .accentCart {
-  @include posRightBottom(25px, 100px);
+  @include posRightBottom(25px, 130px);
   @include wh(45px, 45px);
   border: none;
   background: transparent url(./../../assets/main/ic-add-cart.svg);
 }
 
 .product__sale {
-  height: 80px;
+  height: rem(60px);
+  margin-bottom: rem(40px);
 }
 
 .product__regularPrice {
@@ -162,7 +156,6 @@
   position: absolute;
   right: -15px;
   top: 129px;
-  // @include posRightTop(-30px, 0px);
   border: none;
   background: transparent url(./../../assets/main/ic-product-swiper-arrow.svg) no-repeat;
 }

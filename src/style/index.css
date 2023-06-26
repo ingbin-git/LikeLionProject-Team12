@@ -830,9 +830,9 @@ nav {
 }
 
 .banner {
-  height: 370px;
-  max-width: 1920px;
-  margin-bottom: 40px;
+  height: 23.125rem;
+  max-width: 120rem;
+  margin-bottom: 2.5rem;
 }
 
 .banner__list {
@@ -848,14 +848,14 @@ nav {
 
 .left__btn {
   position: absolute;
-  top: 9.125rem;
-  left: 21.875rem;
+  left: 350px;
+  top: 146px;
 }
 
 .right__btn {
   position: absolute;
-  top: 9.125rem;
-  right: 21.875rem;
+  right: 350px;
+  top: 146px;
   transform: scaleX(-1);
 }
 
@@ -864,10 +864,10 @@ nav {
 }
 
 .sideBar {
+  width: 74px;
+  height: 223px;
   display: block;
-  width: 4.625rem;
-  height: 13.9375rem;
-  border: 1px solid var(--gray-200, #C4C4C4);
+  border: 1px solid #c4c4c4;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.5rem;
@@ -880,12 +880,12 @@ nav {
 
 .up__btn,
 .down__btn {
+  width: 18px;
+  height: 18px;
   border: 0;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
-  width: 1.125rem;
-  height: 1.125rem;
 }
 
 .up__btn {
@@ -906,15 +906,17 @@ nav {
 }
 
 .myView {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
   height: 8.0625rem;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
 }
 
 .myView__list img {
-  width: 2.5rem;
-  height: 3.212875rem;
+  width: 40px;
+  height: 52px;
 }
 
 .myView__wrapper {
@@ -935,9 +937,8 @@ nav {
 .product {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
   justify-content: center;
+  align-items: stretch;
 }
 
 .product__wrapper {
@@ -948,6 +949,10 @@ nav {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
+}
+
+.product__caption {
+  margin-top: 1rem;
 }
 
 .product__name {
@@ -963,7 +968,7 @@ nav {
 .accentCart {
   position: absolute;
   right: 25px;
-  bottom: 100px;
+  bottom: 130px;
   width: 45px;
   height: 45px;
   border: none;
@@ -971,7 +976,8 @@ nav {
 }
 
 .product__sale {
-  height: 80px;
+  height: 3.75rem;
+  margin-bottom: 2.5rem;
 }
 
 .product__regularPrice {
