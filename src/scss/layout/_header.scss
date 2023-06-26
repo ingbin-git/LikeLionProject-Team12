@@ -8,27 +8,20 @@
   color: $gray-500;
 }
 
-header {
-  width: rem(1050px);
-  height: rem(197px);
-  position: relative;
-  // 적용 안되네
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .promotion {
   background: $primary-color;
-  width: 100vw;
+  width: 100%;
   height: 50px;
   padding: rem(4px);
   font-size: 16px;
   color: $white;
   text-align: center;
   line-height: 42px;
-
+  
   &__wrapper {
     width: rem(1050px);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__button {
@@ -37,6 +30,14 @@ header {
     border: 0;
     height: rem(42px);
   }
+}
+
+.headerWrapper {
+  width: rem(1050px);
+  height: rem(147px);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .logo {
@@ -50,33 +51,39 @@ header {
     padding-right: rem(12px);
   }
   
-    &__img__new {
-    position: absolute;
-    top : rem(94px);
-    left: rem(260px);
-    }
+  &__img__new {
+  position: absolute;
+  top: rem(44px);
+  left: rem(250px);
+  }
 
-    &__link__beauty {
-      color: $gray-400;
-    }
+  &__link__beauty {
+    color: $gray-400;
+  }
 }
 
 .searchForm {
-  position: absolute;
+  width: rem(400px);
+  height: rem(60px);
   border: 1px solid $primary-color;
-  border-radius: 4px; 
-  top: rem(82px);
+  border-radius: 4px;
+  padding: rem(12px) rem(20px); 
+  position: absolute;
+  top: rem(32px);
   left: rem(330px);
+  
   &__group {
     @include flexbox ($items: center);
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
 .formInput {
   padding: rem(12px) rem(20px);
-  width: rem(400px);
-  // 60인데 50px로..
-  height: rem(50px);
+  width: rem(360px);
+  height: rem(60px);
   @include flexbox ($items: center);
 
   &__input {
@@ -98,7 +105,7 @@ header {
 
 .memberOnly {
   position: absolute;
-  top: rem(62px);
+  top: rem(12px);
   right: 0;
   &__wrapper {
     @include flexbox;
