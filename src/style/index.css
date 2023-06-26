@@ -918,6 +918,11 @@ nav {
   display: block;
 }
 
+@media screen and (max-width: 1500px) {
+  .sideBar {
+    visibility: hidden;
+  }
+}
 .product__name {
   font-size: 1rem;
   line-height: 1.6;
