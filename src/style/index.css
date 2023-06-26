@@ -1016,12 +1016,10 @@ nav {
   margin-right: auto;
   position: relative;
 }
-
 .product__main {
   margin-left: 250px;
   margin-top: -50px;
 }
-
 .product__filter {
   width: 220px;
   position: absolute;
