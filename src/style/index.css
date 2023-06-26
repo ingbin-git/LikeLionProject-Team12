@@ -966,8 +966,8 @@ nav {
 }
 .product .accentCart {
   position: absolute;
-  right: 25px;
-  bottom: 130px;
+  right: 30px;
+  top: 260px;
   width: 45px;
   height: 45px;
   border: none;
@@ -1014,6 +1014,7 @@ nav {
   width: 65.625rem;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .product__main {
@@ -1177,14 +1178,14 @@ nav {
   font-weight: 600;
 }
 .best__sale {
-  height: 3.75rem;
+  height: 6.875rem;
   margin-bottom: 2.5rem;
 }
 .best__regularPrice {
   color: #898989;
   font-size: 0.75rem;
   position: absolute;
-  bottom: -5px;
+  bottom: 25px;
 }
 .best__discountPercent {
   display: inline-flex;
@@ -1205,11 +1206,57 @@ nav {
   border: none;
   background: transparent url(./../../assets/main/ic-product-swiper-arrow.svg) no-repeat;
 }
+.best__delivery, .best__info {
+  color: #898989;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.best__delivery {
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+}
+.best__limit, .best__only {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #e1e1e1;
+  border-radius: 4px;
+  padding: 0.375rem;
+  margin-bottom: 8px;
+}
+.best__only {
+  color: #5f0080;
+}
+.best__deliveryDetergent, .best__infoDetergent {
+  color: #898989;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.best__deliveryDetergent {
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+}
+.best__limitDetergent, .best__onlyDetergent {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #e1e1e1;
+  border-radius: 4px;
+  padding: 0.375rem;
+  margin-top: 20px;
+}
+.best__onlyDetergent {
+  color: #5f0080;
+}
 
 .accentCart {
   position: absolute;
-  right: 25px;
-  bottom: 130px;
+  right: 30px;
+  top: 240px;
   width: 45px;
   height: 45px;
   border: none;
@@ -1233,24 +1280,6 @@ nav {
   font-size: 0.75rem;
   text-align: center;
   line-height: 1.875rem;
-}
-
-.best__delivery, .best__info {
-  color: #898989;
-  font-size: 0.75rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.best__delivery {
-  font-weight: 600;
-  position: absolute;
-  top: 0;
-}
-
-.detail {
-  background: pink;
-  font-size: 50px;
 }
 
 body {

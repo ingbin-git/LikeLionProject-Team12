@@ -121,7 +121,7 @@
   }
   
   .accentCart {
-    @include posRightBottom(25px, 130px);
+    @include posRightTop(30px, 260px);
     @include wh(45px, 45px);
     border: none;
     background: transparent url(./../../assets/main/ic-add-cart.svg);

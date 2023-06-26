@@ -104,3 +104,9 @@
   grid-row-gap: rem($row-gap);
   grid-column-gap: rem($column-gap);
 }
+
+@mixin textStyle($size, $weight, $color) {
+  font-size: rem($size);
+  font-weight: $weight;
+  color: $color;
+}
