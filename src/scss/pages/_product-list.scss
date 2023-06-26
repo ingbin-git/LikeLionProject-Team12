@@ -1,23 +1,23 @@
 @use "./../utils/" as *;
 
-
-.productWrapper {
-  width: rem(1050px);
-  @include autoMarginX;
-  position: relative;
+.product {
+  &Wrapper {
+    width: rem(1050px);
+    @include autoMarginX;
+    position: relative;
+  }
+  
+  &__main {
+  margin-left: 250px;
+  margin-top: -50px;
+  }
+  
+  
+  &__filter {
+    width: 220px;
+    position: absolute;
+  }
 }
-
-.product__main {
-margin-left: 250px;
-margin-top: -50px;
-}
-
-
-.product__filter {
-  width: 220px;
-  position: absolute;
-}
-
 
 .filter {
   display: inline-block;
@@ -37,10 +37,6 @@ margin-top: -50px;
     background: transparent;
     font-size: rem(10px);
     color: $gray-300;
-  }
-
-  &__mark {
-    // @include flexbox($items: center);
   }
 
   &__mark::after {
