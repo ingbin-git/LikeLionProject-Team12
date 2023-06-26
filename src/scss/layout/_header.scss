@@ -19,9 +19,8 @@
   line-height: 42px;
   
   &__wrapper {
+    @include autoMarginX;
     width: rem(1050px);
-    margin-left: auto;
-    margin-right: auto;
   }
 
   &__button {
@@ -33,10 +32,8 @@
 }
 
 .headerWrapper {
-  width: rem(1050px);
-  height: rem(147px);
-  margin-left: auto;
-  margin-right: auto;
+  @include wh(1050px, 147px);
+  @include autoMarginX;
   position: relative;
 }
 
@@ -46,15 +43,12 @@
   padding-top: rem(44px);
   
   &__img {
-    width: rem(82px);
-    height: rem(42px);
+    @include wh(82px, 42px);
     padding-right: rem(12px);
   }
   
   &__img__new {
-  position: absolute;
-  top: rem(44px);
-  left: rem(250px);
+    @include posLeftTop(250px, 44px);
   }
 
   &__link__beauty {
@@ -63,27 +57,24 @@
 }
 
 .searchForm {
-  width: rem(400px);
-  height: rem(60px);
+  @include wh(400px, 60px);
+  @include paddingX(20px);
+  @include paddingY(12px);
+  @include posLeftTop(330px, 32px);
   border: 1px solid $primary-color;
   border-radius: 4px;
-  padding: rem(12px) rem(20px); 
-  position: absolute;
-  top: rem(32px);
-  left: rem(330px);
   
   &__group {
     @include flexbox ($items: center);
-    position: absolute;
-    top: 0;
-    left: 0;
+    @include posLeftTop(330px, 32px);
+    @include posLeftTop;
   }
 }
 
 .formInput {
-  padding: rem(12px) rem(20px);
-  width: rem(360px);
-  height: rem(60px);
+  @include paddingX(20px);
+  @include paddingY(12px);
+  @include wh(360px, 60px);
   @include flexbox ($items: center);
 
   &__input {
@@ -97,37 +88,31 @@
 }
 
 .searchButton {
-  width: rem(36px);
-  height: rem(36px);
+  @include wh(36px, 36px);
   border: 0px;
   background: transparent;
 }
 
 .memberOnly {
-  position: absolute;
-  top: rem(12px);
-  right: 0;
+  @include posRightTop(0, 12px);
+
   &__wrapper {
     @include flexbox;
     font-size: rem(12px);
   }
 
   &__down {
-    width: rem(8px);
-    height: rem(5.6px);    
+    @include wh(8px, 5.6px);
   }
 }
 
 .buttons {
-  position: absolute;
-  bottom: rem(63px);
-  right: 0;
+  @include posRightBottom(0, 63px);
 }
 
 nav {
-  width: rem(1050px);
-  height: rem(72px);
-  padding: rem(16px) 0;
+  @include wh(1050px, 72px);
+  @include paddingY(16px);
 }
 
 .menu {
@@ -147,12 +132,12 @@ nav {
     width: rem(600px);
     @include flexbox($justify: space-between);
     // 적용 안됨...
-    margin-left: auto;
-    margin-right: auto;
+    @include autoMarginX;
   }
 
   &__delivery {
-    padding: rem(4px) rem(8px);
+    @include paddingX(8px);
+    @include paddingY(4px);
     border: 1px solid $gray-300;
     border-radius: 16px;
   }
@@ -160,8 +145,7 @@ nav {
 
 // 메뉴 카테고리 일단 숨겨둠
 .category {
-  width: 0;
-  height: 0;
+  @include wh(0, 0);
   overflow: hidden;
 }
 
@@ -171,9 +155,8 @@ nav {
 }
 
 .sprite {
+  @include wh(24px, 24px);
   background: url(/assets/header/ic-menuIcon.svg) no-repeat;
-  width: rem(24px);
-  height: rem(24px);
   padding-left: rem(8px);
 }
 
@@ -192,57 +175,74 @@ nav {
 .sprite__fish {
   background-position: -4px -507px;
 }
+
 .sprite__meat {
   background-position: -3px -77px;
 }
+
 .sprite__soup {
   background-position: -3px -173px;
 }
+
 .sprite__salad {
   background-position: -3px -341px;
 }
+
 .sprite__noodles {
   background-position: -4px -244px;
 }
 .sprite__water {
   background-position: -3px -125px;
 }
+
 .sprite__snack {
   background-position: -3px -291px;
 }
+
 .sprite__bakery {
   background-position: -3px -50px;
 }
+
 .sprite__health {
   background-position: -3px -484px;
 }
+
 .sprite__wine {
   background-position: -5px -435px;
 }
+
 .sprite__tradition {
   background-position: -5px -27px;
 }
+
 .sprite__living {
   background-position: -6px -98px;
 }
+
 .sprite__skin {
   background-position: -3px -147px;
 }
+
 .sprite__hair {
   background-position: -3px -411px;
 }
+
 .sprite__kitchen {
   background-position: -3px -196px;
 }
+
 .sprite__appliances {
   background-position: -5px -267px;
 }
+
 .sprite__pet {
   background-position: -5px -316px;
 }
+
 .sprite__baby {
   background-position: -5px -363px;
 }
+
 .sprite__travel {
   background-position: -4px -460px;
 }
