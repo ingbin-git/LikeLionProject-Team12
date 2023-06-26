@@ -65,9 +65,9 @@
   border: 1px solid var(--gray-200, #C4C4C4);
   @include padding(8px);
   text-align: center;
-  position: fixed;
+  position: absolute;
   right: rem(39px);
-  bottom: rem(30px);
+  top: rem(800px);
   // margin-top: 300px;
 }
 
@@ -117,6 +117,11 @@
     display: block;
 }
 
+// @media screen (max-width: 1500px) {
+//   .sideBar{
+//     overflow: hidden;
+//   }
+// }
 
 
 

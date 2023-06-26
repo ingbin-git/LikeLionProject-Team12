@@ -866,9 +866,9 @@ nav {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
-  position: fixed;
+  position: absolute;
   right: 2.4375rem;
-  bottom: 1.875rem;
+  top: 50rem;
 }
 
 .up__btn,
@@ -1006,10 +1006,10 @@ nav {
 }
 
 .productDetail {
-  background: darkcyan;
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   justify-content: center;
+  align-items: stretch;
 }
 
 .prod__img img {
@@ -1018,15 +1018,13 @@ nav {
   margin-right: 85px;
 }
 
-.productInfo {
-  background: salmon;
-}
-
 .prod__buy {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 16px;
-  padding: 0 0 20px 0;
+  padding-bottom: 20px;
 }
 
 .prod__delivery {
@@ -1063,9 +1061,218 @@ nav {
   color: #5f0080;
 }
 
+.itemDescription {
+  width: 35rem;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.itemDescription dl {
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.itemDescription__list,
+.prod__select {
+  width: 8rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.itemDescription__list,
+.itemDescription__contetnts,
+.prod__select,
+.select__name {
+  font-size: 0.7501875rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #6b6b6b;
+}
+
+.itemDescription:last-child {
+  border-bottom: none;
+}
+
+.itemDescription__info {
+  font-size: 0.7501875rem;
+  font-weight: 600;
+  color: #898989;
+  line-height: 150%;
+}
+
+.allergy__info {
+  width: 27rem;
+  color: #6b6b6b;
+  font-weight: normal;
+}
+
+.SelectWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 35rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.select__info {
+  position: relative;
+  width: 27rem;
+  height: 5.25rem;
+  border: 1px solid #e1e1e1;
+}
+
+.select__count {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.select__updown {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.select__name {
+  margin-bottom: 0.75rem;
+}
+
+.select__price {
+  font-size: 0.7501875rem;
+  font-weight: 600;
+  line-height: 150%;
+  color: #333333;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+
+.count__btn button {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.count__btn {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 84px;
+  height: 30px;
+  border: 1px solid #c4c4c4;
+}
+
+.count {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.select__total {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  text-align: end;
+}
+
+.select__totalprice {
+  margin-bottom: 8px;
+}
+
+.select__totalprice,
+.login__benefit {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+}
+
+.select__totalprice span {
+  margin-left: 1.0625rem;
+  color: #333333;
+  font-size: 1.776875rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.select__totalprice::after {
+  content: "원";
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.mileage {
+  border-radius: 12px;
+  background: #fa622f;
+  width: 34px;
+  height: 24px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: #ffffff;
+  font-size: 0.625rem;
+  line-height: 160%;
+  margin-right: 6px;
+  font-weight: normal;
+}
+
+.productBuy {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.prod__heart {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.prod__alaram {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.prod__cart {
+  border: 0;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  cursor: pointer;
+  width: 26.5rem;
+  height: 3.375rem;
+  background: #5f0080;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
 .navTitles {
   margin-top: 3rem;
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
   margin-bottom: 2.5rem;
 }
 
@@ -1075,8 +1282,8 @@ nav {
   width: 16.4375rem;
   height: 3.375rem;
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background: #F9F9F9;
   border: 1px solid #a6a6a6;
 }
@@ -1153,8 +1360,8 @@ nav {
 .checkPoint::before {
   width: 100%;
   position: absolute;
-  top: 37px;
   left: 0;
+  top: 37px;
   content: "";
   height: 1px;
   z-index: 1;
