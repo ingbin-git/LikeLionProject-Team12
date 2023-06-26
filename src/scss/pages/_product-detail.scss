@@ -1,8 +1,9 @@
 @use "./../utils/" as *;
 
-main {
-    margin: 0 auto;
-    position: relative;
+
+
+body {
+  font-family: pretendard;
 }
 
 .why__carly {
@@ -14,15 +15,16 @@ main {
 .why__carlyImg {
   margin-top: rem(96px);
   margin-bottom: rem(52px);
-  width: 100%;
-  height: 100%;
+  @include wh(100%, 100%);
 }
 
 /* 문의하기 */
 .qna {
   position: relative;
   width: rem(1050px);
-  margin: 0px auto 72px auto;
+  margin-top: 0;
+  margin-bottom: rem(72px);
+  @include autoMarginX;
 }
 
 .qna__title {
@@ -34,15 +36,14 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 155px;
-  height: 45px;
+  @include wh(155px, 45px);
   border: none;
-  border-radius: 5px;
+  border-radius: rem(5px);
   background-color: $primary-color;
   color: $white;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: rem(10px);
+  right: rem(10px);
 }
 
 .qna__infoIist {
@@ -63,23 +64,24 @@ button {
 }
 
 .review {
-  width: 1050px;
-  margin: 0 auto 72px auto;
+  width: rem(1050px);
+  @include autoMarginX;
+  margin-top: 0;
+  margin-bottom: rem(72px);
   position: relative;
 }
 
 .review__title {
-  font-size: 28px;
+  font-size: rem(28px);
   font-weight: bold;
 }
 
 .reviewWrite__button {
-  width: 155px;
-  height: 44px;
+  @include wh(155px, 45px);
   background-color: $primary-color;
   color: $white;
   border: 0;
-  border-radius: 4px;
+  border-radius: rem(4px);
   position: absolute;
   right: 0;
 }
@@ -100,11 +102,11 @@ button {
   color: $content-color;
   color: $gray-500;
   list-style: disc;
-  margin-left: 20px;
+  margin-left: rem(20px);
 }
 
 .review__wrapper {
-  margin-top: 56px;
+  margin-top: rem(56px);
 }
 
 .review__wrapper__top {
@@ -115,16 +117,16 @@ button {
 
 .review__count {
   font-size: rem(12px);
-  line-height: 18px;
-  margin-top: 3px;
-  margin-bottom: 3px;
+  line-height: rem(18px);
+  margin-top: rem(3px);
+  margin-bottom: rem(3px);
 }
 
 .sorting {
   font-size: rem(16px);
   font-weight: 600;
-  height: 24px;
-  line-height: 24px;
+  height: rem(24px);
+  line-height: re,(24px);
   display: flex-box;
 }
 
@@ -140,23 +142,23 @@ button {
   content: '';
   height: 50%;
   border-left: 1px solid $gray-300;
-  margin-left: 8px;
-  margin-right: 8px;
+  @include marginX(8px);
 }
 
 .notification__container {
   border-top: 1px solid $black;
 }
 .notification__summary {
-  padding: 17px 20px 17px;
+  @include paddingX(20px);
+  @include paddingY(17px);
   border-bottom: 1px solid $gray-100;
   color: $content-color;
 }
 
 .notification {
-  padding: 0 8px 0 8px;
-  height: 18px;
-  line-height: 18px;
+  @include paddingX(8px);
+  height: rem(18px);
+  line-height: rem(18px);
   font-size: rem(14px);
   background-color: $gray-100;
   border-radius: 1px;
@@ -176,12 +178,12 @@ button {
 .notification__content {
   background-color: $gray-50;
   border-bottom: 1px solid $gray-100;
-  padding: 20px;
-  line-height: 18px;
+  padding: rem(20px);
+  line-height: rem(18px);
 }
 
 .review__content {
-  padding: 20px;
+  padding: rem(20px);
   display: flex;
   font-size: rem(12px);
   border-bottom: 1px solid $gray-100;
@@ -193,8 +195,8 @@ button {
 
 .tag__best {
   padding: 0 8px 0 8px;
-  height: 18px;
-  line-height: 18px;
+  height: rem(18px);
+  line-height: rem(18px);
   font-size: rem(14px);
   background-color: $secondary-color;
   color: $white;
@@ -204,8 +206,8 @@ button {
 
 .tag__membership {
   padding: 0 8px;
-  height: 18px;
-  line-height: 18px;
+  height: rem(18px);
+  line-height: rem(18px);
   font-size: rem(14px);
   background-color: $white;
   color: $primary-color;
@@ -219,7 +221,7 @@ button {
 }
 
 .review__text {
-  margin: 20px 0;
+  @include marginY(20px);
 }
 
 .review__date,
@@ -229,27 +231,27 @@ button {
 }
 
 .review__buttonGroup {
-  margin: 16px auto 0 auto;
-  width: 128px;
+  @include autoMarginX;
+  margin-top: rem(16px);
+  width: rem(128px);
   display: flex;
   justify-content: space-between;
 }
 
 .prev,
 .next {
-  width: 56px;
-  height: 56px;
+  @include wh(56px, 56px);
   border: 1px solid $gray-100;
   border-radius: 4px;
 }
 
 .prev svg {
   transform: rotate(180deg);
-  margin: 10px;
+  margin: rem(10px);
 }
 
 .next img {
-  margin: 10px;
+  margin: rem(10px);
 }
 
 .inquiry__listWrap {
@@ -258,7 +260,6 @@ button {
 
 .inquiry__listHeader {
   border-bottom: 2px solid $gray-500;
-  font-family: "Pretendard";
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -282,19 +283,18 @@ button {
 
 .inquiry__noticeBox {
   background-color: $gray-100;
-  font-size: 0.75rem;
-  padding: 0 8px 0 8px;
+  font-size: rem(12px);
+  @include paddingX(8px);
   border-radius: 1px;
-  margin-right: 20px;
+  margin-right: rem(20px);
 }
 
 .inquiry__listTitle {
   display: inline-block;
-  width: 782px;
-  line-height: 58px;
-  height: 58px;
+  @include wh(782px, 58px);
+  line-height: rem(58px);
   font-weight: 600;
-  padding-left: 20px;
+  padding-left: rem(20px);
 }
 
 .customer__post li {
@@ -305,34 +305,34 @@ button {
 .inquiry__listTitleSecret {
   display: inline-block;
   color: $gray-400;
-  height: 58px;
-  line-height: 58px;
-  padding-right: 20px;
+  height: rem(58px);
+  line-height: rem(58px);
+  padding-right: rem(20px);
 }
 
 .inquiry__listWho {
   display: inline-block;
-  width: 80px;
+  width: rem(80px);
   text-align: center;
-  font-size: 1rem;
+  font-size: rem(16px);
   color: $gray-400;
   font-weight: 600;
 }
 
 .inquiry__listDay {
   display: inline-block;
-  width: 100px;
+  width: rem(100px);
   text-align: center;
-  font-size: 1rem;
+  font-size: rem(16px);
   color: $gray-400;
   font-weight: 600;
 }
 
 .inquiry__listAnswerState {
   display: inline-block;
-  width: 55px;
+  width: rem(55px);
   text-align: center;
-  font-size: 13px;
+  font-size: rem(13px);
   color: $gray-400;
   font-weight: 600;
 }
@@ -341,68 +341,60 @@ button {
   color: $primary-color;
   font-weight: 600;
   text-align: center;
-  font-size: 13px;
+  font-size: rem(13px);
 }
 
 .list__question {
-  width: 974px;
+  width: rem(974px);
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-family: "Pretendard";
+  margin-top: rem(20px);
+  margin-bottom: rem(40px);
   font-style: normal;
   font-weight: 600;
-  font-size: 0.7502rem;
+  font-size: rem(12px);
   line-height: 150%;
   color: $content-color;
-  padding-left: 20px;
+  padding-left: rem(20px);
 }
 
 .list__answer {
   display: flex;
-  font-family: "Pretendard";
   font-style: normal;
   font-weight: 600;
-  font-size: 0.7502rem;
+  font-size: rem(12px);
   line-height: 150%;
   color: $content-color;
-  width: 481px;
-  margin-right: 500px;
-  padding-left: 20px;
+  width: rem(481px);
+  margin-right: rem(500px);
+  padding-left: rem(20px);
 }
 .list__questionIcon {
-  width: 24px;
-  height: 24px;
-  margin-right: 19px;
+  @include wh(24px, 24px);
+  margin-right: rem(19px);
 }
 
 .list__answerIcon {
-  width: 24px;
-  height: 24px;
-  margin-right: 19px;
+  @include wh(24px, 24px);
+  margin-right: rem(19px);
 }
 .list__answerBox p {
-  margin-bottom: 8px;
+  margin-bottom: rem(8px);
 }
 
 .list__answerBox {
-  width: 481px;
-  height: 216px;
-  font-family: "Pretendard";
+  @include wh(481px, 216px);
   font-style: normal;
   font-weight: 600;
-  font-size: 12.003px;
+  font-size: rem(12px);
   line-height: 150%;
   color: $content-color;
-  margin-bottom: 20px;
-  width: 481px;
+  margin-bottom: rem(20px);
 }
 
-.list__answeDate {
-  font-family: "Pretendard";
+.list__answerDate {
   font-style: normal;
   font-weight: 600;
-  font-size: 12.003px;
+  font-size: rem(12px);
   line-height: 150%;
   color: $gray-400;
 }
