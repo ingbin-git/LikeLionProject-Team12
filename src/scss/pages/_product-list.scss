@@ -1,22 +1,23 @@
 @use "./../utils/" as *;
 
-
-.productWrapper {
-  width: rem(1050px);
-  @include autoMarginX;  
+.product {
+  &Wrapper {
+    width: rem(1050px);
+    @include autoMarginX;
+    position: relative;
+  }
+  
+  &__main {
+  margin-left: 250px;
+  margin-top: -50px;
+  }
+  
+  
+  &__filter {
+    width: 220px;
+    position: absolute;
+  }
 }
-
-.product__main {
-margin-left: 250px;
-margin-top: -50px;
-}
-
-
-.product__filter {
-  width: 220px;
-  position: absolute;
-}
-
 
 .filter {
   display: inline-block;
@@ -36,10 +37,6 @@ margin-top: -50px;
     background: transparent;
     font-size: rem(10px);
     color: $gray-300;
-  }
-
-  &__mark {
-    // @include flexbox($items: center);
   }
 
   &__mark::after {
@@ -114,9 +111,6 @@ margin-top: -50px;
     height: 24px;
     width: 770px;
     @include autoMarginX;
-    // position: absolute;
-    // margin-left: 230px;
-
   }
  
   &__total,
@@ -160,6 +154,14 @@ margin-top: -50px;
   margin-bottom: rem(28px);
 }
 
+
+
+
+
+
+
+
+
 .best {
   
   
@@ -167,9 +169,7 @@ margin-top: -50px;
     @include flexbox($justify: center);
     width: 800px;
   }
-  
-
-  
+    
   &__item {
     @include paddingX(16px);
     position: relative;
@@ -193,7 +193,7 @@ margin-top: -50px;
   }  
   
   &__sale {
-    height: rem(60px);
+    height: rem(110px);
     margin-bottom: rem(40px);
   }
   
@@ -201,7 +201,7 @@ margin-top: -50px;
     color: $gray-400;
     font-size: rem(12px);
     position: absolute;
-    bottom: -5px;
+    bottom: 25px;
   }
   
   &__discountPercent {
@@ -224,10 +224,62 @@ margin-top: -50px;
     border: none;
     background: transparent url(./../../assets/main/ic-product-swiper-arrow.svg) no-repeat;
   }
+
+  &__delivery, &__info {
+    color: $gray-400;
+    font-size: rem(12px);
+    @include marginY(8px);
+  }
+  
+  &__delivery {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+  }
+  
+  &__limit, &__only {
+    display: inline-block;
+    font-size: rem(12px);
+    font-weight: 600;
+    background: $gray-100;
+    border-radius: 4px;
+    padding: rem(6px);
+    margin-bottom: 8px;
+  }
+  
+  &__only {
+    color: $primary-color;
+  }
+  
+  &__deliveryDetergent, &__infoDetergent {
+    color: $gray-400;
+    font-size: rem(12px);
+    @include marginY(8px);
+  }
+  
+  &__deliveryDetergent {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+  }
+  
+  &__limitDetergent, &__onlyDetergent {
+    display: inline-block;
+    font-size: rem(12px);
+    font-weight: 600;
+    background: $gray-100;
+    border-radius: 4px;
+    padding: rem(6px);
+    margin-top: 20px;
+  }
+  
+  &__onlyDetergent {
+    color: $primary-color;
+  }
 }
 
 .accentCart {
-  @include posRightBottom(25px, 130px);
+  @include posRightTop(30px, 240px);
   @include wh(45px, 45px);
   border: none;
   background: transparent url(./../../assets/main/ic-add-cart.svg);
@@ -247,16 +299,4 @@ margin-top: -50px;
     text-align: center;
     line-height: rem(30px);
   }
-}
-
-.best__delivery, .best__info {
-  color: $gray-400;
-  font-size: rem(12px);
-  @include marginY(8px);
-}
-
-.best__delivery {
-  font-weight: 600;
-  position: absolute;
-  top: 0;
 }
