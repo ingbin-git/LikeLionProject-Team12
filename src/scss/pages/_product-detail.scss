@@ -1,10 +1,408 @@
 @use "./../utils/" as *;
 
-.detail {
-  background: pink;
-  font-size: 50px;
+main {
+    margin: 0 auto;
+    position: relative;
 }
 
-.detail-text {
-  background: greenyellow;
+.why__carly {
+  width: rem(1050px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why__carlyImg {
+  margin-top: rem(96px);
+  margin-bottom: rem(52px);
+  width: 100%;
+  height: 100%;
+}
+
+/* 문의하기 */
+.qna {
+  position: relative;
+  width: rem(1050px);
+  margin: 0px auto 72px auto;
+}
+
+.qna__title {
+  font-size: rem(24px);
+  color: $black;
+}
+
+.qna__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  background-color: $primary-color;
+  color: $white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.qna__infoIist {
+  margin-top: rem(24px);
+  margin-bottom: rem(55px);
+  margin-left: rem(20px);
+  font-size: rem(12px);
+  color: $gray-500;
+  list-style-type: disc;
+  line-height: 150%;
+}
+
+/* 상품 후기 */
+button {
+  all: unset;
+  text-align: center;
+  cursor: pointer;
+}
+
+.review {
+  width: 1050px;
+  margin: 0 auto 72px auto;
+  position: relative;
+}
+
+.review__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.reviewWrite__button {
+  width: 155px;
+  height: 44px;
+  background-color: $primary-color;
+  color: $white;
+  border: 0;
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+}
+
+.review__benefit {
+  margin-top: rem(24px);
+  line-height: 150%;
+}
+
+.review-benefit__title {
+  font-weight: bold;
+  list-style: none;
+}
+
+.review-benefit__content {
+  font-size: rem(12px);
+  line-height: rem(18px);
+  color: $content-color;
+  color: $gray-500;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.review__wrapper {
+  margin-top: 56px;
+}
+
+.review__wrapper__top {
+  margin-bottom: rem(16px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.review__count {
+  font-size: rem(12px);
+  line-height: 18px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.sorting {
+  font-size: rem(16px);
+  font-weight: 600;
+  height: 24px;
+  line-height: 24px;
+  display: flex-box;
+}
+
+.sorting-deactive {
+  color: $gray-300;
+}
+
+.sorting-active {
+  color: $content-color;
+}
+
+.sorting__recommend::after {
+  content: '';
+  height: 50%;
+  border-left: 1px solid $gray-300;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.notification__container {
+  border-top: 1px solid $black;
+}
+.notification__summary {
+  padding: 17px 20px 17px;
+  border-bottom: 1px solid $gray-100;
+  color: $content-color;
+}
+
+.notification {
+  padding: 0 8px 0 8px;
+  height: 18px;
+  line-height: 18px;
+  font-size: rem(14px);
+  background-color: $gray-100;
+  border-radius: 1px;
+  margin-right: rem(20px);
+}
+
+.notification__title {
+  font-weight: 600;
+}
+
+.notification__content,
+.review__text {
+  white-space: pre-line;
+  font-size: rem(12px);
+}
+
+.notification__content {
+  background-color: $gray-50;
+  border-bottom: 1px solid $gray-100;
+  padding: 20px;
+  line-height: 18px;
+}
+
+.review__content {
+  padding: 20px;
+  display: flex;
+  font-size: rem(12px);
+  border-bottom: 1px solid $gray-100;
+}
+
+.review__writerInfo {
+  flex: 0 0 225px;
+}
+
+.tag__best {
+  padding: 0 8px 0 8px;
+  height: 18px;
+  line-height: 18px;
+  font-size: rem(14px);
+  background-color: $secondary-color;
+  color: $white;
+  border-radius: 1px;
+  margin-right: rem(8px);
+}
+
+.tag__membership {
+  padding: 0 8px;
+  height: 18px;
+  line-height: 18px;
+  font-size: rem(14px);
+  background-color: $white;
+  color: $primary-color;
+  border-radius: 1px;
+  border: 1px solid $primary-color;
+  margin-right: rem(8px);
+}
+
+.review__textContainer {
+  flex: 1 1 0%;
+}
+
+.review__text {
+  margin: 20px 0;
+}
+
+.review__date,
+.review__productName {
+  color: $gray-400;
+  font-weight: 600;
+}
+
+.review__buttonGroup {
+  margin: 16px auto 0 auto;
+  width: 128px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  width: 56px;
+  height: 56px;
+  border: 1px solid $gray-100;
+  border-radius: 4px;
+}
+
+.prev svg {
+  transform: rotate(180deg);
+  margin: 10px;
+}
+
+.next img {
+  margin: 10px;
+}
+
+.inquiry__listWrap {
+  border-top: 2px solid $content-color;
+}
+
+.inquiry__listHeader {
+  border-bottom: 2px solid $gray-500;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: $black;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.inquiry__listNotice {
+  border-bottom: 1px solid $gray-200;
+  font-weight: 600;
+  font-size: 1rem;
+  color: $gray-400;
+}
+
+.inquiry__listTitle span {
+  color: $content-color;
+}
+
+.inquiry__noticeBox {
+  background-color: $gray-100;
+  font-size: 0.75rem;
+  padding: 0 8px 0 8px;
+  border-radius: 1px;
+  margin-right: 20px;
+}
+
+.inquiry__listTitle {
+  display: inline-block;
+  width: 782px;
+  line-height: 58px;
+  height: 58px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.customer__post li {
+  border-bottom: 1px solid $gray-200;
+}
+
+/* 자물쇠문단 */
+.inquiry__listTitleSecret {
+  display: inline-block;
+  color: $gray-400;
+  height: 58px;
+  line-height: 58px;
+  padding-right: 20px;
+}
+
+.inquiry__listWho {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  color: $gray-400;
+  font-weight: 600;
+}
+
+.inquiry__listDay {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-size: 1rem;
+  color: $gray-400;
+  font-weight: 600;
+}
+
+.inquiry__listAnswerState {
+  display: inline-block;
+  width: 55px;
+  text-align: center;
+  font-size: 13px;
+  color: $gray-400;
+  font-weight: 600;
+}
+
+.inquiry__listAnswerComplete {
+  color: $primary-color;
+  font-weight: 600;
+  text-align: center;
+  font-size: 13px;
+}
+
+.list__question {
+  width: 974px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7502rem;
+  line-height: 150%;
+  color: $content-color;
+  padding-left: 20px;
+}
+
+.list__answer {
+  display: flex;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7502rem;
+  line-height: 150%;
+  color: $content-color;
+  width: 481px;
+  margin-right: 500px;
+  padding-left: 20px;
+}
+.list__questionIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 19px;
+}
+
+.list__answerIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 19px;
+}
+.list__answerBox p {
+  margin-bottom: 8px;
+}
+
+.list__answerBox {
+  width: 481px;
+  height: 216px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+  color: $content-color;
+  margin-bottom: 20px;
+  width: 481px;
+}
+
+.list__answeDate {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+  color: $gray-400;
 }

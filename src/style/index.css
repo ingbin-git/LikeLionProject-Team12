@@ -650,8 +650,11 @@ nav {
 }
 
 .footer {
-  border-top: 100px solid #F9F9F9;
+  border-top: 1px solid #e1e1e1;
+  margin-top: 96px;
   color: #333333;
+  line-height: 130%;
+  background-color: #F9F9F9;
 }
 
 .footer .divider {
@@ -749,6 +752,7 @@ nav {
 
 .footer__mail {
   font-size: 0.5rem;
+  padding-top: 1rem;
 }
 
 .footer__about {
@@ -1160,13 +1164,414 @@ nav {
   line-height: 1.875rem;
 }
 
-.detail {
-  background: pink;
-  font-size: 50px;
+main {
+  margin: 0 auto;
+  position: relative;
 }
 
-.detail-text {
-  background: greenyellow;
+.why__carly {
+  width: 65.625rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why__carlyImg {
+  margin-top: 6rem;
+  margin-bottom: 3.25rem;
+  width: 100%;
+  height: 100%;
+}
+
+/* 문의하기 */
+.qna {
+  position: relative;
+  width: 65.625rem;
+  margin: 0px auto 72px auto;
+}
+
+.qna__title {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.qna__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5f0080;
+  color: #ffffff;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.qna__infoIist {
+  margin-top: 1.5rem;
+  margin-bottom: 3.4375rem;
+  margin-left: 1.25rem;
+  font-size: 0.75rem;
+  color: #6b6b6b;
+  list-style-type: disc;
+  line-height: 150%;
+}
+
+/* 상품 후기 */
+button {
+  all: unset;
+  text-align: center;
+  cursor: pointer;
+}
+
+.review {
+  width: 1050px;
+  margin: 0 auto 72px auto;
+  position: relative;
+}
+
+.review__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.reviewWrite__button {
+  width: 155px;
+  height: 44px;
+  background-color: #5f0080;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  position: absolute;
+  right: 0;
+}
+
+.review__benefit {
+  margin-top: 1.5rem;
+  line-height: 150%;
+}
+
+.review-benefit__title {
+  font-weight: bold;
+  list-style: none;
+}
+
+.review-benefit__content {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #333333;
+  color: #6b6b6b;
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.review__wrapper {
+  margin-top: 56px;
+}
+
+.review__wrapper__top {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review__count {
+  font-size: 0.75rem;
+  line-height: 18px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.sorting {
+  font-size: 1rem;
+  font-weight: 600;
+  height: 24px;
+  line-height: 24px;
+  display: flex-box;
+}
+
+.sorting-deactive {
+  color: #a6a6a6;
+}
+
+.sorting-active {
+  color: #333333;
+}
+
+.sorting__recommend::after {
+  content: "";
+  height: 50%;
+  border-left: 1px solid #a6a6a6;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.notification__container {
+  border-top: 1px solid #000000;
+}
+
+.notification__summary {
+  padding: 17px 20px 17px;
+  border-bottom: 1px solid #e1e1e1;
+  color: #333333;
+}
+
+.notification {
+  padding: 0 8px 0 8px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 0.875rem;
+  background-color: #e1e1e1;
+  border-radius: 1px;
+  margin-right: 1.25rem;
+}
+
+.notification__title {
+  font-weight: 600;
+}
+
+.notification__content,
+.review__text {
+  white-space: pre-line;
+  font-size: 0.75rem;
+}
+
+.notification__content {
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 20px;
+  line-height: 18px;
+}
+
+.review__content {
+  padding: 20px;
+  display: flex;
+  font-size: 0.75rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.review__writerInfo {
+  flex: 0 0 225px;
+}
+
+.tag__best {
+  padding: 0 8px 0 8px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 0.875rem;
+  background-color: #bd76ff;
+  color: #ffffff;
+  border-radius: 1px;
+  margin-right: 0.5rem;
+}
+
+.tag__membership {
+  padding: 0 8px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 0.875rem;
+  background-color: #ffffff;
+  color: #5f0080;
+  border-radius: 1px;
+  border: 1px solid #5f0080;
+  margin-right: 0.5rem;
+}
+
+.review__textContainer {
+  flex: 1 1 0%;
+}
+
+.review__text {
+  margin: 20px 0;
+}
+
+.review__date,
+.review__productName {
+  color: #898989;
+  font-weight: 600;
+}
+
+.review__buttonGroup {
+  margin: 16px auto 0 auto;
+  width: 128px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+.prev svg {
+  transform: rotate(180deg);
+  margin: 10px;
+}
+
+.next img {
+  margin: 10px;
+}
+
+.inquiry__listWrap {
+  border-top: 2px solid #333333;
+}
+
+.inquiry__listHeader {
+  border-bottom: 2px solid #6b6b6b;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.inquiry__listNotice {
+  border-bottom: 1px solid #c4c4c4;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #898989;
+}
+
+.inquiry__listTitle span {
+  color: #333333;
+}
+
+.inquiry__noticeBox {
+  background-color: #e1e1e1;
+  font-size: 0.75rem;
+  padding: 0 8px 0 8px;
+  border-radius: 1px;
+  margin-right: 20px;
+}
+
+.inquiry__listTitle {
+  display: inline-block;
+  width: 782px;
+  line-height: 58px;
+  height: 58px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.customer__post li {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+/* 자물쇠문단 */
+.inquiry__listTitleSecret {
+  display: inline-block;
+  color: #898989;
+  height: 58px;
+  line-height: 58px;
+  padding-right: 20px;
+}
+
+.inquiry__listWho {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  font-size: 1rem;
+  color: #898989;
+  font-weight: 600;
+}
+
+.inquiry__listDay {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-size: 1rem;
+  color: #898989;
+  font-weight: 600;
+}
+
+.inquiry__listAnswerState {
+  display: inline-block;
+  width: 55px;
+  text-align: center;
+  font-size: 13px;
+  color: #898989;
+  font-weight: 600;
+}
+
+.inquiry__listAnswerComplete {
+  color: #5f0080;
+  font-weight: 600;
+  text-align: center;
+  font-size: 13px;
+}
+
+.list__question {
+  width: 974px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7502rem;
+  line-height: 150%;
+  color: #333333;
+  padding-left: 20px;
+}
+
+.list__answer {
+  display: flex;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7502rem;
+  line-height: 150%;
+  color: #333333;
+  width: 481px;
+  margin-right: 500px;
+  padding-left: 20px;
+}
+
+.list__questionIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 19px;
+}
+
+.list__answerIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 19px;
+}
+
+.list__answerBox p {
+  margin-bottom: 8px;
+}
+
+.list__answerBox {
+  width: 481px;
+  height: 216px;
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+  color: #333333;
+  margin-bottom: 20px;
+  width: 481px;
+}
+
+.list__answeDate {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.003px;
+  line-height: 150%;
+  color: #898989;
 }
 
 /*# sourceMappingURL=index.css.map */
