@@ -8,10 +8,6 @@
   color: $gray-500;
 }
 
-.headerAllWrapper {
-  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.10);
-}
-
 .promotion {
   background: $primary-color;
   width: 100%;
@@ -114,10 +110,10 @@
   @include posRightBottom(0, 63px);
 }
 
-nav {
+.navi {
   width: rem(1050px);
   height: rem(72px);
-  padding: rem(20px, 16px) 0;
+  padding: rem(16px) 0;
 }
 
 .menu {
@@ -151,7 +147,6 @@ nav {
 .menu__button:hover .category {
   background: $white;
   position: absolute;
-  top: rem(40px);
   z-index: 100;
   width: rem(247px);
   height: auto;
