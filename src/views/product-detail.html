@@ -20,34 +20,34 @@
   </section>
 
   <section id="tabpanel-3" class="review" aria-labelledby="tab-3">
-    <button class="reviewWrite__button" aria-label="후기 작성 버튼">
+    <button class="reviewWrite__btn" aria-label="후기 작성 버튼">
       후기 작성하기
     </button>
     <h2 class="review__title">상품후기</h2>
-    <ul class="review__benefit">
-      <p class="review-benefit__title">
+    <ul class="review__event">
+      <p class="review-event__title">
         글후기 50원 적립금 혜택이 있어요.
       </p>
-      <li class="review-benefit__content">
+      <li class="review-event__content">
         퍼플, 더퍼플은 2배 적립 (100원) / 주간 베스트 후기로 선정 시 5,000원
         추가 적립
       </li>
-      <li class="review-benefit__content">
+      <li class="review-event__content">
         후기 작성은 배송완료일로부터 30일 이내 가능합니다.
       </li>
-      <li class="review-benefit__content">
+      <li class="review-event__content">
         작성하신 후기는 확인 후 적립금이 지급됩니다. (영업일 기준 평균 1~2일
         소요)
       </li>
     </ul>
     <div class="review__wrapper">
-      <div class="review__wrapper__top">
+      <div class="review__wrapperTop">
         <span class="review__count">총 2개</span>
         <div class="sorting">
-          <button class="sorting__recommend sorting-active" aria-label="추천순 정렬 버튼">
+          <button class="sorting__recommend sorting-array" aria-label="추천순 정렬 버튼">
             추천순 
           </button>
-          <button class="sorting__recent sorting-deactive" aria-label="최근 등록순 정렬 버튼">
+          <button class="sorting__recent sorting-registration" aria-label="최근 등록순 정렬 버튼">
             최근 등록순
           </button>
         </div>
@@ -262,7 +262,7 @@
       </div>
     </div>
 
-    <div class="review__buttonGroup">
+    <div class="buttonGroup">
       <button class="prev" aria-label="상품 후기 이전 페이지 버튼">
         <img src="../assets/product-detail/arrow-left.svg" alt="arrow-prev" />
       </button>
@@ -275,7 +275,7 @@
   <section id="tabpanel-4" class="qna" aria-labelledby="tab-4">
     <h2 class="qna__title">상품 문의</h2>
     <button class="qna__btn" type="button">문의하기</button>
-    <ul class="qna__infoIist">
+    <ul class="qna__list">
       <li>
         상품에 대한 문의를 남기는 공간입니다. 해당 게시판의 성격과 다른 글은
         사전동의 없이 담당 게시판으로 이동될 수 있습니다.
@@ -288,28 +288,28 @@
 
     <article class="inquiry__listWrap">
       <div class="inquiry__listHeader">
-        <span class="inquiry__listTitle header__title">제목</span>
-        <span class="inquiry__listWho">작성자</span>
-        <span class="inquiry__listDay">작성일</span>
-        <span class="inquiry__listAnswerState">답변상태</span>
+        <span class="inquiry__title header__title">제목</span>
+        <span class="inquiry__who">작성자</span>
+        <span class="inquiry__day">작성일</span>
+        <span class="inquiry__answerState">답변상태</span>
       </div>
-      <div class="inquiry__listNotice">
-        <div class="inquiry__listTitle">
+      <div class="inquiry__notice">
+        <div class="inquiry__title">
           <span class="inquiry__noticeBox">공지</span>
           <span>판매(일시)중단 제품 안내(23.06.23 업데이트)</span>
         </div>
-        <span class="inquiry__listWho">칼리</span>
-        <span class="inquiry__listDay">2017.02.01</span>
-        <span class="inquiry__listAnswerState">-</span>
+        <span class="inquiry__who">칼리</span>
+        <span class="inquiry__day">2017.02.01</span>
+        <span class="inquiry__answerState">-</span>
       </div>
       <ul class="customer__post">
         <li>
-          <p class="inquiry__listTitle inquiry-list-title-geul">
+          <p class="inquiry__title">
             팩이 터져서 왔어요
           </p>
-          <span class="inquiry__listWho">김*식</span>
-          <span class="inquiry__listDay">2022.06.26</span>
-          <span class="inquiry__listAnswerState">답변대기</span>
+          <span class="inquiry__who">김*식</span>
+          <span class="inquiry__day">2022.06.26</span>
+          <span class="inquiry__answerState">답변대기</span>
         </li>
         <ul>
           <li>
@@ -339,52 +339,52 @@
           </li>
         </ul>
         <li>
-          <div class="inquiry__listTitle">
-            <p class="inquiry__listTitleSecret">비밀글입니다.</p>
+          <div class="inquiry__title">
+            <p class="inquiry__titleSecret">비밀글입니다.</p>
             <img src="../assets/product-detail/ic-lock.svg" alt="" />
           </div>
-          <span class="inquiry__listWho">김*진</span>
-          <span class="inquiry__listDay">2023.06.23</span>
-          <span class="inquiry__listAnswerState">답변대기</span>
+          <span class="inquiry__who">김*진</span>
+          <span class="inquiry__day">2023.06.23</span>
+          <span class="inquiry__answerState">답변대기</span>
         </li>
         <li>
-          <div class="inquiry__listTitle">
-            <p class="inquiry__listTitleSecret">비밀글입니다.</p>
+          <div class="inquiry__title">
+            <p class="inquiry__titleSecret">비밀글입니다.</p>
             <img src="../assets/product-detail/ic-lock.svg" alt="" />
           </div>
-          <span class="inquiry__listWho">김*진</span>
-          <span class="inquiry__listDay">2023.06.20</span>
-          <span class="inquiry__listAnswerState inquiry__listAnswerComplete">답변완료</span>
+          <span class="inquiry__who">김*진</span>
+          <span class="inquiry__day">2023.06.20</span>
+          <span class="inquiry__answerState inquiry__listAnswerComplete">답변완료</span>
         </li>
         <li>
-          <div class="inquiry__listTitle">
-            <p class="inquiry__listTitleSecret">비밀글입니다.</p>
+          <div class="inquiry__title">
+            <p class="inquiry__titleSecret">비밀글입니다.</p>
             <img src="../assets/product-detail/ic-lock.svg" alt="" />
           </div>
-          <span class="inquiry__listWho">김*진</span>
-          <span class="inquiry__listDay">2023.06.14</span>
+          <span class="inquiry__who">김*진</span>
+          <span class="inquiry__day">2023.06.14</span>
           <span class="inquiry__listAnswerComplete">답변완료</span>
         </li>
         <li>
-          <div class="inquiry__listTitle">
-            <p class="inquiry__listTitleSecret">비밀글입니다.</p>
+          <div class="inquiry__title">
+            <p class="inquiry__titleSecret">비밀글입니다.</p>
             <img src="../assets/product-detail/ic-lock.svg" alt="" />
           </div>
-          <span class="inquiry__listWho">김*진</span>
-          <span class="inquiry__listDay">2023.06.07</span>
+          <span class="inquiry__who">김*진</span>
+          <span class="inquiry__day">2023.06.07</span>
           <span class="inquiry__listAnswerComplete">답변완료</span>
         </li>
         <li>
-          <div class="inquiry__listTitle">
-            <p class="inquiry__listTitleSecret">비밀글입니다.</p>
+          <div class="inquiry__title">
+            <p class="inquiry__titleSecret">비밀글입니다.</p>
             <img src="../assets/product-detail/ic-lock.svg" alt="" />
           </div>
-          <span class="inquiry__listWho">김*진</span>
-          <span class="inquiry__listDay">2023.06.01</span>
+          <span class="inquiry__who">김*진</span>
+          <span class="inquiry__day">2023.06.01</span>
           <span class="inquiry__listAnswerComplete">답변완료</span>
         </li>
       </ul>
-      <div class="review__buttonGroup">
+      <div class="buttonGroup">
         <button class="prev" aria-label="상품 후기 이전 페이지 버튼">
           <img src="../assets/product-detail/arrow-left.svg" alt="arrow-prev" />
         </button>
@@ -399,15 +399,15 @@
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__innerTop">
-        <div class="footer__customerService">
-          <h2 class="footer__customerServiceTitle">고객행복센터</h2>
-          <div class="footer__customerServiceInfo">
-            <p class="footer__customerServiceNumber">1644-1107</p>
-            <p class="footer__customerServiceTime">월~토요일 오전 7시 - 오후 6시</p>
+        <div class="footer__service">
+          <h2 class="footer__serviceTitle">고객행복센터</h2>
+          <div class="footer__serviceInfo">
+            <p class="footer__serviceNumber">1644-1107</p>
+            <p class="footer__serviceTime">월~토요일 오전 7시 - 오후 6시</p>
           </div>
-          <ul class="footer__inquiryList">
-            <li class="footer__inquiryItem">
-              <a class="footer__inquiryItemButton" href="#">카카오톡 문의</a>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__itemButton" href="#">카카오톡 문의</a>
               <div>
                 <p>
                   <span>월~토요일</span>
@@ -421,15 +421,15 @@
                 </p>
               </div>
             </li>
-            <li class="footer__inquiryItem">
-              <a class="footer__inquiryItemButton" href="#">1:1 문의</a>
+            <li class="footer__item">
+              <a class="footer__itemButton" href="#">1:1 문의</a>
               <div>
                 <p><span>365일</span></p>
                 <p><span>고객센터 운영시간에 순차적으로 답변드리겠습니다.</span></p>
               </div>
             </li>
-            <li class="footer__inquiryItem">
-              <a class="footer__inquiryItemButton" href="#">대량주문 문의</a>
+            <li class="footer__item">
+              <a class="footer__itemButton" href="#">대량주문 문의</a>
               <div>
                 <p>
                   <span>월~금요일</span>
@@ -452,7 +452,7 @@
         </div>
         <!-- 이용안내 -->
         <div class="footer__about">
-          <ul class="footer__navigation">
+          <ul class="footer__clause">
             <li><a href="/">칼리소개</a></li>
             <li><a href="/">칼리소개영상</a></li>
             <li><a href="/">인재채용</a></li>
@@ -512,12 +512,12 @@
         </div>
       </div>
       <!-- 기타 인증 -->
-      <div class="footer__innerMiddle">
-        <ul class="footer__certifiedList">
+      <div class="footer__middle">
+        <ul class="footer__logoList">
           <li>
-            <a href="#" target="_blank" class="footer__certifiedItem">
-              <img class="footer__certifiedImg" src="/assets/footer/logo-isms.svg" alt="ISMS 로고" />
-              <p class="footer__certifiedInfo">
+            <a href="#" target="_blank" class="footer__logoItem">
+              <img class="footer__logoImg" src="/assets/footer/logo-isms.svg" alt="ISMS 로고" />
+              <p class="footer__logoInfo">
                 [인증범위] 마켓칼리 쇼핑몰 서비스 개발 운영
                 <br />
                 (심사받지 않은 물리적 인프라 제외)
@@ -527,27 +527,27 @@
             </a>
           </li>
           <li>
-            <a href="#" target="_blank" class="footer__certifiedItem">
-              <img class="footer__certifiedImg" src="/assets/footer/logo-privacy.svg" alt="개인정보보호 인증 로고" />
-              <p class="footer__certifiedInfo">
+            <a href="#" target="_blank" class="footer__logoItem">
+              <img class="footer__logoImg" src="/assets/footer/logo-privacy.svg" alt="개인정보보호 인증 로고" />
+              <p class="footer__logoInfo">
                 개인정보보호 우수 웹사이트<br />
                 개인정보처리시스템 인증(ePRIVACY PLUS)
               </p>
             </a>
           </li>
           <li>
-            <a href="#" target="_blank" class="footer__certifiedItem">
-              <img class="footer__certifiedImg" src="/assets/footer/logo-tosspayments.svg" alt="payments 로고" />
-              <p class="footer__certifiedInfo">
+            <a href="#" target="_blank" class="footer__logoItem">
+              <img class="footer__logoImg" src="/assets/footer/logo-tosspayments.svg" alt="payments 로고" />
+              <p class="footer__logoInfo">
                 토스페이먼츠 구매안전(에스크로) 서비스<br />
                 를 이용하실 수 있습니다.
               </p>
             </a>
           </li>
           <li>
-            <a href="#" target="_blank" class="footer__certifiedItem">
-              <img class="footer__certifiedImg" src="/assets/footer/logo-woori-bank.svg" alt="우리은행 로고" />
-              <p class="footer__certifiedInfo">
+            <a href="#" target="_blank" class="footer__logoItem">
+              <img class="footer__logoImg" src="/assets/footer/logo-woori-bank.svg" alt="우리은행 로고" />
+              <p class="footer__logoInfo">
                 고객님이 현금으로 결제한 금액에 대해 우리은행과
                 <br />채무지급보증 계약을 체결하여 안전거래를 보장하고
                 <br />있습니다.

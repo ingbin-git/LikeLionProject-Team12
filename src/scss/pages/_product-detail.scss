@@ -46,7 +46,7 @@ body {
   right: rem(10px);
 }
 
-.qna__infoIist {
+.qna__list {
   margin-top: rem(24px);
   margin-bottom: rem(55px);
   margin-left: rem(20px);
@@ -76,7 +76,7 @@ button {
   font-weight: bold;
 }
 
-.reviewWrite__button {
+.reviewWrite__btn {
   @include wh(155px, 45px);
   background-color: $primary-color;
   color: $white;
@@ -86,17 +86,17 @@ button {
   right: 0;
 }
 
-.review__benefit {
+.review__event {
   margin-top: rem(24px);
   line-height: 150%;
 }
 
-.review-benefit__title {
+.review-event__title {
   font-weight: bold;
   list-style: none;
 }
 
-.review-benefit__content {
+.review-event__content {
   font-size: rem(12px);
   line-height: rem(18px);
   color: $content-color;
@@ -109,7 +109,7 @@ button {
   margin-top: rem(56px);
 }
 
-.review__wrapper__top {
+.review__wrapperTop {
   margin-bottom: rem(16px);
   display: flex;
   justify-content: space-between;
@@ -130,11 +130,11 @@ button {
   display: flex-box;
 }
 
-.sorting-deactive {
+.sorting-registration {
   color: $gray-300;
 }
 
-.sorting-active {
+.sorting-array {
   color: $content-color;
 }
 
@@ -230,7 +230,7 @@ button {
   font-weight: 600;
 }
 
-.review__buttonGroup {
+.buttonGroup {
   @include autoMarginX;
   margin-top: rem(16px);
   width: rem(128px);
@@ -270,14 +270,14 @@ button {
   text-align: center;
 }
 
-.inquiry__listNotice {
+.inquiry__notice {
   border-bottom: 1px solid $gray-200;
   font-weight: 600;
   font-size: 1rem;
   color: $gray-400;
 }
 
-.inquiry__listTitle span {
+.inquiry__title span {
   color: $content-color;
 }
 
@@ -289,7 +289,7 @@ button {
   margin-right: rem(20px);
 }
 
-.inquiry__listTitle {
+.inquiry__title {
   display: inline-block;
   @include wh(782px, 58px);
   line-height: rem(58px);
@@ -302,7 +302,7 @@ button {
 }
 
 /* 자물쇠문단 */
-.inquiry__listTitleSecret {
+.inquiry__titleSecret {
   display: inline-block;
   color: $gray-400;
   height: rem(58px);
@@ -310,7 +310,7 @@ button {
   padding-right: rem(20px);
 }
 
-.inquiry__listWho {
+.inquiry__who {
   display: inline-block;
   width: rem(80px);
   text-align: center;
@@ -319,7 +319,7 @@ button {
   font-weight: 600;
 }
 
-.inquiry__listDay {
+.inquiry__day {
   display: inline-block;
   width: rem(100px);
   text-align: center;
@@ -328,7 +328,7 @@ button {
   font-weight: 600;
 }
 
-.inquiry__listAnswerState {
+.inquiry__answerState {
   display: inline-block;
   width: rem(55px);
   text-align: center;
