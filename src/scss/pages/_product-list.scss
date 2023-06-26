@@ -1,9 +1,302 @@
 @use "./../utils/" as *;
 
-.best {
-  background: yellow;
+.product {
+  &Wrapper {
+    width: rem(1050px);
+    @include autoMarginX;
+    position: relative;
+  }
+  
+  &__main {
+  margin-left: 250px;
+  margin-top: -50px;
+  }
+  
+  
+  &__filter {
+    width: 220px;
+    position: absolute;
+  }
 }
 
-.best-text {
-  background: salmon;
+.filter {
+  display: inline-block;
+  @include flexbox($justify: space-between);
+  @include paddingY(14px);
+  width: rem(220px);
+  border: none;
+  border-bottom: 1px solid $gray-100;
+  background: transparent;
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__reset {
+    border: none;
+    background: transparent;
+    font-size: rem(10px);
+    color: $gray-300;
+  }
+
+  &__mark::after {
+    content: "1";
+    padding-left: rem(8px);
+    font-size: rem(10px);
+    color: $gray-300;
+  }
+
+  &__fold {
+    padding-right: 4px;
+  }
+
+  &__checkbox {
+    @include pos;
+    appearance: none;
+  }
+
+  &__label {
+    display: block;
+    padding-top: rem(8px);
+    padding-bottom: rem(12px);
+  }
+
+  &__label &__brand {
+    display: block;
+    background: url(./../../assets/product-list/ic-unchecked.svg) no-repeat 0 0 / 24px;
+    height: rem(25px);
+    padding-left: rem(30px);
+    line-height: rem(25px);
+  }
+
+  &__checkbox:checked+&__label &__brand {
+    background-image: url(/assets/product-list/ic-checked.svg);
+  }
+
+  &__brand::after {
+    content: "1";
+    padding-left: 8px;
+    font-size: rem(10px);
+    color: $gray-300;
+  }
+
+  &__brandPlus {
+    width: rem(220px);
+    border: none;
+    background: transparent;
+    font-size: rem(12px);
+    color: $gray-300;
+    font-weight: 600;
+    padding-top: rem(8px);
+    padding-bottom: rem(12px);
+    text-align: center;
+  }
+
+  &__list {
+    width: rem(220px);
+  }
+}
+
+.product {
+  &__best {
+    font-size: rem(22px);
+    text-align: center;
+    @include paddingY(48px);
+  }
+
+  &__top {
+    margin-top: rem(48px);
+    margin-bottom: rem(20px);
+    @include flexbox($justify: space-between, $items: center);
+    height: 24px;
+    width: 770px;
+    @include autoMarginX;
+  }
+ 
+  &__total,
+  &__align {
+    font-weight: 600;
+  }
+  
+  &__option {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  &__list {
+    @include flexbox;
+  }
+  
+  &__align {
+    color: $gray-300;
+  }
+  
+  &__align:hover {
+    color: $content-color;
+  }
+  
+  &__alignHelp {
+    height: rem(14px);
+  }
+
+  &__alignDeco {
+    color: $gray-300;
+    font-weight: 400;
+  }
+}
+
+// 작업 시작
+.bestTitle {
+  font-size: rem(28px);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: rem(28px);
+}
+
+
+
+
+
+
+
+
+
+.best {
+  
+  
+  &__group {
+    @include flexbox($justify: center);
+    width: 800px;
+  }
+    
+  &__item {
+    @include paddingX(16px);
+    position: relative;
+  }
+  
+  &__caption {
+    margin-top: rem(4px);
+    position: relative;
+    padding-top: 30px;
+  }
+  
+  &__name {
+    font-size: rem(16px);
+    margin-bottom: rem(8px);
+  }
+  
+  &__price {
+    display: inline-block;
+    font-size: rem(20px);
+    font-weight: 600;
+  }  
+  
+  &__sale {
+    height: rem(110px);
+    margin-bottom: rem(40px);
+  }
+  
+  &__regularPrice {
+    color: $gray-400;
+    font-size: rem(12px);
+    position: absolute;
+    bottom: 25px;
+  }
+  
+  &__discountPercent {
+    display: inline-flex;
+    color: $accent-color;
+    font-size: rem(20px);
+    font-weight: 600;
+    padding-right: rem(8px);
+  }
+  
+  &__discountPrice {
+    text-decoration: none;
+  }
+  
+  &__more {
+    @include wh(60px, 60px);
+    position: absolute;
+    right: -15px;
+    top: 129px;
+    border: none;
+    background: transparent url(./../../assets/main/ic-product-swiper-arrow.svg) no-repeat;
+  }
+
+  &__delivery, &__info {
+    color: $gray-400;
+    font-size: rem(12px);
+    @include marginY(8px);
+  }
+  
+  &__delivery {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+  }
+  
+  &__limit, &__only {
+    display: inline-block;
+    font-size: rem(12px);
+    font-weight: 600;
+    background: $gray-100;
+    border-radius: 4px;
+    padding: rem(6px);
+    margin-bottom: 8px;
+  }
+  
+  &__only {
+    color: $primary-color;
+  }
+  
+  &__deliveryDetergent, &__infoDetergent {
+    color: $gray-400;
+    font-size: rem(12px);
+    @include marginY(8px);
+  }
+  
+  &__deliveryDetergent {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+  }
+  
+  &__limitDetergent, &__onlyDetergent {
+    display: inline-block;
+    font-size: rem(12px);
+    font-weight: 600;
+    background: $gray-100;
+    border-radius: 4px;
+    padding: rem(6px);
+    margin-top: 20px;
+  }
+  
+  &__onlyDetergent {
+    color: $primary-color;
+  }
+}
+
+.accentCart {
+  @include posRightTop(30px, 240px);
+  @include wh(45px, 45px);
+  border: none;
+  background: transparent url(./../../assets/main/ic-add-cart.svg);
+}
+
+.page {
+  @include flexbox($justify: center);
+  width: 800px;
+
+  &__number {
+    @include paddingX(10px);
+    margin-top: rem(36px);
+    margin-bottom: rem(80px);
+    height: rem(32px);
+    border: 1px solid $gray-100;
+    font-size: rem(12px);
+    text-align: center;
+    line-height: rem(30px);
+  }
 }
