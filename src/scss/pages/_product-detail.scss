@@ -4,7 +4,6 @@
 // 제품 디테일 전체 영역
 .productWrapper{
   width: rem(1050px);
-  // background: skyblue;
   padding-top: 40px;
   padding-bottom: 40px;
   @include flexbox($justify: center);
@@ -18,11 +17,7 @@
 
 // 상품 정보
 .productDetail{
-  background: darkcyan;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  
+  @include flexbox($justify: center);
 }
 
 .prod__img img{
@@ -31,19 +26,12 @@
   margin-right: 85px;
 }
 
-
-.productInfo{
-  
-  background: salmon;
-}
-
 .prod__buy{
-  // background: seagreen;
-  display: flex;
-  flex-direction: column;
+  @include flexbox($direction: column);
   gap: 16px;
-  padding: 0 0 20px 0;
+  padding-bottom: 20px;
 }
+
 
 .prod__delivery{
   font-size: rem(21.328px);
@@ -79,14 +67,192 @@
   color: $primary-color;
 }
 
+// 상품 구매 정보
+.itemDescription{
+  width: rem(560px);
+  border-top: 1px solid $gray-100;
+  border-bottom: 1px solid $gray-100;
+}
+
+.itemDescription dl{
+  border-bottom: 1px solid $gray-100;
+  display: flex;
+  @include paddingY(16px);
+}
+
+.itemDescription__list,
+.prod__select{
+  width: rem(128px);
+  @include padding(4px);
+}
 
 
+.itemDescription__list,
+.itemDescription__contetnts,
+.prod__select,
+.select__name{
+  font-size: rem(12.003px);
+  font-weight: 600;
+  line-height: 150%;
+  color: $gray-500;
+}
 
+.itemDescription:last-child{
+  border-bottom: none;
+}
+
+.itemDescription__info{
+  font-size: rem(12.003px);
+  font-weight: 600;
+  color: $gray-400;
+  line-height: 150%;
+}
+
+.allergy__info{
+  width: rem(432px);
+  color: $gray-500;
+  font-weight: normal;
+}
+
+.SelectWrapper{
+  @include flexbox;
+  width: rem(560px);
+  @include paddingY(16px);
+  border-bottom: 1px solid $gray-100;
+}
+
+.select__info{
+  position: relative;
+  width: rem(432px);
+  height: rem(84px);
+  border: 1px solid $gray-100;
+}
+
+.select__count{
+  @include flexbox;
+}
+
+.select__updown{
+  @include paddingY(12px);
+  @include paddingX(16px); 
+}
+
+.select__name{
+  margin-bottom: rem(12px);
+}
+
+.select__price{
+  font-size: rem(12.003px);
+  font-weight: 600;
+  line-height: 150%;
+  color: $content-color;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+}
+
+.count__btn button{
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.count__btn{
+  @include flexbox($items: center);
+  width: 84px;
+  height: 30px;
+  border: 1px solid $gray-200;
+}
+
+.count{
+  @include marginX(8px);
+  font-weight: 600;
+  font-size: rem(16px);
+  color: $black;
+}
+
+.select__total{
+  @include paddingY(28px);
+  text-align: end;
+}
+
+.select__totalprice{
+  margin-bottom: 8px;
+}
+
+.select__totalprice,
+.login__benefit{
+  font-size: rem(16px);
+  font-weight: 600;
+  color: $black;
+}
+
+.select__totalprice span{
+ margin-left: rem(17px);
+ color: $content-color;
+ font-size: rem(28.43px);
+ font-weight: 600;
+ line-height: 150%;
+}
+
+.select__totalprice::after{
+ content: '원';
+ color: $content-color;
+ font-size: rem(16px);
+ font-weight: 700;
+ line-height: 140%;
+}
+
+.mileage{
+  border-radius: 12px;
+  background: $accent-color;
+  width: 34px;
+  height: 24px;
+  @include paddingX(8px);
+  @include paddingY(4px);
+  color: $white;
+  font-size: rem(10px);
+  line-height: 160%;
+  margin-right: 6px;
+  font-weight: normal;
+}
+
+.productBuy{
+  @include flexbox;
+  gap: 12px;
+}
+
+.prod__heart{
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.prod__alaram{
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.prod__cart{
+  border: 0;
+  @include padding(0);
+  cursor: pointer;
+  width: rem(424px);
+  height: rem(54px);
+  background: $primary-color;
+  color: $white;
+  font-weight: 600;
+  font-size: rem(16px);
+  border-radius: 4px;
+}
 
 // 제품 디테일 nav 영역
 .navTitles{ 
   margin-top: rem(48px); 
-  display:flex;
+  @include flexbox;
   margin-bottom: rem(40px);
 }
 
@@ -96,8 +262,7 @@
   width: rem(263px);
   height: rem(54px);
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  @include paddingY(16px);
   background: $gray-50;
   border: 1px solid $gray-300;
 }
@@ -108,6 +273,8 @@
   border-right: 1px solid $gray-100;
   border-left: 1px solid $gray-100;
   border-bottom: none;
+
+  
 }
 
 .navTitles li:nth-child(2),
@@ -176,11 +343,13 @@
 
 .checkPoint::before{
   width: 100%;
-  position: absolute;
-  top: 37px;
-  left: 0;
+  @include posLeftTop($l: 0, $t: 37px);
   content: '';
   height: 1px;
   z-index: 1;
   background: #D9D9D9;
 }
+
+
+
+
