@@ -629,9 +629,11 @@ nav {
 }
 
 .footer {
-  border-top: 100px solid #F9F9F9;
+  border-top: 1px solid #e1e1e1;
+  margin-top: 96px;
   color: #333333;
   line-height: 130%;
+  background-color: #F9F9F9;
 }
 
 .footer .divider {
@@ -989,93 +991,15 @@ main {
   position: relative;
 }
 
-.product-description {
-  width: 1050px;
+.why__carly {
+  width: 65.625rem;
   margin-left: auto;
   margin-right: auto;
 }
 
-.product-detail-tab-menu {
-  width: 1px;
-  position: absolute;
-  top: 1053px;
-  left: 50%;
-  bottom: 0;
-}
-
-.product-detail-tab-menu-box {
-  width: 1050px;
-  display: flex;
-  position: sticky;
-  top: 60px;
-  left: 0;
-  transform: translateX(-50%);
-  z-index: 29;
-}
-
-.product-detail-tab-menu__item,
-.product-detail-tab-menu__item--selected {
-  width: 262.25px;
-  height: 54px;
-  color: #333333;
-  font-weight: 600;
-  border: 1px solid #a6a6a6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #F9F9F9;
-  cursor: pointer;
-  box-sizing: content-box;
-}
-
-.product-detail-tab-menu__item--selected {
-  color: #5f0080;
-  border: 1px solid #e1e1e1;
-  border-bottom: 1px solid #ffffff;
-  background-color: #ffffff;
-}
-
-.product-detail-tab-menu__item--review-number {
-  font-size: 0.75rem;
-  font-weight: 400;
-  margin-left: 0.5rem;
-}
-
-.product-detail__product-description-img {
-  margin-top: 96px;
-  margin-bottom: 76px;
-  width: 100%;
-  height: 100%;
-}
-
-.product-description__description {
-  font-size: 1.7rem;
-  font-weight: 600;
-  color: #000000;
-  text-align: center;
-}
-
-.product-description__title {
-  font-size: 3.1rem;
-  font-weight: 700;
-  color: #333333;
-  text-align: center;
-  margin-bottom: 96px;
-}
-
-.product-detail__product-detail-img {
-  margin-top: 96px;
-  width: 100%;
-  height: 100%;
-}
-
-.product-detail__why-carly {
-  margin-bottom: 52px;
-  width: 100%;
-  height: 100%;
-}
-
-.product-description__goods-point {
+.why__carlyImg {
+  margin-top: 6rem;
+  margin-bottom: 3.25rem;
   width: 100%;
   height: 100%;
 }
@@ -1107,49 +1031,14 @@ main {
   right: 10px;
 }
 
-.qna__popup-btn:focus {
-  outline: 2px solid #000000;
-  outline-offset: 2px;
-}
-
-.qna__info-list {
+.qna__infoIist {
   margin-top: 1.5rem;
   margin-bottom: 3.4375rem;
   margin-left: 1.25rem;
   font-size: 0.75rem;
   color: #6b6b6b;
   list-style-type: disc;
-}
-
-/* 문의하기 테이블 */
-.qna__table {
-  width: 100%;
-  font-weight: 600;
-}
-
-.qna__table th,
-.qna__table td {
-  padding: 17px 0;
-  text-align: center;
-}
-
-.qna__table thead th {
-  border-top: 2px solid;
-  border-bottom: 1px solid;
-}
-
-.qna__table tbody tr {
-  border-bottom: 1px solid #e1e1e1;
-}
-
-.qna__table td:nth-child(1) {
-  padding-left: 20px;
-  text-align: left;
-  cursor: pointer;
-}
-
-.qna__table td[colspan="4"] {
-  cursor: auto;
+  line-height: 150%;
 }
 
 /* 상품 후기 */
@@ -1165,12 +1054,12 @@ button {
   position: relative;
 }
 
-.review-title {
+.review__title {
   font-size: 28px;
   font-weight: bold;
 }
 
-.review-write-button {
+.reviewWrite__button {
   width: 155px;
   height: 44px;
   background-color: #5f0080;
@@ -1181,7 +1070,7 @@ button {
   right: 0;
 }
 
-.review-benefit {
+.review__benefit {
   margin-top: 1.5rem;
   line-height: 150%;
 }
@@ -1200,17 +1089,17 @@ button {
   margin-left: 20px;
 }
 
-.review-wrapper {
+.review__wrapper {
   margin-top: 56px;
 }
 
-.review-wrapper__top {
+.review__wrapper__top {
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
 }
 
-.review-count {
+.review__count {
   font-size: 0.75rem;
   line-height: 18px;
   margin-top: 3px;
@@ -1241,17 +1130,17 @@ button {
   margin-right: 8px;
 }
 
-.announcement-container {
+.notification__container {
   border-top: 1px solid #000000;
 }
 
-.announcement-summary {
+.notification__summary {
   padding: 17px 20px 17px;
   border-bottom: 1px solid #e1e1e1;
   color: #333333;
 }
 
-.tag-announcement {
+.notification {
   padding: 0 8px 0 8px;
   height: 18px;
   line-height: 18px;
@@ -1261,39 +1150,35 @@ button {
   margin-right: 1.25rem;
 }
 
-.announcement-title {
+.notification__title {
   font-weight: 600;
 }
 
-.announcement-content,
-.review-text-field {
+.notification__content,
+.review__text {
   white-space: pre-line;
   font-size: 0.75rem;
 }
 
-.announcement-content {
+.notification__content {
   background-color: #F9F9F9;
   border-bottom: 1px solid #e1e1e1;
   padding: 20px;
   line-height: 18px;
 }
 
-.announcement-content.hidden {
-  display: none;
-}
-
-.review-content {
+.review__content {
   padding: 20px;
   display: flex;
   font-size: 0.75rem;
   border-bottom: 1px solid #e1e1e1;
 }
 
-.review-writer-info {
+.review__writerInfo {
   flex: 0 0 225px;
 }
 
-.tag-best {
+.tag__best {
   padding: 0 8px 0 8px;
   height: 18px;
   line-height: 18px;
@@ -1304,7 +1189,7 @@ button {
   margin-right: 0.5rem;
 }
 
-.tag-membership {
+.tag__membership {
   padding: 0 8px;
   height: 18px;
   line-height: 18px;
@@ -1316,347 +1201,137 @@ button {
   margin-right: 0.5rem;
 }
 
-.reivew-text-container {
+.review__textContainer {
   flex: 1 1 0%;
 }
 
-.review-text-field {
+.review__text {
   margin: 20px 0;
 }
 
-.review-date,
-.review-product-name {
+.review__date,
+.review__productName {
   color: #898989;
   font-weight: 600;
 }
 
-.review-button-group {
+.review__buttonGroup {
   margin: 16px auto 0 auto;
   width: 128px;
   display: flex;
   justify-content: space-between;
 }
 
-.review-page-button__prev,
-.review-page-button__next {
+.prev,
+.next {
   width: 56px;
   height: 56px;
   border: 1px solid #e1e1e1;
   border-radius: 4px;
 }
 
-.review-page-button__prev svg {
+.prev svg {
   transform: rotate(180deg);
   margin: 10px;
 }
 
-.review-page-button__next img {
+.next img {
   margin: 10px;
 }
 
-/* EOL - 상품 후기 */
-/* 상품 후기 작성 모달 */
-.modal-review-background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.25);
-  z-index: 9999;
+.inquiry__listWrap {
+  border-top: 2px solid #333333;
 }
 
-.modal-review {
-  position: fixed;
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 32px;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: 9999;
-  width: 793px;
-  height: 630px;
-  background-color: #ffffff;
-  border-radius: 16px;
-}
-
-.modal-review__top {
-  position: relative;
-}
-
-.modal-review__title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 1.25rem;
-}
-
-.modal-review__close-button {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.modal-review__product-info {
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
-  padding: 16px 0;
-  display: flex;
-  align-items: center;
-}
-
-.modal-review__product-info > img {
-  width: 72px;
-  height: 72px;
-  margin-right: 24px;
-}
-
-.modal-review__product-info .product-name {
-  font-weight: 600;
-}
-
-.modal-review__form {
-  border-bottom: 1px solid #e1e1e1;
-}
-
-.modal-review-title {
-  margin-top: 1rem;
-}
-
-.modal-review-content {
-  margin-top: 0.75rem;
-  margin-bottom: 58px;
-  position: relative;
-}
-
-.modal-review-content * {
-  vertical-align: top;
-}
-
-.modal-review-title > label,
-.modal-review-content > label {
-  color: #333333;
-  font-weight: 600;
-  margin-right: 64px;
-  margin-top: 8px;
-  display: inline-block;
-}
-
-#modal-review-title__input,
-#modal-review-content__textarea {
-  width: 629px;
-  border-radius: 4px;
-  border: 1px solid #a6a6a6;
-  color: #333333;
-}
-
-#modal-review-title__input {
-  height: 44px;
-  padding-left: 1.25rem;
-}
-
-#modal-review-title__input::placeholder {
-  color: #898989;
-}
-
-#modal-review-content__textarea {
-  padding: 16px;
-  height: 198px;
-  resize: none;
-}
-
-.modal-review-content__placeholder {
-  overflow-y: auto;
-  z-index: 1;
-  padding: 16px 16px 0px 22px;
-  width: 629px;
-  height: 80%;
-  position: absolute;
-  top: 1px;
-  right: 5px;
-  color: #898989;
-  font-size: 0.75rem;
-}
-
-.review-notice-title {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 24px;
-  margin-top: 0.75rem;
-}
-
-.review-notice-list {
-  font-size: 0.75rem;
-  list-style-type: disc;
-  padding-inline-start: 1rem;
-  margin-top: 4px;
-  line-height: 19px;
-}
-
-.warning-message {
-  color: var(--info-error);
-  line-height: 19.2px;
-}
-
-.count-char {
-  position: absolute;
-  right: 10px;
-  bottom: 7px;
-  font-size: 0.75rem;
-  line-height: 19;
-  color: #a6a6a6;
-}
-
-.modal-review-button-group {
-  margin: 20px auto 0px;
-}
-
-.modal-review-button {
-  width: 186px;
-  height: 54px;
-  border-radius: 4px;
-}
-
-.modal-review-button--cancel {
-  border: 1px solid #c4c4c4;
-  color: var(--content);
-}
-
-.modal-review-button--submit {
-  margin-left: 12px;
-  background-color: #e1e1e1;
-  color: #ffffff;
-}
-
-.modal-review-button--submit.active {
-  background-color: #5f0080;
-  color: #ffffff;
-}
-
-.inquiry-list-wrap {
-  /* display: flex; */
-  /* justify-content: ; */
-  border-top: 2px solid var(--content);
-}
-
-.inquiry-list-header {
-  /* line-height: 58px; */
-  /* height: 58px; */
-  border-bottom: 2px solid var(--gray-500);
+.inquiry__listHeader {
+  border-bottom: 2px solid #6b6b6b;
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
-  color: var(--black);
+  color: #000000;
 }
 
-.header-title {
+.header__title {
   text-align: center;
 }
 
-.inquiry-list-notice {
-  border-bottom: 1px solid var(--gray-200);
+.inquiry__listNotice {
+  border-bottom: 1px solid #c4c4c4;
   font-weight: 600;
   font-size: 1rem;
-  color: var(--gray-400);
-  /* color:var(--gray-400); */
+  color: #898989;
 }
 
-.inquiry-list-title span {
-  color: var(--content);
+.inquiry__listTitle span {
+  color: #333333;
 }
 
-.inquiry-notice-box {
-  background-color: var(--gray-100);
+.inquiry__noticeBox {
+  background-color: #e1e1e1;
   font-size: 0.75rem;
-  /* width: 21px; */
-  /* height: 18px; */
   padding: 0 8px 0 8px;
   border-radius: 1px;
   margin-right: 20px;
 }
 
-.inquiry-list-title {
+.inquiry__listTitle {
   display: inline-block;
   width: 782px;
   line-height: 58px;
   height: 58px;
   font-weight: 600;
+  padding-left: 20px;
 }
 
-.customer-post li {
-  border-bottom: 1px solid var(--gray-200);
+.customer__post li {
+  border-bottom: 1px solid #c4c4c4;
 }
 
 /* 자물쇠문단 */
-.inquiry-list-title-secret {
+.inquiry__listTitleSecret {
   display: inline-block;
-  color: var(--gray-400);
+  color: #898989;
   height: 58px;
   line-height: 58px;
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
-.inquiry-list-who {
+.inquiry__listWho {
   display: inline-block;
   width: 80px;
   text-align: center;
   font-size: 1rem;
-  color: var(--gray-400);
+  color: #898989;
   font-weight: 600;
 }
 
-.inquiry-list-day {
+.inquiry__listDay {
   display: inline-block;
   width: 100px;
   text-align: center;
   font-size: 1rem;
-  color: var(--gray-400);
+  color: #898989;
   font-weight: 600;
 }
 
-.inquiry-list-answer-state {
+.inquiry__listAnswerState {
   display: inline-block;
-  width: 55.41px;
+  width: 55px;
   text-align: center;
-  font-size: 1rem;
-  color: var(--gray-400);
+  font-size: 13px;
+  color: #898989;
   font-weight: 600;
 }
 
-.inquiry-list-answer-complete {
-  color: var(--primary);
+.inquiry__listAnswerComplete {
+  color: #5f0080;
   font-weight: 600;
   text-align: center;
+  font-size: 13px;
 }
 
-.pagination-modal {
-  display: flex;
-  margin-top: 36px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 4px;
-  gap: 4px;
-  /* width: 56px; */
-  /* height: 56px; */
-  /* gray/100 */
-  /* border: 1px solid #E1E1E1; */
-  /* border-radius: 4px; */
-}
-
-.inquiry-prev {
-  background-color: var(--white);
-  border: 0;
-}
-
-.inquiry-next {
-  background-color: var(--white);
-  background-color: none;
-  border: 0;
-}
-
-.list-question {
+.list__question {
   width: 974px;
   display: flex;
   margin-top: 20px;
@@ -1666,43 +1341,40 @@ button {
   font-weight: 600;
   font-size: 0.7502rem;
   line-height: 150%;
-  color: var(--content);
+  color: #333333;
+  padding-left: 20px;
 }
 
-.list-answer {
+.list__answer {
   display: flex;
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 600;
   font-size: 0.7502rem;
   line-height: 150%;
-  color: var(--content);
-  /* margin-right: 19px;   */
+  color: #333333;
   width: 481px;
   margin-right: 500px;
+  padding-left: 20px;
 }
 
-.list-question-icon {
+.list__questionIcon {
   width: 24px;
   height: 24px;
   margin-right: 19px;
 }
 
-.list-answer-icon {
+.list__answerIcon {
   width: 24px;
   height: 24px;
   margin-right: 19px;
 }
 
-.list-question p {
-  /* display: inline-block; */
-}
-
-.list-answer-box p {
+.list__answerBox p {
   margin-bottom: 8px;
 }
 
-.list-answer-box {
+.list__answerBox {
   width: 481px;
   height: 216px;
   font-family: "Pretendard";
@@ -1710,18 +1382,18 @@ button {
   font-weight: 600;
   font-size: 12.003px;
   line-height: 150%;
-  color: var(--content);
+  color: #333333;
   margin-bottom: 20px;
   width: 481px;
 }
 
-.list-answer-date {
+.list__answeDate {
   font-family: "Pretendard";
   font-style: normal;
   font-weight: 600;
   font-size: 12.003px;
   line-height: 150%;
-  color: var(--gray-400);
+  color: #898989;
 }
 
 /*# sourceMappingURL=index.css.map */
