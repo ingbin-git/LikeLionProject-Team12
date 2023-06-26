@@ -952,6 +952,10 @@ nav {
   padding-right: 1rem;
   position: relative;
 }
+.product__img {
+  width: 249px;
+  height: 320px;
+}
 .product__caption {
   margin-top: 1rem;
 }
@@ -1016,12 +1020,10 @@ nav {
   margin-right: auto;
   position: relative;
 }
-
 .product__main {
   margin-left: 250px;
   margin-top: -50px;
 }
-
 .product__filter {
   width: 220px;
   position: absolute;
@@ -1162,6 +1164,10 @@ nav {
   padding-left: 1rem;
   padding-right: 1rem;
   position: relative;
+}
+.best__img {
+  width: 249px;
+  height: 320px;
 }
 .best__caption {
   margin-top: 0.25rem;

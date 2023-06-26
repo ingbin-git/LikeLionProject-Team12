@@ -105,6 +105,10 @@
     position: relative;
   }
   
+  &__img {
+    @include wh(249px, 320px);
+  }
+
   &__caption {
     margin-top: rem(16px);
   }
