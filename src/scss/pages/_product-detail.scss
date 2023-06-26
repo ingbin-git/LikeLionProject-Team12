@@ -55,7 +55,7 @@
 }
 
 .prod__benefit{
-  @include textStyle(16px, 600, $content-color);
+  @include textStyle(16px, 600, $primary-color);
 }
 
 // 상품 구매 정보
@@ -268,7 +268,8 @@
 
 .contents__info p{
   @include textStyle(28.43px, 600, $black);
-  text-align: center;  
+  text-align: center;
+  line-height: 150%;  
 }
 
 .contents__info figcaption{
@@ -306,6 +307,10 @@
   @include paddingY(0); 
 }
 
+.tagntang__detail{
+  padding-top: 96px;
+}
+
 .why__carly {
   width: rem(1050px);
   margin-left: auto;
@@ -313,7 +318,6 @@
 }
 
 .why__carlyImg {
-  margin-top: rem(96px);
   margin-bottom: rem(52px);
   @include wh(100%, 100%);
 }

@@ -1357,7 +1357,7 @@ nav {
 .prod__benefit {
   font-size: 1rem;
   font-weight: 600;
-  color: #333333;
+  color: #5f0080;
 }
 
 .itemDescription {
@@ -1622,6 +1622,7 @@ nav {
   font-weight: 600;
   color: #000000;
   text-align: center;
+  line-height: 150%;
 }
 
 .contents__info figcaption {
@@ -1666,6 +1667,10 @@ nav {
   padding-bottom: 0rem;
 }
 
+.tagntang__detail {
+  padding-top: 96px;
+}
+
 .why__carly {
   width: 65.625rem;
   margin-left: auto;
@@ -1673,7 +1678,6 @@ nav {
 }
 
 .why__carlyImg {
-  margin-top: 6rem;
   margin-bottom: 3.25rem;
   width: 100%;
   height: 100%;
