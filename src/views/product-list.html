@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/style/index.css" />
 </head>
 
-<body>  
+<body>
   <div class="promotion">
     <div class="promotion__wrapper">
       <a href="" class="promotion__link">
@@ -120,7 +120,7 @@
               <li class="category__list"><span class="sprite sprite__travel"></span><a href="#">여행&bull;티켓</a></li>
             </ul>
           </div>
-          
+
           <h2 class="a11y">메뉴</h2>
           <ul class="menu__list">
             <li class="menu__item"><a href="/" class="menu__link">신상품</a></li>
@@ -136,20 +136,20 @@
     </header>
   </div>
 
-  <main>
+  <main class="gridWrapper">
     <section>
       <div class="filter">
         <span class="filter__title">필터</span>
         <button type="reset" class="filter__reset">초기화</button>
       </div>
       <button type="button" class="filter">
-        <span class="filter__title fiter__mark">카테고리</span>
-        <img src="/assets/product-list/ic-arrow-down.svg" alt="카테고리 펼쳐보기" class="filter__fold filter__markFold" />
+        <span class="filter__title filter__mark">카테고리</span>
+        <img src="/assets/product-list/ic-arrow-down.svg" alt="카테고리 펼쳐보기" class="filter__fold" />
       </button>
       <div>
         <button type="button" class="filter">
           <span class="filter__title">브랜드</span>
-          <img src="/assets/product-list/ic-arrow-up.svg" alt="카테고리 펼쳐보기" class="filter__fold" />
+          <img src="/assets/product-list/ic-arrow-up.svg" alt="카테고리 펼쳐보기" />
         </button>
         <ul class="filter__list">
           <li class="filter__item">
@@ -235,39 +235,47 @@
       </button>
     </section>
 
-    <ul>
-      <li>
-        <a href="#">
-          추천순
-          <img src="./../assets/product-list/ic-help.svg" alt="추천순 도움말" />
-        </a>
-      </li>
-      <li>
-        <a href="#">신상품순</a>
-      </li>
-      <li>
-        <a href="#">판매량순</a>
-      </li>
-      <li>
-        <a href="#">혜택순</a>
-      </li>
-      <li>
-        <a href="#">낮은가격순</a>
-      </li>
-      <li>
-        <a href="#">높은가격순</a>
-      </li>
-    </ul>
+    <div class="product__top">
+      <span class="product__total">총 284건</span>
+      <ul class="product__option">
+        <li class="product__list">
+          <a href="#" class="product__align">
+            <span>추천순</span>
+            <img src="/assets/product-list/ic-help.svg" class="product__alignHelp" alt="추천순 도움말"
+              title="소비자 인기도(판매량, 판매금액, 조회수 등), 상품 출시일, 수요 적합성, 상품 운영상 필요 등을 종합적으로 고려한 순서입니다." />
+          </a>
+          <span aria-hidden="true" class="product__alignDeco">ㅣ</span>
+        </li>
+        <li class="product__list">
+          <a href="#" class="product__align product__alignList">신상품순</a>
+          <span aria-hidden="true" class="product__alignDeco">ㅣ</span>
+        </li>
+        <li class="product__list">
+          <a href="#" class="product__align product__alignList">판매량순</a>
+          <span aria-hidden="true" class="product__alignDeco">ㅣ</span>
+        </li>
+        <li class="product__list">
+          <a href="#" class="product__align product__alignList">혜택순</a>
+          <span aria-hidden="true" class="product__alignDeco">ㅣ</span>
+        </li>
+        <li class="product__list">
+          <a href="#" class="product__align product__alignList">낮은가격순</a>
+          <span aria-hidden="true" class="product__alignDeco">ㅣ</span>
+        </li>
+        <li class="product__list">
+          <a href="#" class="product__align product__alignList">높은가격순</a>
+        </li>
+      </ul>
+    </div>
 
-
-    <div>
-      <a href="#">«</a>
-      <a href="#">‹</a>
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">›</a>
-      <a href="#">»</a>
+    <div class="page">
+      <a href="#" class="page__number">«</a>
+      <a href="#" class="page__number">‹</a>
+      <a href="#" class="page__number">1</a>
+      <a href="#" class="page__number">2</a>
+      <a href="#" class="page__number">3</a>
+      <a href="#" class="page__number">›</a>
+      <a href="#" class="page__number">»</a>
     </div>
   </main>
 
