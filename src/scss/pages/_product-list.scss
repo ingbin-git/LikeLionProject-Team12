@@ -1,9 +1,152 @@
 @use "./../utils/" as *;
 
-.best {
-  background: yellow;
+
+.gridWrapper {
+  width: rem(1050px);
+  @include autoMarginX;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: ". . . . . . . . . . . ."
+    "filter filter top top top top top top top top top top"
+    ". . . . . . . . . . . ."
+    ". . . . . . page page . . . ."
+  ;
 }
 
-.best-text {
-  background: salmon;
+.filter {
+  grid-area: filter;
+  @include flexbox($justify: space-between);
+  @include paddingY(14px);
+  width: rem(220px);
+  border: none;
+  border-bottom: 1px solid $gray-100;
+  background: transparent;
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__reset {
+    border: none;
+    background: transparent;
+    font-size: rem(10px);
+    color: $gray-300;
+  }
+
+  &__mark {
+    @include flexbox($items: center);
+  }
+
+  &__mark::after {
+    content: "1";
+    padding-left: rem(8px);
+    font-size: rem(10px);
+    color: $gray-300;
+  }
+
+  &__fold {
+    padding-right: 4px;
+  }
+
+  &__checkbox {
+    @include pos;
+    appearance: none;
+  }
+
+  &__label {
+    display: block;
+    padding-top: rem(8px);
+    padding-bottom: rem(12px);
+  }
+
+  &__label &__brand {
+    display: block;
+    background: url(./../../assets/product-list/ic-unchecked.svg) no-repeat 0 0 / 24px;
+    height: rem(25px);
+    padding-left: rem(30px);
+    line-height: rem(25px);
+  }
+
+  &__checkbox:checked+&__label &__brand {
+    background-image: url(/assets/product-list/ic-checked.svg);
+  }
+
+  &__brand::after {
+    content: "1";
+    padding-left: 8px;
+    font-size: rem(10px);
+    color: $gray-300;
+  }
+
+  &__brandPlus {
+    width: rem(220px);
+    border: none;
+    background: transparent;
+    font-size: rem(12px);
+    color: $gray-300;
+    font-weight: 600;
+    padding-top: rem(8px);
+    padding-bottom: rem(12px);
+    text-align: center;
+  }
+
+  &__list {
+    width: rem(220px);
+  }
+}
+
+.product {
+  &__top {
+    grid-area: top;
+    margin-top: rem(48px);
+    margin-bottom: rem(20px);
+    @include flexbox($justify: space-between);
+  }
+  
+  &__total,
+  &__align {
+    font-weight: 600;
+  }
+  
+  &__option {
+    @include flexbox($justify: flex-end, $items: center);
+  }
+  
+  &__list {
+    @include flexbox;
+  }
+  
+  &__align {
+    color: $gray-300;
+  }
+  
+  &__align:hover {
+    color: $content-color;
+  }
+  
+  &__alignHelp {
+    height: rem(14px);
+  }
+
+  &__alignDeco {
+    color: $gray-300;
+    font-weight: 400;
+  }
+}
+
+.page {
+  grid-area: page;
+  @include flexbox($justify: center);
+
+  &__number {
+    @include paddingX(10px);
+    margin-top: rem(36px);
+    margin-bottom: rem(80px);
+    height: rem(32px);
+    border: 1px solid $gray-100;
+    font-size: rem(12px);
+    text-align: center;
+    line-height: rem(30px);
+  }
 }
