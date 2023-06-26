@@ -650,8 +650,11 @@ nav {
 }
 
 .footer {
-  border-top: 100px solid #F9F9F9;
+  border-top: 1px solid #e1e1e1;
+  margin-top: 96px;
   color: #333333;
+  line-height: 130%;
+  background-color: #F9F9F9;
 }
 
 .footer .divider {
@@ -679,7 +682,7 @@ nav {
   border-bottom: 1px solid #898989;
 }
 
-.footer__customerService {
+.footer__service {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -688,7 +691,7 @@ nav {
   width: 50%;
 }
 
-.footer__customerServiceTitle {
+.footer__serviceTitle {
   font-size: 1.25rem;
   font-weight: 700;
   padding: 0;
@@ -696,7 +699,7 @@ nav {
   line-height: normal;
 }
 
-.footer__customerServiceInfo {
+.footer__serviceInfo {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -706,18 +709,18 @@ nav {
   gap: 1rem;
 }
 
-.footer__customerServiceNumber {
+.footer__serviceNumber {
   font-size: 1.6875rem;
   font-weight: 700;
   width: 8.75rem;
 }
 
-.footer__customerServiceTime {
+.footer__serviceTime {
   font-weight: 600;
   font-size: 1rem;
 }
 
-.footer__inquiryList {
+.footer__list {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -725,7 +728,7 @@ nav {
   gap: 1rem;
 }
 
-.footer__inquiryItem {
+.footer__item {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -736,7 +739,7 @@ nav {
   font-size: 0.9375rem;
 }
 
-.footer__inquiryItemButton {
+.footer__itemButton {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
@@ -749,6 +752,7 @@ nav {
 
 .footer__mail {
   font-size: 0.5rem;
+  padding-top: 1rem;
 }
 
 .footer__about {
@@ -760,7 +764,7 @@ nav {
   width: 50%;
 }
 
-.footer__navigation {
+.footer__clause {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -789,13 +793,13 @@ nav {
   height: 30px;
 }
 
-.footer__innerMiddle {
+.footer__middle {
   padding-top: 1.5rem;
   padding-bottom: 2.25rem;
   font-size: 0.625rem;
 }
 
-.footer__certifiedList {
+.footer__logoList {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -803,20 +807,20 @@ nav {
   word-break: keep-all;
 }
 
-.footer__certifiedItem {
+.footer__logoItem {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: stretch;
 }
 
-.footer__certifiedImg {
+.footer__logoImg {
   margin-right: 0.5rem;
   width: 100%;
   height: 100%;
 }
 
-.footer__certifiedInfo {
+.footer__logoInfo {
   white-space: nowrap;
 }
 
@@ -1249,8 +1253,421 @@ nav {
   font-size: 50px;
 }
 
-.detail-text {
-  background: greenyellow;
+body {
+  font-family: pretendard;
+}
+
+.why__carly {
+  width: 65.625rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.why__carlyImg {
+  margin-top: 6rem;
+  margin-bottom: 3.25rem;
+  width: 100%;
+  height: 100%;
+}
+
+/* 문의하기 */
+.qna {
+  position: relative;
+  width: 65.625rem;
+  margin-top: 0;
+  margin-bottom: 4.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.qna__title {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.qna__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 155px;
+  height: 45px;
+  border: none;
+  border-radius: 0.3125rem;
+  background-color: #5f0080;
+  color: #ffffff;
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+}
+
+.qna__list {
+  margin-top: 1.5rem;
+  margin-bottom: 3.4375rem;
+  margin-left: 1.25rem;
+  font-size: 0.75rem;
+  color: #6b6b6b;
+  list-style-type: disc;
+  line-height: 150%;
+}
+
+/* 상품 후기 */
+button {
+  all: unset;
+  text-align: center;
+  cursor: pointer;
+}
+
+.review {
+  width: 65.625rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 4.5rem;
+  position: relative;
+}
+
+.review__title {
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.reviewWrite__btn {
+  width: 155px;
+  height: 45px;
+  background-color: #5f0080;
+  color: #ffffff;
+  border: 0;
+  border-radius: 0.25rem;
+  position: absolute;
+  right: 0;
+}
+
+.review__event {
+  margin-top: 1.5rem;
+  line-height: 150%;
+}
+
+.review-event__title {
+  font-weight: bold;
+  list-style: none;
+}
+
+.review-event__content {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  color: #333333;
+  color: #6b6b6b;
+  list-style: disc;
+  margin-left: 1.25rem;
+}
+
+.review__wrapper {
+  margin-top: 3.5rem;
+}
+
+.review__wrapperTop {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review__count {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  margin-top: 0.1875rem;
+  margin-bottom: 0.1875rem;
+}
+
+.sorting {
+  font-size: 1rem;
+  font-weight: 600;
+  height: 1.5rem;
+  line-height: re, 24px;
+  display: flex-box;
+}
+
+.sorting-registration {
+  color: #a6a6a6;
+}
+
+.sorting-array {
+  color: #333333;
+}
+
+.sorting__recommend::after {
+  content: "";
+  height: 50%;
+  border-left: 1px solid #a6a6a6;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.notification__container {
+  border-top: 1px solid #000000;
+}
+
+.notification__summary {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.0625rem;
+  padding-bottom: 1.0625rem;
+  border-bottom: 1px solid #e1e1e1;
+  color: #333333;
+}
+
+.notification {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 1.125rem;
+  line-height: 1.125rem;
+  font-size: 0.875rem;
+  background-color: #e1e1e1;
+  border-radius: 1px;
+  margin-right: 1.25rem;
+}
+
+.notification__title {
+  font-weight: 600;
+}
+
+.notification__content,
+.review__text {
+  white-space: pre-line;
+  font-size: 0.75rem;
+}
+
+.notification__content {
+  background-color: #F9F9F9;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1.25rem;
+  line-height: 1.125rem;
+}
+
+.review__content {
+  padding: 1.25rem;
+  display: flex;
+  font-size: 0.75rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.review__writerInfo {
+  flex: 0 0 225px;
+}
+
+.tag__best {
+  padding: 0 8px 0 8px;
+  height: 1.125rem;
+  line-height: 1.125rem;
+  font-size: 0.875rem;
+  background-color: #bd76ff;
+  color: #ffffff;
+  border-radius: 1px;
+  margin-right: 0.5rem;
+}
+
+.tag__membership {
+  padding: 0 8px;
+  height: 1.125rem;
+  line-height: 1.125rem;
+  font-size: 0.875rem;
+  background-color: #ffffff;
+  color: #5f0080;
+  border-radius: 1px;
+  border: 1px solid #5f0080;
+  margin-right: 0.5rem;
+}
+
+.review__textContainer {
+  flex: 1 1 0%;
+}
+
+.review__text {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.review__date,
+.review__productName {
+  color: #898989;
+  font-weight: 600;
+}
+
+.buttonGroup {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  width: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.prev,
+.next {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+.prev svg {
+  transform: rotate(180deg);
+  margin: 0.625rem;
+}
+
+.next img {
+  margin: 0.625rem;
+}
+
+.inquiry__listWrap {
+  border-top: 2px solid #333333;
+}
+
+.inquiry__listHeader {
+  border-bottom: 2px solid #6b6b6b;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.inquiry__notice {
+  border-bottom: 1px solid #c4c4c4;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #898989;
+}
+
+.inquiry__title span {
+  color: #333333;
+}
+
+.inquiry__noticeBox {
+  background-color: #e1e1e1;
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1px;
+  margin-right: 1.25rem;
+}
+
+.inquiry__title {
+  display: inline-block;
+  width: 782px;
+  height: 58px;
+  line-height: 3.625rem;
+  font-weight: 600;
+  padding-left: 1.25rem;
+}
+
+.customer__post li {
+  border-bottom: 1px solid #c4c4c4;
+}
+
+/* 자물쇠문단 */
+.inquiry__titleSecret {
+  display: inline-block;
+  color: #898989;
+  height: 3.625rem;
+  line-height: 3.625rem;
+  padding-right: 1.25rem;
+}
+
+.inquiry__who {
+  display: inline-block;
+  width: 5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #898989;
+  font-weight: 600;
+}
+
+.inquiry__day {
+  display: inline-block;
+  width: 6.25rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #898989;
+  font-weight: 600;
+}
+
+.inquiry__answerState {
+  display: inline-block;
+  width: 3.4375rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: #898989;
+  font-weight: 600;
+}
+
+.inquiry__listAnswerComplete {
+  color: #5f0080;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.8125rem;
+}
+
+.list__question {
+  width: 60.875rem;
+  display: flex;
+  margin-top: 1.25rem;
+  margin-bottom: 2.5rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 150%;
+  color: #333333;
+  padding-left: 1.25rem;
+}
+
+.list__answer {
+  display: flex;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 150%;
+  color: #333333;
+  width: 30.0625rem;
+  margin-right: 31.25rem;
+  padding-left: 1.25rem;
+}
+
+.list__questionIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1.1875rem;
+}
+
+.list__answerIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 1.1875rem;
+}
+
+.list__answerBox p {
+  margin-bottom: 0.5rem;
+}
+
+.list__answerBox {
+  width: 481px;
+  height: 216px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 150%;
+  color: #333333;
+  margin-bottom: 1.25rem;
+}
+
+.list__answerDate {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 150%;
+  color: #898989;
 }
 
 /*# sourceMappingURL=index.css.map */
