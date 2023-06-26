@@ -385,9 +385,9 @@ iframe {
   line-height: 42px;
 }
 .promotion__wrapper {
-  width: 65.625rem;
   margin-left: auto;
   margin-right: auto;
+  width: 65.625rem;
 }
 .promotion__button {
   float: right;
@@ -397,8 +397,8 @@ iframe {
 }
 
 .headerWrapper {
-  width: 65.625rem;
-  height: 9.1875rem;
+  width: 1050px;
+  height: 147px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -413,28 +413,31 @@ iframe {
   padding-top: 2.75rem;
 }
 .logo__img {
-  width: 5.125rem;
-  height: 2.625rem;
+  width: 82px;
+  height: 42px;
   padding-right: 0.75rem;
 }
 .logo__img__new {
   position: absolute;
-  top: 2.75rem;
-  left: 15.625rem;
+  left: 250px;
+  top: 44px;
 }
 .logo__link__beauty {
   color: #898989;
 }
 
 .searchForm {
-  width: 25rem;
-  height: 3.75rem;
+  width: 400px;
+  height: 60px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  position: absolute;
+  left: 330px;
+  top: 32px;
   border: 1px solid #5f0080;
   border-radius: 4px;
-  padding: 0.75rem 1.25rem;
-  position: absolute;
-  top: 2rem;
-  left: 20.625rem;
 }
 .searchForm__group {
   display: flex;
@@ -442,14 +445,20 @@ iframe {
   justify-content: flex-start;
   align-items: center;
   position: absolute;
-  top: 0;
+  left: 330px;
+  top: 32px;
+  position: absolute;
   left: 0;
+  top: 0;
 }
 
 .formInput {
-  padding: 0.75rem 1.25rem;
-  width: 22.5rem;
-  height: 3.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: 360px;
+  height: 60px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -464,16 +473,16 @@ iframe {
 }
 
 .searchButton {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 36px;
+  height: 36px;
   border: 0px;
   background: transparent;
 }
 
 .memberOnly {
   position: absolute;
-  top: 0.75rem;
   right: 0;
+  top: 12px;
 }
 .memberOnly__wrapper {
   display: flex;
@@ -483,20 +492,21 @@ iframe {
   font-size: 0.75rem;
 }
 .memberOnly__down {
-  width: 0.5rem;
-  height: 0.35rem;
+  width: 8px;
+  height: 5.6px;
 }
 
 .buttons {
   position: absolute;
-  bottom: 3.9375rem;
   right: 0;
+  bottom: 63px;
 }
 
 nav {
-  width: 65.625rem;
-  height: 4.5rem;
-  padding: 1rem 0;
+  width: 1050px;
+  height: 72px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .menu {
@@ -522,7 +532,10 @@ nav {
   margin-right: auto;
 }
 .menu__delivery {
-  padding: 0.25rem 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
   border: 1px solid #a6a6a6;
   border-radius: 16px;
 }
@@ -542,9 +555,9 @@ nav {
 }
 
 .sprite {
+  width: 24px;
+  height: 24px;
   background: url(/assets/header/ic-menuIcon.svg) no-repeat;
-  width: 1.5rem;
-  height: 1.5rem;
   padding-left: 0.5rem;
 }
 
@@ -816,31 +829,6 @@ nav {
   color: #898989;
 }
 
-.productTitle {
-  font-size: 1.75rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 1.75rem;
-}
-
-.product {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  justify-content: center;
-}
-
-.product__wrapper {
-  position: relative;
-}
-
-.product__item {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  position: relative;
-}
-
 .banner {
   height: 370px;
   max-width: 1920px;
@@ -935,6 +923,31 @@ nav {
 
 .myView__list a {
   display: block;
+}
+
+.productTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.75rem;
+}
+
+.product {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.product__wrapper {
+  position: relative;
+}
+
+.product__item {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: relative;
 }
 
 .product__name {
