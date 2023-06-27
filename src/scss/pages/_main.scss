@@ -37,10 +37,11 @@
   border: 1px solid $gray-200;
   @include padding(8px);
   text-align: center;
-  position: fixed;
+  position: absolute;
   right: rem(39px);
-  bottom: rem(30px);
   
+  top: rem(800px);
+  // margin-top: 300px;
 }
 
 .up__btn,
