@@ -157,6 +157,11 @@
   top: rem(40px);
 }
 
+.category__list:hover {
+  color: $primary-color;
+  background: $gray-100;
+}
+
 // 메뉴 카테고리 일단 숨겨둠
 .category {
   @include wh(0, 0);
