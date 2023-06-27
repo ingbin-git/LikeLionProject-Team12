@@ -537,6 +537,11 @@ body {
   top: 2.5rem;
 }
 
+.category__list:hover {
+  color: #5f0080;
+  background: #e1e1e1;
+}
+
 .category {
   width: 0;
   height: 0;
