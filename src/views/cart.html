@@ -138,43 +138,48 @@
   </div>
   </div>
 
-
-
-
-
-
-
-
   <h1 class="cart">장바구니</h1>
 
  <main class="cartWrapper">
   <!-- 장바구니 아이템 선택 영역 -->
   <section class="cart__accordion">
 
-    <input type="checkbox" class="cart__check" name="chk" id="chk" />
-    <label for="chk" class="cart__label">
-      <span class="selectAll">전체선택 (3/3) | 선택삭제</span>
+    <input type="checkbox" class="cart__check" name="chk" id="chk_1" />
+    <label for="chk_1" class="cart__label">      
+      <span class="selectAll">전체선택 (3/3)
+      <span aria-hidden="true">|</span>
+      선택삭제</span>
     </label>
 
     <ul class="foodCategory">
-      <li class="food__categorylist">냉장 식품
+      <li class="food__categorylist">
+        <img src="/assets/cart/ic-cold.svg" alt="" aria-labelledby="food__cold" />
+        <span id="food__cold" class="food__text">냉장 식품</span>
         <button type="button" class="arrow__down">
           <img src="/assets/product-list/ic-arrow-down.svg" alt="아래로 펼치기" />
         </button>
       </li>
-      <li class="food__categorylist">냉동 식품
+      <li class="food__categorylist">
+        <img src="/assets/cart/ic-frozen.svg" alt="" aria-labelledby="food__frozen" />
+        <span id="food__frozen" class="food__text">냉동 식품</span>
         <button type="button" class="arrow__down">
           <img src="/assets/product-list/ic-arrow-down.svg" alt="아래로 펼치기" />
+          </button>
       </li>
-      <li class="food__categorylist">상온 식품
+      <li class="food__categorylist">
+        <img src="/assets/cart/ic-temperature.svg" alt="" aria-labelledby="food__temperature" />
+        <span id="food__temperature" class="food__text">상온 식품</span>
         <button type="button" class="arrow__down">
           <img src="/assets/product-list/ic-arrow-down.svg" alt="아래로 펼치기" />
+        </button>
       </li>
     </ul>
 
-    <input type="checkbox" class="cart__check" name="chk" id="chk" />
-    <label for="chk" class="cart__label">
-      <span class="selectAll">전체선택 (3/3) | 선택삭제</span>
+    <input type="checkbox" class="cart__check" name="chk" id="chk_2" />
+    <label for="chk_2" class="cart__label">      
+      <span class="selectAll">전체선택 (3/3)
+      <span aria-hidden="true">|</span>
+      선택삭제</span>
     </label>
     
   </section>

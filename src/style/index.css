@@ -2161,24 +2161,23 @@ button {
   display: block;
   background: url(/assets/cart/ic-checked-false.svg) no-repeat 0 0/24px;
   height: 3.5rem;
-  padding-left: 32px;
+  padding-left: 2rem;
   line-height: 150%;
   font-size: 1rem;
   font-weight: 600;
   color: #333333;
 }
 
+.cart__check:checked + label .selectAll {
+  background-image: url("/assets/cart/ic-checked-true.svg");
+}
+
 .cart__label {
   display: block;
 }
 
-.cart__check:checked + .cart__label .selectAll {
-  background-image: url(/assets/cart/ic-checked-true.svg);
-}
-
 .cart__check {
   appearance: none;
-  opacity: 0;
 }
 
 .cart__accordion {
@@ -2190,7 +2189,9 @@ button {
   border-bottom: 1px solid #000000;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
   margin-top: -15px;
 }
 
@@ -2203,6 +2204,7 @@ button {
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   line-height: 150%;
@@ -2211,12 +2213,17 @@ button {
   color: #000000;
 }
 
+.food__text {
+  padding-left: 0.75rem;
+}
+
 .arrow__down {
   display: block;
-  align-items: end;
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   padding: 4px;
+  flex-grow: 1;
+  text-align: right;
 }
 
 .craditWrapper {
@@ -2240,6 +2247,7 @@ button {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid #e1e1e1;
+  background: #ffffff;
 }
 
 .order-button {
