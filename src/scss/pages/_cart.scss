@@ -1,8 +1,8 @@
 @use "./../utils/" as *;
 
-main {
+ .add-cart {
   width: rem(1050px);
-  margin: 0px auto;
+  margin: auto;
   height: 100%;
 }
 
@@ -101,7 +101,7 @@ main {
   line-height: 24px;
 }
 
-/* 전체 결제 폼  */
+/* 전체결제 폼  */
 .cradit-wrapper {
   position: relative;
   width: 284px;

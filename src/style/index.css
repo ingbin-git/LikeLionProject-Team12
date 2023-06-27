@@ -2097,9 +2097,9 @@ button {
   background: #D9D9D9;
 }
 
-main {
+.add-cart {
   width: 65.625rem;
-  margin: 0px auto;
+  margin: auto;
   height: 100%;
 }
 
@@ -2204,7 +2204,7 @@ main {
   line-height: 24px;
 }
 
-/* 전체 결제 폼  */
+/* 전체결제 폼  */
 .cradit-wrapper {
   position: relative;
   width: 284px;
