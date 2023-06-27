@@ -365,9 +365,9 @@ button {
 
 .sorting {
   @include textStyle(16px, 600, $content-color);
+  @include flexbox;
   height: rem(24px);
   line-height: rem(24px);
-  display: flex-box;
 
   &-registration {
     color: $gray-300;

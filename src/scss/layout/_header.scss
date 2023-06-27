@@ -122,7 +122,6 @@
 
 .menu {
   @include flexbox($justify: space-between, $items: center);
-  // menu__button이 absolute
   position: relative;
 
   &__button__img {

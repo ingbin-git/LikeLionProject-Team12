@@ -1670,9 +1670,12 @@ button {
   font-size: 1rem;
   font-weight: 600;
   color: #333333;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
   height: 1.5rem;
   line-height: 1.5rem;
-  display: flex-box;
 }
 .sorting-registration {
   color: #a6a6a6;

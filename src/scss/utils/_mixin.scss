@@ -1,12 +1,10 @@
 @use "./unit" as *;
 
-// 크기와 높이 관련 믹스인
 @mixin wh($w, $h) {
   width: $w;
   height: $h;
 }
 
-// 포지션 관련 믹스인
 @mixin pos {
   position: absolute;
 }
@@ -54,7 +52,6 @@
   transform: translateY(-100%);
 }
 
-// 패딩 관련 믹스인
 @mixin padding($spacing) {
   @include paddingX($spacing);
   @include paddingY($spacing);
@@ -70,7 +67,6 @@
   padding-bottom: rem($spacing);
 }
 
-// 마진 믹스인
 @mixin autoMarginX {
   margin-left: auto;
   margin-right: auto;
@@ -96,7 +92,6 @@
   margin-bottom: rem($spacing);
 }
 
-// 그리드 믹스인
 @mixin gridbox($column-count: 12, $column-width: 1fr, $row-gap: 0, $column-gap: 16px) {
   display: grid;
   grid-template-columns: repeat($column-count, $column-width);
