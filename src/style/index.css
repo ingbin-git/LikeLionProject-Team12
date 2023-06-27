@@ -350,24 +350,6 @@ body {
   margin-right: auto;
 }
 
-<<<<<<< HEAD
-=======
-/* 유연한 미디어 */
-img {
-  height: auto;
-}
-
-video {
-  width: 100%;
-  height: auto;
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
-}
-
->>>>>>> develop
 .primary-color {
   color: #5f0080;
 }
