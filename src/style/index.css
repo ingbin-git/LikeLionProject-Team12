@@ -551,6 +551,10 @@ body {
   align-items: center;
 }
 
+.category__link {
+  padding-left: 8px;
+}
+
 .sprite {
   width: 24px;
   height: 24px;
