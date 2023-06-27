@@ -122,7 +122,6 @@
 
 .menu {
   @include flexbox($justify: space-between, $items: center);
-  // menu__button이 absolute
   position: relative;
 
   &__button__img {
@@ -141,131 +140,131 @@
     border: 1px solid $gray-300;
     border-radius: 16px;
   }
+
+  &__button__category:hover {
+    filter: invert(14%) sepia(52%) saturate(7471%) hue-rotate(282deg) brightness(61%) contrast(113%);
+  }
+  
+  &__button:hover .category {
+    background: $white;
+    position: absolute;
+    z-index: 100;
+    width: rem(247px);
+    height: auto;
+    top: rem(40px);
+  }
 }
 
-// 메뉴 호버
-.menu__button__category:hover {
-  filter: invert(14%) sepia(52%) saturate(7471%) hue-rotate(282deg) brightness(61%) contrast(113%);
-}
 
-.menu__button:hover .category {
-  background: $white;
-  position: absolute;
-  z-index: 100;
-  width: rem(247px);
-  height: auto;
-  top: rem(40px);
-}
 
-.category__list:hover {
-  color: $primary-color;
-  background: $gray-100;
-}
-
-// 메뉴 카테고리 일단 숨겨둠
 .category {
   @include wh(0, 0);
   overflow: hidden;
-}
 
-.category__list {
-  padding: rem(8px) 0 rem(8px) rem(12px); 
-  @include flexbox($items: center);
-}
+  &__list {
+    padding: rem(8px) 0 rem(8px) rem(12px); 
+    @include flexbox($items: center);
+  }
+  
+  &__link {
+    padding-left: 8px;
+  }
 
-.category__link {
-  padding-left: 8px;
+  &__list:hover {
+    color: $primary-color;
+    background: $gray-100;
+  }
 }
 
 .sprite {
   @include wh(24px, 24px);
   background: url(/assets/header/ic-menuIcon.svg) no-repeat;
   padding-left: rem(8px);
-}
 
-.sprite__gift {
-  background-position: -4px -3px;
-}
-
-.sprite__vegetable {
-  background-position: -4px -219px;
-}
-
-.sprite__friut {
-  background-position: -2px -388px;
-}
-
-.sprite__fish {
-  background-position: -4px -505px;
-}
-
-.sprite__meat {
-  background-position: -3px -75px;
-}
-
-.sprite__soup {
-  background-position: -3px -172px;
-}
-
-.sprite__salad {
-  background-position: -3px -339px;
-}
-
-.sprite__noodles {
-  background-position: -4px -243px;
-}
-.sprite__water {
-  background-position: -3px -125px;
-}
-
-.sprite__snack {
-  background-position: -3px -291px;
-}
-
-.sprite__bakery {
-  background-position: -3px -50px;
-}
-
-.sprite__health {
-  background-position: -3px -484px;
-}
-
-.sprite__wine {
-  background-position: -4px -435px;
-}
-
-.sprite__tradition {
-  background-position: -4px -27px;
-}
-
-.sprite__living {
-  background-position: -4px -98px;
-}
-
-.sprite__skin {
-  background-position: -3px -147px;
-}
-
-.sprite__hair {
-  background-position: -3px -411px;
-}
-
-.sprite__kitchen {
-  background-position: -3px -196px;
-}
-
-.sprite__appliances {
-  background-position: -4px -267px;
-}
-
-.sprite__pet {
-  background-position: -4px -316px;
-}
-
-.sprite__baby {
-  background-position: -4px -363px;
-}
-
-.sprite__travel {
-  background-position: -4px -460px;
+  &__gift {
+    background-position: -4px -3px;
+  }
+  
+  &__vegetable {
+    background-position: -4px -219px;
+  }
+  
+  &__friut {
+    background-position: -2px -388px;
+  }
+  
+  &__fish {
+    background-position: -4px -505px;
+  }
+  
+  &__meat {
+    background-position: -3px -75px;
+  }
+  
+  &__soup {
+    background-position: -3px -172px;
+  }
+  
+  &__salad {
+    background-position: -3px -339px;
+  }
+  
+  &__noodles {
+    background-position: -4px -243px;
+  }
+  &__water {
+    background-position: -3px -125px;
+  }
+  
+  &__snack {
+    background-position: -3px -291px;
+  }
+  
+  &__bakery {
+    background-position: -3px -50px;
+  }
+  
+  &__health {
+    background-position: -3px -484px;
+  }
+  
+  &__wine {
+    background-position: -4px -435px;
+  }
+  
+  &__tradition {
+    background-position: -4px -27px;
+  }
+  
+  &__living {
+    background-position: -4px -98px;
+  }
+  
+  &__skin {
+    background-position: -3px -147px;
+  }
+  
+  &__hair {
+    background-position: -3px -411px;
+  }
+  
+  &__kitchen {
+    background-position: -3px -196px;
+  }
+  
+  &__appliances {
+    background-position: -4px -267px;
+  }
+  
+  &__pet {
+    background-position: -4px -316px;
+  }
+  
+  &__baby {
+    background-position: -4px -363px;
+  }
+  
+  &__travel {
+    background-position: -4px -460px;
+  }
 }

@@ -3,18 +3,22 @@
 .banner{
   height: rem(370px);  
   max-width: rem(1920px);
-  margin-bottom: rem(40px);  
-}
+  margin-bottom: rem(40px);
 
-.banner__list{
-  position: relative;
-}
+  &__list{
+    position: relative;
+  }
+  
+  & button{
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
 
-.banner button{
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
+  &__list img{
+    height: 100%; 
+  }  
 }
 
 .left__btn{
@@ -26,11 +30,6 @@
   transform: scaleX(-1);
 }
 
-.banner__list img{
-  height: 100%; 
-}
-
-// 최근 본 상품 영역
 .sideBar{
   @include wh(74px, 223px);
   display: block;  
@@ -44,7 +43,7 @@
 
 @media screen and (max-width: 1500px){
   .sideBar{
-    visibility: hidden
+    visibility: hidden;
   }
 }
 
@@ -77,29 +76,29 @@
   @include flexbox($direction: column);
   height: rem(129px);
   overflow: hidden;
-}
 
-.myView__list img{
-  @include wh(40px, 52px);
-}
-
-.myView__wrapper{
-  gap: 4px;
-}
-
-.myView__list  a{
-  display: block;
-}
-
-.productTitle {
-  font-size: rem(28px);
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: rem(28px);
+  &__list img{
+    @include wh(40px, 52px);
+  }
+  
+  &__wrapper{
+    gap: 4px;
+  }
+  
+  &__list  a{
+    display: block;
+  }
 }
 
 .product {
   @include flexbox($justify: center);
+
+  &Title {
+    font-size: rem(28px);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: rem(28px);
+  }
 
   &__wrapper {
     position: relative;
@@ -128,14 +127,7 @@
     font-size: rem(20px);
     font-weight: 600;
   }
-  
-  .accentCart {
-    @include posRightTop(30px, 260px);
-    @include wh(45px, 45px);
-    border: none;
-    background: transparent url(./../../assets/main/ic-add-cart.svg);
-  }
-  
+    
   &__sale {
     height: rem(60px);
     margin-bottom: rem(40px);
@@ -168,6 +160,13 @@
     border: none;
     background: transparent url(./../../assets/main/ic-product-swiper-arrow.svg) no-repeat;
   }
+}
+
+.accentCart {
+  @include posRightTop(30px, 260px);
+  @include wh(45px, 45px);
+  border: none;
+  background: transparent url(./../../assets/main/ic-add-cart.svg);
 }
 
 .middleBanner { 

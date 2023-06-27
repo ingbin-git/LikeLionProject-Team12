@@ -1,213 +1,217 @@
 @use "./../utils/" as *;
 
-.cart{
+.cart {
   padding-top: rem(80px);
-  @include textStyle(21.328px, 600, $black);
-  line-height: 150%;
+  @include textStyle(22px, 600, $black);
+  line-height: 1.5;
   margin-bottom: rem(44px);
   text-align: center;
+
+  &Wrapper {
+    @include flexbox($justify: center);
+    gap: 24px;
+    @include autoMarginX;
+    width: rem(1050px);
+  }
+
+  &__check:checked+label .selectAll {
+    background-image: url('/assets/cart/ic-checked-true.svg');
+  }
+
+  &__label {
+    display: block;
+  }
+
+  &__check {
+    appearance: none;
+  }
+
+  &__accordion {
+    width: rem(742px);
+  }
 }
 
-.cartWrapper{
-  @include flexbox($justify: center);
-  margin: 0 auto; 
-  width: rem(1050px);
-  gap: 24px;
-}
-
-// 장바구니 아이템 선택 영역
-.selectAll{
+.selectAll {
   display: block;
-  background: url(/assets/cart/ic-checked-false.svg)
-   no-repeat 0 0 / 24px;
+  background: url(/assets/cart/ic-checked-false.svg) no-repeat 0 0 / 24px;
   height: rem(56px);
   padding-left: rem(32px);
-  line-height: 150%;
-  @include textStyle(16px, 600, $content-color); 
+  line-height: 1.5;
+  @include textStyle(16px, 600, $content-color);
 }
 
-.cart__check:checked+label .selectAll {
-  background-image: url('/assets/cart/ic-checked-true.svg');
-}
-
-.cart__label {
-  display: block;
-}
-
-.cart__check{
-  appearance: none;
-}
-
-.cart__accordion{
-  width: rem(742px);
-}
-
-.foodCategory{
+.foodCategory {
   border-top: 1px solid $black;
   border-bottom: 1px solid $black;
   position: relative;
-  @include flexbox($direction:column);
-  margin-top: -15px;
+  @include flexbox($direction: column);
+  margin-top: rem(-15px);
+
+  & li:first-child,
+  & li:nth-child(2) {
+    border-bottom: 1px solid $black;
+  }
 }
 
-.foodCategory li:first-child,
-.foodCategory li:nth-child(2){
-  border-bottom: 1px solid $black;
+.food {
+  &__categorylist {
+    @include paddingY(16px);
+    @include flexbox($justify: space-between, $items: center);
+    line-height: 1.5;
+    @include textStyle(16px, 600, $black);
+  }
+
+  &__text {
+    padding-left: rem(12px);
+  }
 }
 
-.food__categorylist{
-  @include paddingY(16px);  
-  @include flexbox($justify:space-between,$items:center);
-  line-height: 150%;
-  @include textStyle(16px, 600, $black); 
-}
-
-.food__text {
-  padding-left: rem(12px);
-}
-
-.arrow__down{
+.arrow__down {
+  @include wh(30px, 30px);
   display: block;
-  width: rem(30px);
-  height: rem(30px);
-  padding: 4px;
+  padding: rem(4px);
+  margin-right: rem(8px);
   flex-grow: 1;
   text-align: right;
 }
 
-
-// 배송지 영역
-.craditWrapper{
-  width: rem(284px);
-}
-
-.cradit{
+.cradit {
   background: $gray-50;
   border: 1px solid $gray-100;
+
+  &Wrapper {
+    width: rem(284px);
+  }
 }
 
-.delivery__info{
-  @include flexbox($direction: column);
-  gap: 12px;
-  position: relative;
-  @include padding(20px);
-  border-bottom: 1px solid $gray-100;
-  background: $white;
+.delivery {
+  &__info {
+    @include flexbox($direction: column);
+    gap: 12px;
+    position: relative;
+    @include padding(20px);
+    border-bottom: 1px solid $gray-100;
+    background: $white;
+  }
+
+  &__location {
+    @include flexbox($items: center);
+  }
+
+  &__location::before {
+    @include wh(36px, 36px);
+    display: inline-block;
+    content: '';
+    background-image: url("/assets/cart/Location.svg");
+  }
+
+  &__location,
+  &__address {
+    @include textStyle(16px, 600, $black);
+    line-height: 1.5;
+  }
+
+  &__chage {
+    @include wh(244px, 44px);
+    border: 0;
+    padding: 0;
+    border-radius: 4px;
+    border: 1px solid $primary-color;
+    background: $white;
+    @include textStyle(16px, 600, $primary-color);
+    line-height: 1.5;
+  }
+
+  &__type {
+    @include textStyle(12px, 600, $primary-color);
+    line-height: 1.5;
+  }
 }
-.order-button{
-  width: rem(284px);
-  height: rem(44px);
+
+.order-button {
+  @include wh(284px, 44px);
+  @include textStyle(16px, 600, $white);
+  @include marginY(16px);
   border-radius: 4px;
   border: 0;
   padding: 0;
   background: $primary-color;
-  @include textStyle(16px, 600, $white);
   cursor: pointer;
-  @include marginY(16px)
 }
 
-.delivery__location{
-  @include flexbox($items: center);
+.payment {
+  &__info {
+    @include paddingX(20px);
+    @include paddingY(20px);
+    @include flexbox($direction: column);
+    border-top: 1px solid $gray-100;
+  }
+
+  &__info dl {
+    @include flexbox($justify: space-between, $items: center);
+    padding-bottom: rem(24px);
+  }
+
+  &__total {
+    @include flexbox($justify: space-between, $items: center);
+  }
+
+  &__total span {
+    @include textStyle(28px, 700, $black);
+    line-height: 1.4;
+  }
+
+  &__total span::after {
+    content: '원';
+    margin-left: rem(4px);
+    @include textStyle(16px, 600, $black);
+    line-height: 1.5;
+  }
+
+  &__price {
+    @include textStyle(16px, normal, $content-color);
+    line-height: 1.6;
+  }
 }
 
-.delivery__location::before{
-  display: inline-block;
-  content: '';
-  background-image: url("/assets/cart/Location.svg");
-  width: rem(36px);
-  height: rem(36px);
+.pay {
+  &__info::after {
+    content: '원';
+    margin-left: rem(4px);
+    @include textStyle(16px, 600, $content-color);
+    line-height: 1.5;
+  }
+
+  &__list,
+  &__info {
+    @include textStyle(16px, normal, $content-color);
+    line-height: 1.6;
+  }
 }
 
-.delivery__location,
-.delivery__address{
-  @include textStyle(16px, 600, $black);
-  line-height: 150%;
+.membership {
+  &__point {
+    @include textStyle(12px, 600, $content-color);
+    line-height: 1.5;
+    text-align: end;
+  }
+
+  &__point span {
+    @include paddingX(8px);
+    border-radius: 1px;
+    background: $accent-color;
+    @include textStyle(12px, 600, $white);
+    line-height: 1.5;
+    margin-right: rem(8px);
+    align-items: end;
+  }
 }
 
-.delivery__chage{
-  border: 0;
-  padding: 0;
-  width: rem(244px);
-  height: rem(44px);
-  border-radius: 4px;
-  border: 1px solid $primary-color;
-  background: $white;
-  @include textStyle(16px, 600, $primary-color);
-  line-height: 150%;
-}
-
-.delivery__type{
-  @include textStyle(12.003px, 600, $primary-color);
-  line-height: 150%;
-}
-
-.payment__info{
-  @include paddingX(20px);
-  @include paddingY(20px);
+.couponInfo {
   @include flexbox($direction: column);
-  border-top: 1px solid $gray-100;
-}
 
-.payment__info dl{
-  @include flexbox($justify: space-between, $items: center);
-  padding-bottom: 24px;
-}
-
-.pay__info::after{
-  content: '원';
-  margin-left: 4px;
-  @include textStyle(16px, 600, $content-color);
-  line-height: 150%;
-}
-
-.pay__list,
-.pay__info{
-  @include textStyle(16px, normal, $content-color);
-  line-height: 160%;
-}
-
-.payment__total{
-  @include flexbox($justify: space-between, $items: center);
-}
-
-.payment__total span{
-  @include textStyle(28.43px, 700, $black);
-  line-height: 140%;
-}
-
-.payment__total span::after{
-  content: '원';
-  margin-left: 4px;
-  @include textStyle(16px, 600, $black);
-  line-height: 150%;
-}
-
-.payment__price{
-  @include textStyle(16px, normal, $content-color);
-  line-height: 160%;
-}
-
-.membership__point{
-  @include textStyle(12.003px, 600, $content-color);
-  line-height: 150%;
-  text-align: end;
-}
-
-.membership__point span{
-  @include paddingX(8px);
-  border-radius: 1px;
-  background: $accent-color;
-  @include textStyle(12.003px, 600, $white);
-  line-height: 150%;
-  margin-right: 8px;
-  align-items: end;
-}
-
-.couponInfo{
-  @include flexbox($direction: column); 
-}
-
-.couponInfo__list{
-  @include textStyle(12.003px, 600, $gray-400);
-  line-height: 150%;
+  &__list {
+    @include textStyle(12px, 600, $gray-400);
+    line-height: 1.5;
+  }
 }
