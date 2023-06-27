@@ -148,13 +148,32 @@
   <!-- 장바구니 아이템 선택 영역 -->
   <section class="cart__accordion">
 
-   <ul>
-    <li>냉동 식품</li>
-    <li>냉장 식품</li>
-    <li>상온 식품</li>
-   </ul>
+    <input type="checkbox" class="cart__check" name="chk" id="chk" />
+    <label for="chk" class="cart__label">
+      <span class="selectAll">전체선택 (3/3) | 선택삭제</span>
+    </label>
 
+    <ul class="foodCategory">
+      <li class="food__categorylist">냉장 식품
+        <button type="button" class="arrow__down">
+          <img src="/assets/product-list/ic-arrow-down.svg" alt="아래로 펼치기" />
+        </button>
+      </li>
+      <li class="food__categorylist">냉동 식품
+        <button type="button" class="arrow__down">
+          <img src="/assets/product-list/ic-arrow-down.svg" alt="아래로 펼치기" />
+      </li>
+      <li class="food__categorylist">상온 식품
+        <button type="button" class="arrow__down">
+          <img src="/assets/product-list/ic-arrow-down.svg" alt="아래로 펼치기" />
+      </li>
+    </ul>
 
+    <input type="checkbox" class="cart__check" name="chk" id="chk" />
+    <label for="chk" class="cart__label">
+      <span class="selectAll">전체선택 (3/3) | 선택삭제</span>
+    </label>
+    
   </section>
 
 
