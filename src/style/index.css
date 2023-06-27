@@ -521,6 +521,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.menu__link {
+  font-weight: 600;
+}
 .menu__delivery {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1023,6 +1026,9 @@ body {
 }
 .product__align {
   color: #a6a6a6;
+}
+.product__focus {
+  color: #333333;
 }
 .product__align:hover {
   color: #333333;
