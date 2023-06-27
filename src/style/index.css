@@ -879,6 +879,11 @@ body {
   top: 50rem;
 }
 
+@media screen and (max-width: 1500px) {
+  .sideBar {
+    visibility: hidden;
+  }
+}
 .up__btn,
 .down__btn {
   width: 18px;
@@ -2095,6 +2100,210 @@ button {
   height: 1px;
   z-index: -1;
   background: #D9D9D9;
+}
+
+.cart {
+  padding-top: 5rem;
+  font-size: 1.333rem;
+  font-weight: 600;
+  color: #000000;
+  line-height: 150%;
+  margin-bottom: 2.75rem;
+  text-align: center;
+}
+
+.cartWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 0 auto;
+  width: 65.625rem;
+  gap: 24px;
+}
+
+.craditWrapper {
+  width: 17.75rem;
+}
+
+.cradit {
+  background: #F9F9F9;
+  border: 1px solid #e1e1e1;
+}
+
+.delivery__info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 12px;
+  position: relative;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.order-button {
+  width: 17.75rem;
+  height: 2.75rem;
+  border-radius: 4px;
+  border: 0;
+  padding: 0;
+  background: #5f0080;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.delivery__location {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.delivery__location::before {
+  display: inline-block;
+  content: "";
+  background-image: url("/assets/cart/Location.svg");
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+.delivery__location,
+.delivery__address {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+  line-height: 150%;
+}
+
+.delivery__chage {
+  border: 0;
+  padding: 0;
+  width: 15.25rem;
+  height: 2.75rem;
+  border-radius: 4px;
+  border: 1px solid #5f0080;
+  background: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5f0080;
+  line-height: 150%;
+}
+
+.delivery__type {
+  font-size: 0.7501875rem;
+  font-weight: 600;
+  color: #5f0080;
+  line-height: 150%;
+}
+
+.payment__info {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  border-top: 1px solid #e1e1e1;
+}
+
+.payment__info dl {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+}
+
+.pay__info::after {
+  content: "원";
+  margin-left: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333333;
+  line-height: 150%;
+}
+
+.pay__list,
+.pay__info {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #333333;
+  line-height: 160%;
+}
+
+.payment__total {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment__total span {
+  font-size: 1.776875rem;
+  font-weight: 700;
+  color: #000000;
+  line-height: 140%;
+}
+
+.payment__total span::after {
+  content: "원";
+  margin-left: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000000;
+  line-height: 150%;
+}
+
+.payment__price {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #333333;
+  line-height: 160%;
+}
+
+.membership__point {
+  font-size: 0.7501875rem;
+  font-weight: 600;
+  color: #333333;
+  line-height: 150%;
+  text-align: end;
+}
+
+.membership__point span {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1px;
+  background: #fa622f;
+  font-size: 0.7501875rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 150%;
+  margin-right: 8px;
+  align-items: end;
+}
+
+.couponInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.couponInfo__list {
+  font-size: 0.7501875rem;
+  font-weight: 600;
+  color: #898989;
+  line-height: 150%;
 }
 
 /*# sourceMappingURL=index.css.map */
