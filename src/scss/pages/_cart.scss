@@ -31,8 +31,7 @@
 }
 
 .delivery__info{
-  display: flex;
-  flex-direction: column;
+  @include flexbox($direction: column);
   gap: 12px;
   position: relative;
   @include padding(20px);
@@ -51,16 +50,15 @@
 }
 
 .delivery__location{
-  display: flex;
-  align-items: center;
+  @include flexbox($items: center);
 }
 
 .delivery__location::before{
   display: inline-block;
   content: '';
   background-image: url("/assets/cart/Location.svg");
-  width: 36px;
-  height: 36px;
+  width: rem(36px);
+  height: rem(36px);
 }
 
 .delivery__location,
@@ -94,9 +92,7 @@
 }
 
 .payment__info dl{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexbox($justify: space-between, $items: center);
   padding-bottom: 24px;
 }
 
@@ -114,9 +110,7 @@
 }
 
 .payment__total{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flexbox($justify: space-between, $items: center);
 }
 
 .payment__total span{
@@ -139,7 +133,7 @@
 .membership__point{
   @include textStyle(12.003px, 600, $content-color);
   line-height: 150%;
-  text-align: end
+  text-align: end;
 }
 
 .membership__point span{
@@ -153,8 +147,7 @@
 }
 
 .couponInfo{
-  display: flex;
-  flex-direction: column;  
+  @include flexbox($direction: column); 
 }
 
 .couponInfo__list{

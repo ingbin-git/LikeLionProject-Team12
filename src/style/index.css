@@ -2130,7 +2130,9 @@ button {
 
 .delivery__info {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
   gap: 12px;
   position: relative;
   padding-left: 1.25rem;
@@ -2157,6 +2159,8 @@ button {
 
 .delivery__location {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -2164,8 +2168,8 @@ button {
   display: inline-block;
   content: "";
   background-image: url("/assets/cart/Location.svg");
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .delivery__location,
@@ -2211,6 +2215,7 @@ button {
 
 .payment__info dl {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 24px;
@@ -2235,6 +2240,7 @@ button {
 
 .payment__total {
   display: flex;
+  flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -2285,7 +2291,9 @@ button {
 
 .couponInfo {
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
 .couponInfo__list {
