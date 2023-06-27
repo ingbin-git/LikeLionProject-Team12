@@ -48,6 +48,10 @@
     color: $gray-300;
   }
 
+  &__focus {
+    color: $content-color;
+  }
+
   &__align:hover {
     color: $content-color;
   }

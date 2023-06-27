@@ -142,6 +142,10 @@
     @include autoMarginX;
   }
 
+  &__link {
+    font-weight: 600;
+  }
+
   &__delivery {
     @include paddingX(8px);
     @include paddingY(5px);
