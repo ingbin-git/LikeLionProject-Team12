@@ -46,7 +46,7 @@
   - aria-label과 aria-labelledby 활용하여 스크린리더 사용자 고려 
   - 이미지에 대체 텍스트 제공
 
-### 🛜 크로스 브라우징(Cross Browsing)
+### 🌐 크로스 브라우징(Cross Browsing)
 > 사용자의 모던 브라우저 환경에 맞추어 모두 사용 가능합니다.
   <div>
     <img src="https://cdn.discordapp.com/attachments/1120944741626941470/1123258653198254090/2023-06-27_11.28.42.png" width="450px">
