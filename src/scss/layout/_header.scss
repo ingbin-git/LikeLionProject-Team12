@@ -173,6 +173,10 @@
   @include flexbox($items: center);
 }
 
+.category__link {
+  padding-left: 8px;
+}
+
 .sprite {
   @include wh(24px, 24px);
   background: url(/assets/header/ic-menuIcon.svg) no-repeat;
