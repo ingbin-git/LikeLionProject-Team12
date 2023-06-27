@@ -1,0 +1,231 @@
+@use "./../utils/" as *;
+
+main {
+  width: rem(1050px);
+  margin: 0px auto;
+  height: 100%;
+}
+
+.cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start
+}
+
+.cart-title {
+  @include textStyle(21px, 500, $content-color);
+  height: rem(32px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0px 44px;
+  text-align: center;
+
+}
+
+.is-checked-false {
+  @include wh(24px, 24px);
+  margin-right: rem(12px);
+}
+
+/* 장바구니 전체 선택 */
+.click-total {
+  padding: 16px 10px 16px 2px;
+  display: flex;
+  align-items: center;
+}
+
+.check-all {
+  padding-right: 8px;
+}
+
+.click-total button {
+  border: none;
+  line-height: 26px;
+  border-radius: 5px;
+  line-height: 150%;
+  @include textStyle(16px, 500, $content-color);
+}
+
+.click-down img {
+  @include wh(30px, 30px);
+}
+
+/* 장바구니 상품 리스트  */
+.eat-list {
+  border-top: 1px solid $content-color;
+}
+
+.normal-list {
+  border-bottom: 1px solid $content-color;
+}
+
+.cart-list {
+  width: 742px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 24px;
+}
+
+.catagory {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.list-name {
+  display: flex;
+  line-height: 26px;
+  align-items: center;
+  @include textStyle(16px, 700, $gray-800);
+  gap: 12px;
+  width: auto;
+  height: auto;
+}
+
+.list-name img {
+  // margin-right: 8px;
+}
+.product-name {
+  font-weight: 500;
+}
+
+/* 리스트 안의 상품 가격 표시 */
+.product-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  width: 127px;
+  text-align: right;
+  @include textStyle(16px, 700, $content-color);
+  line-height: 24px;
+}
+
+/* 전체 결제 폼  */
+.cradit-wrapper {
+  position: relative;
+  width: 284px;
+  height: 709px;
+}
+
+/* 주소 */
+.location {
+  padding: 23px 19px 20px;
+  border-top: 1px solid $gray-100;
+  border-right: 1px solid $gray-100;
+  border-left: 1px solid $gray-100;
+}
+
+.location-mark {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  @include textStyle(16px, 500, $content-color);
+  line-height: 20px;
+}
+
+.location-mark img {
+  @include wh(20px, 20px);
+  margin-right: 5px;
+}
+
+/*  배송지 주소 */
+.address {
+  padding-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.address li:nth-child(2) {
+  @include textStyle(12px, bold, $primary-color);
+  padding: 7px 0px 12px;
+}
+
+.address li:nth-child(3) > button {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  @include wh(244px, 44px);
+  border-radius: 3px;
+}
+
+/* 결제 */
+.payment {
+  background: $gray-50;
+  padding: 20px;
+  align-items: center;
+  border: 1px solid $gray-100;
+  font-size: 1rem;
+}
+
+.pay-list {
+  @include textStyle(16px, 400, $content-color);
+  line-height: 160%;
+}
+
+.pay-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.to
+tal {
+  border-top: 1px dashed $gray-100;
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+}
+
+.price-unit {
+  @include textStyle(16px, 600, $content-color);
+  margin-left: 2px;
+}
+
+.total-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-number {
+  @include textStyle(28.43px, 700, $content-color);
+}
+
+.total-down {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.accumulate {
+  @include textStyle(12px, 400, $white);
+  background: $accent-color;
+  border-radius: 1px;
+  padding: 1px 8px 0 8px;
+  margin-right: 6px;
+  align-items: center;
+}
+
+.accumulate-hint {
+  @include textStyle(12px, 500, $gray-700);
+}
+
+.accumulate-hint span {
+  margin-left: 4px;
+  font-size: 0.6875rem;
+  color: $gray-400;
+}
+
+.cradit-order {
+  margin: 20px 0;
+  background: $primary-color;
+  color: $white;
+  @include wh(284px, 44px);
+  border-radius: 3px;
+}
+
+.information {
+  @include textStyle(12px, 600, $gray-400);
+  width: 284px;
+  line-height: 18px;
+}
