@@ -110,19 +110,16 @@
   @include posRightBottom(0, 63px);
 }
 
-nav {
-  @include wh(1050px, 72px);
-  @include paddingY(16px);
+.navi {
+  width: rem(1050px);
+  height: rem(72px);
+  padding: rem(16px) 0;
 }
 
 .menu {
   @include flexbox($justify: space-between, $items: center);
-
-  &__button:hover {
-    // 색이 왜 파랗지?
-    color: $primary-color;
-    filter: invert(14%) sepia(52%) saturate(7471%) hue-rotate(282deg) brightness(61%) contrast(113%);
-  }
+  // menu__button이 absolute
+  position: relative;
 
   &__button__img {
     padding-right: rem(12px);
@@ -131,7 +128,6 @@ nav {
   &__list {
     width: rem(600px);
     @include flexbox($justify: space-between);
-    // 적용 안됨...
     @include autoMarginX;
   }
 
@@ -141,6 +137,19 @@ nav {
     border: 1px solid $gray-300;
     border-radius: 16px;
   }
+}
+
+// 메뉴 호버
+.menu__button__category:hover {
+  filter: invert(14%) sepia(52%) saturate(7471%) hue-rotate(282deg) brightness(61%) contrast(113%);
+}
+
+.menu__button:hover .category {
+  background: $white;
+  position: absolute;
+  z-index: 100;
+  width: rem(247px);
+  height: auto;
 }
 
 // 메뉴 카테고리 일단 숨겨둠

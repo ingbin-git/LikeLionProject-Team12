@@ -350,6 +350,27 @@ body {
   margin-right: auto;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+/* 유연한 미디어 */
+img {
+  height: auto;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+>>>>>>> develop
+>>>>>>> b4e9cdf77a77151f7b47574bd1d4d3e8cd7d971e
 .primary-color {
   color: #5f0080;
 }
@@ -486,11 +507,10 @@ body {
   bottom: 63px;
 }
 
-nav {
-  width: 1050px;
-  height: 72px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.navi {
+  width: 65.625rem;
+  height: 4.5rem;
+  padding: 1rem 0;
 }
 
 .menu {
@@ -498,10 +518,7 @@ nav {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-}
-.menu__button:hover {
-  color: #5f0080;
-  filter: invert(14%) sepia(52%) saturate(7471%) hue-rotate(282deg) brightness(61%) contrast(113%);
+  position: relative;
 }
 .menu__button__img {
   padding-right: 0.75rem;
@@ -522,6 +539,18 @@ nav {
   padding-bottom: 0.25rem;
   border: 1px solid #a6a6a6;
   border-radius: 16px;
+}
+
+.menu__button__category:hover {
+  filter: invert(14%) sepia(52%) saturate(7471%) hue-rotate(282deg) brightness(61%) contrast(113%);
+}
+
+.menu__button:hover .category {
+  background: #ffffff;
+  position: absolute;
+  z-index: 100;
+  width: 15.4375rem;
+  height: auto;
 }
 
 .category {
