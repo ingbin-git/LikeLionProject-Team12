@@ -380,6 +380,10 @@ body {
   height: 2.625rem;
 }
 
+.headerAllWrapper {
+  box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.1);
+}
+
 .headerWrapper {
   width: 1050px;
   height: 147px;
@@ -489,7 +493,7 @@ body {
 .navi {
   width: 65.625rem;
   height: 4.5rem;
-  padding: 1rem 0;
+  padding: 1.25rem 0 1rem 0;
 }
 
 .menu {
@@ -530,6 +534,7 @@ body {
   z-index: 100;
   width: 15.4375rem;
   height: auto;
+  top: 2.5rem;
 }
 
 .category {
@@ -554,35 +559,35 @@ body {
 }
 
 .sprite__gift {
-  background-position: -5px -4px;
+  background-position: -4px -3px;
 }
 
 .sprite__vegetable {
-  background-position: -5px -219px;
+  background-position: -4px -219px;
 }
 
 .sprite__friut {
-  background-position: -2px -389px;
+  background-position: -2px -388px;
 }
 
 .sprite__fish {
-  background-position: -4px -507px;
+  background-position: -4px -505px;
 }
 
 .sprite__meat {
-  background-position: -3px -77px;
+  background-position: -3px -75px;
 }
 
 .sprite__soup {
-  background-position: -3px -173px;
+  background-position: -3px -172px;
 }
 
 .sprite__salad {
-  background-position: -3px -341px;
+  background-position: -3px -339px;
 }
 
 .sprite__noodles {
-  background-position: -4px -244px;
+  background-position: -4px -243px;
 }
 
 .sprite__water {
@@ -602,15 +607,15 @@ body {
 }
 
 .sprite__wine {
-  background-position: -5px -435px;
+  background-position: -4px -435px;
 }
 
 .sprite__tradition {
-  background-position: -5px -27px;
+  background-position: -4px -27px;
 }
 
 .sprite__living {
-  background-position: -6px -98px;
+  background-position: -4px -98px;
 }
 
 .sprite__skin {
@@ -626,15 +631,15 @@ body {
 }
 
 .sprite__appliances {
-  background-position: -5px -267px;
+  background-position: -4px -267px;
 }
 
 .sprite__pet {
-  background-position: -5px -316px;
+  background-position: -4px -316px;
 }
 
 .sprite__baby {
-  background-position: -5px -363px;
+  background-position: -4px -363px;
 }
 
 .sprite__travel {
