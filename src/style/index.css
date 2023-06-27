@@ -874,6 +874,11 @@ body {
   top: 50rem;
 }
 
+@media screen and (max-width: 1500px) {
+  .sideBar {
+    visibility: hidden;
+  }
+}
 .up__btn,
 .down__btn {
   width: 18px;
