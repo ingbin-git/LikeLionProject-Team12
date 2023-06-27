@@ -112,6 +112,14 @@
 
 .buttons {
   @include posRightBottom(0, 63px);
+
+  &__address__img {
+    padding-right: rem(10px);
+  }
+
+  &__heart__img {
+    padding-right: rem(10px);
+  }
 }
 
 .navi {
@@ -136,9 +144,10 @@
 
   &__delivery {
     @include paddingX(8px);
-    @include paddingY(4px);
+    @include paddingY(5px);
     border: 1px solid $gray-300;
     border-radius: 16px;
+    font-size: rem(12px);
   }
 
   &__button__category:hover {

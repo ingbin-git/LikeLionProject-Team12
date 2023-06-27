@@ -489,6 +489,12 @@ body {
   right: 0;
   bottom: 63px;
 }
+.buttons__address__img {
+  padding-right: 0.625rem;
+}
+.buttons__heart__img {
+  padding-right: 0.625rem;
+}
 
 .navi {
   width: 65.625rem;
@@ -518,10 +524,11 @@ body {
 .menu__delivery {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
   border: 1px solid #a6a6a6;
   border-radius: 16px;
+  font-size: 0.75rem;
 }
 .menu__button__category:hover {
   filter: invert(14%) sepia(52%) saturate(7471%) hue-rotate(282deg) brightness(61%) contrast(113%);
@@ -1300,7 +1307,7 @@ body {
   padding-bottom: 1.25rem;
 }
 .prod__delivery {
-  font-size: 1.375rem;
+  font-size: 1.3125rem;
   font-weight: 700;
   color: #6b6b6b;
   line-height: 1.4;
@@ -1631,7 +1638,7 @@ body {
 }
 .qna__title {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 700;
   color: #000000;
 }
 .qna__btn {
@@ -1696,7 +1703,8 @@ button {
   padding-right: 0.5rem;
   height: 1.125rem;
   line-height: 1.125rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 600;
   background-color: #e1e1e1;
   border-radius: 1px;
   margin-right: 1.25rem;
@@ -1883,7 +1891,7 @@ button {
   border-bottom: 1px solid #c4c4c4;
   font-size: 1rem;
   font-weight: 600;
-  color: #898989;
+  color: #333333;
 }
 .inquiry__info {
   display: inline-flex;
