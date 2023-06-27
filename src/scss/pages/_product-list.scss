@@ -6,16 +6,59 @@
     @include autoMarginX;
     position: relative;
   }
-  
+
   &__main {
-  margin-left: 250px;
-  margin-top: -50px;
+    margin-top: -50px;
+    margin-left: 250px;
   }
-  
-  
+
   &__filter {
     width: 220px;
     position: absolute;
+  }
+
+  &__best {
+    font-size: rem(22px);
+    text-align: center;
+    @include paddingY(48px);
+  }
+
+  &__top {
+    margin-top: rem(48px);
+    margin-bottom: rem(20px);
+    @include wh(800px, 24px);
+    @include flexbox($justify: space-between, $items: center);
+    @include autoMarginX;
+  }
+
+  &__total,
+  &__align {
+    font-weight: 600;
+  }
+
+  &__option {
+    @include flexbox($justify: flex-end, $items: center);
+  }
+
+  &__list {
+    @include flexbox;
+  }
+
+  &__align {
+    color: $gray-300;
+  }
+
+  &__align:hover {
+    color: $content-color;
+  }
+
+  &__alignHelp {
+    height: rem(14px);
+  }
+
+  &__alignDeco {
+    color: $gray-300;
+    font-weight: 400;
   }
 }
 
@@ -80,7 +123,7 @@
     color: $gray-300;
   }
 
-  &__brandPlus {
+  &__brandPlus {    
     width: rem(220px);
     border: none;
     background: transparent;
@@ -97,185 +140,149 @@
   }
 }
 
-.product {
-  &__best {
-    font-size: rem(22px);
+.best {
+  &Title {
+    font-size: rem(28px);
+    font-weight: 700;
     text-align: center;
-    @include paddingY(48px);
+    margin-bottom: rem(28px);
   }
 
-  &__top {
-    margin-top: rem(48px);
-    margin-bottom: rem(20px);
-    @include flexbox($justify: space-between, $items: center);
-    height: 24px;
-    width: 770px;
-    @include autoMarginX;
-  }
- 
-  &__total,
-  &__align {
-    font-weight: 600;
-  }
-  
-  &__option {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  &__list {
-    @include flexbox;
-  }
-  
-  &__align {
-    color: $gray-300;
-  }
-  
-  &__align:hover {
-    color: $content-color;
-  }
-  
-  &__alignHelp {
-    height: rem(14px);
-  }
-
-  &__alignDeco {
-    color: $gray-300;
-    font-weight: 400;
-  }
-}
-
-// 작업 시작
-.bestTitle {
-  font-size: rem(28px);
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: rem(28px);
-}
-
-.best {  
-  
   &__group {
     @include flexbox($justify: center);
     width: 800px;
   }
-    
+
   &__item {
     @include paddingX(16px);
     position: relative;
   }
-  
+
   &__img {
     @include wh(249px, 320px);
   }
 
   &__caption {
+    height: 180px;
     margin-top: rem(4px);
-    position: relative;
     padding-top: 30px;
+    position: relative;
   }
-  
+
   &__name {
     font-size: rem(16px);
     margin-bottom: rem(8px);
   }
-  
+
   &__price {
     display: inline-block;
     font-size: rem(20px);
     font-weight: 600;
-  }  
-  
-  &__sale {
-    height: rem(110px);
-    margin-bottom: rem(40px);
   }
-  
+
   &__regularPrice {
     color: $gray-400;
     font-size: rem(12px);
     position: absolute;
     bottom: 25px;
   }
-  
+
   &__discountPercent {
     display: inline-flex;
-    color: $accent-color;
-    font-size: rem(20px);
-    font-weight: 600;
+    @include textStyle(20px, 600, $accent-color);
     padding-right: rem(8px);
   }
-  
+
   &__discountPrice {
     text-decoration: none;
   }
-  
+
   &__more {
     @include wh(60px, 60px);
-    position: absolute;
-    right: -15px;
-    top: 129px;
+    @include posRightTop(-15px, 129px);
     border: none;
     background: transparent url(./../../assets/main/ic-product-swiper-arrow.svg) no-repeat;
   }
 
-  &__delivery, &__info {
+  &__delivery,
+  &__info {
+    @include marginY(8px);
     color: $gray-400;
     font-size: rem(12px);
-    @include marginY(8px);
   }
-  
+
   &__delivery {
     font-weight: 600;
     position: absolute;
     top: 0;
   }
-  
-  &__limit, &__only {
+
+  &__limit,
+  &__only {
     display: inline-block;
-    font-size: rem(12px);
-    font-weight: 600;
-    background: $gray-100;
+    @include textStyle(12px, 600, $content-color);
+    @include paddingX(6px);
+    @include paddingY(6px);
     border-radius: 4px;
-    padding: rem(6px);
-    margin-bottom: 8px;
+    background: $gray-100;
   }
-  
+
   &__only {
     color: $primary-color;
   }
-  
-  &__deliveryDetergent, &__infoDetergent {
-    color: $gray-400;
-    font-size: rem(12px);
+
+  &__deliveryDetergent,
+  &__infoDetergent {
+    @include textStyle(12px, 400, $gray-400);
     @include marginY(8px);
   }
-  
+
   &__deliveryDetergent {
     font-weight: 600;
     position: absolute;
     top: 0;
   }
-  
-  &__limitDetergent, &__onlyDetergent {
+
+  &__limitDetergent,
+  &__onlyDetergent {
+    @include paddingX(6px);
+    @include paddingY(6px);
+    margin-top: 6px;
     display: inline-block;
     font-size: rem(12px);
     font-weight: 600;
     background: $gray-100;
     border-radius: 4px;
-    padding: rem(6px);
-    margin-top: 20px;
   }
-  
+
   &__onlyDetergent {
     color: $primary-color;
   }
 }
 
-.accentCart {
-  @include posRightTop(30px, 240px);
+.accentCart_1 {
   @include wh(45px, 45px);
+  margin-left: 200px;
+  position: absolute;
+  top: 410px;
+  border: none;
+  background: transparent url(./../../assets/main/ic-add-cart.svg);
+}
+
+.accentCart_2 {
+  @include wh(45px, 45px);
+  margin-left: 200px;
+  position: absolute;
+  top: 920px;
+  border: none;
+  background: transparent url(./../../assets/main/ic-add-cart.svg);
+}
+
+.accentCart_3 {
+  @include wh(45px, 45px);
+  margin-left: 200px;
+  position: absolute;
+  bottom: 355px;
   border: none;
   background: transparent url(./../../assets/main/ic-add-cart.svg);
 }
@@ -286,9 +293,9 @@
 
   &__number {
     @include paddingX(10px);
+    height: rem(32px);
     margin-top: rem(36px);
     margin-bottom: rem(80px);
-    height: rem(32px);
     border: 1px solid $gray-100;
     font-size: rem(12px);
     text-align: center;

@@ -396,14 +396,20 @@ button {
 .review-event__title {
   font-weight: bold;
   list-style: none;
+  margin-top: 30px; 
 }
 
 .review-event__content {
+  display: block;
   @include textStyle(12px, bold, $gray-300);
   line-height: rem(18px);
   list-style: disc;
-  margin-left: rem(20px);
+  // margin-left: rem(20px);
+  margin-top: -20xp; 
 }
+
+
+
 
 .review__wrapper {
   margin-top: rem(56px);
@@ -570,8 +576,9 @@ button {
   @include textStyle(16px, 600, $gray-400);
 }
 
-.inquiry__title span {
-  color: $content-color;
+.inquiry__info {
+  display: inline-flex;
+  justify-content: space-between;
 }
 
 .inquiry__noticeBox {
@@ -618,15 +625,15 @@ button {
 }
 
 .inquiry__answerState {
-  display: inline-block;
   width: rem(55px);
   text-align: center;
   @include textStyle(13px, 600, $gray-400);
 }
 
-.inquiry__listAnswerComplete {
-  @include textStyle(13px, 600, $primary-color);
+.inquiry__answerComplete {
+  width: rem(55px);
   text-align: center;
+  @include textStyle(13px, 600, $primary-color);
 }
 
 .list__question {
