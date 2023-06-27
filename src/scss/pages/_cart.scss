@@ -17,6 +17,73 @@
 }
 
 // 장바구니 아이템 선택 영역
+.selectAll{
+  display: block;
+  background: url(/assets/cart/ic-checked-false.svg)
+   no-repeat 0 0 / 24px;
+  height: rem(56px);
+  padding-left: 32px;
+  line-height: 150%;
+  @include textStyle(16px, 600, $content-color); 
+}
+
+.cart__label {
+  display: block;
+}
+
+.cart__check:checked+ .cart__label .selectAll {
+  background-image: url(/assets/cart/ic-checked-true.svg);
+}
+
+.cart__check{
+  appearance: none;
+  opacity: 0;
+}
+
+.cart__accordion{
+  width: rem(742px);
+}
+
+.foodCategory{
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: -15px;
+}
+
+.foodCategory li:first-child,
+.foodCategory li:nth-child(2){
+  border-bottom: 1px solid $black;
+}
+
+.food__categorylist{
+  @include paddingY(16px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 150%;
+  @include textStyle(16px, 600, $black);
+
+}
+
+.arrow__down{
+  display: block;
+ align-items: end;
+ width: 30px;
+ height: 30px;
+ padding: 4px;
+}
+
+// .foodCategory li:first-child::after{
+//   content: '';
+//   background-image: url();
+// }
+// }
+
+
+
 
 
 
