@@ -35,7 +35,7 @@
   }
 
   &__delivery {
-    @include textStyle(22px, 700, $gray-500);
+    @include textStyle(21px, 700, $gray-500);
     line-height: 1.4;
   }
 
@@ -334,7 +334,7 @@
   }
 
   &__title {
-    @include textStyle(24px, 400, $black);
+    @include textStyle(24px, 700, $black);
   }
 
   &__btn {
@@ -389,7 +389,8 @@ button {
   @include paddingX(8px);
   height: rem(18px);
   line-height: rem(18px);
-  font-size: rem(14px);
+  font-size: rem(12px);
+  font-weight: 600;
   background-color: $gray-100;
   border-radius: 1px;
   margin-right: rem(20px);
@@ -572,7 +573,7 @@ button {
 
   &__notice {
     border-bottom: 1px solid $gray-200;
-    @include textStyle(16px, 600, $gray-400);
+    @include textStyle(16px, 600, $content-color);
   }
 
   &__info {
