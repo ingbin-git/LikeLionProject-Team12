@@ -10,7 +10,6 @@
 [![Video Label](https://cdn.discordapp.com/attachments/1120944741626941470/1123263961438093363/GIFMaker_me.gif)](https://youtu.be/ZZ9t4hgoNDM)
 > 영상을 클릭하면 <img src="https://cdn.discordapp.com/attachments/1120944741626941470/1123269939994824734/png-transparent-youtube-logo-youtube-computer-icons-logo-android-joystick-angle-electronics-rectangle.png" width="15px">&nbsp;<span style="color:red">YouTube</span>&nbsp;로 이동됩니다.
 
-
 ### 📷 페이지 사진
 #### 1. 메인 페이지
 <img src="https://media.discordapp.net/attachments/1120944741626941470/1123238596590190683/2.png?width=1696&height=1228" width="50%">
@@ -25,14 +24,10 @@
 #### 4. 장바구니
 <img src="https://media.discordapp.net/attachments/1120944741626941470/1123238597550686290/5.png?width=1710&height=1226" width="50%">
 
-
-<br>
-
 ### ⚒️ Skills
 <p herf="https://skillicons.dev">
   <img src="https://skillicons.dev/icons?i=html,sass,css,git,github,figma"/>
 </p>
-<br>
 
 ### 🏅 프로젝트 목표
 > Git과 Sass를 활용한 협업 진행
@@ -51,20 +46,16 @@
   - aria-label과 aria-labelledby 활용하여 스크린리더 사용자 고려 
   - 이미지에 대체 텍스트 제공
 
-<br>
-
 ### 🛜 크로스 브라우징(Cross Browsing)
 > 사용자의 모던 브라우저 환경에 맞추어 모두 사용 가능합니다.
   <div>
     <img src="https://cdn.discordapp.com/attachments/1120944741626941470/1123258653198254090/2023-06-27_11.28.42.png" width="450px">
   </div>
 
- 
-
 ### 👫 TEAM 소개
-|     [이&nbsp;&nbsp;규&nbsp;&nbsp;정](https://github.com/LKJ970524)     |     [이&nbsp;&nbsp;은&nbsp;&nbsp;빈](https://github.com/ingbin-git)     |     [정&nbsp;&nbsp;소&nbsp;&nbsp;희](https://github.com/haha41)     |     [황&nbsp;&nbsp;초&nbsp;&nbsp;원](https://github.com/chowonn)     |
-| :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
-| ![이규정의 프로필 사진](https://cdn.discordapp.com/attachments/1120944741626941470/1123249641262170122/d46fc8f1208fb22d.jpg) | ![이은빈의 프로필 사진](https://pixabay.com/get/gc54e72b1fd404ba5a4b17a390e02489704f494ada98ed7de717a55a82451d02842796786aa2ae58bab676e96ae0c58dc2b86935553ae9b7a656053600005509e6573bfb19a55019a24e655fdf50cd0c0_640.png) | ![정소희의 프로필 사진](https://cdn.discordapp.com/attachments/1120944741626941470/1123249875870556230/KakaoTalk_Photo_2023-06-27-22-53-31.png) | ![황초원의 프로필 사진](https://cdn.discordapp.com/attachments/1120944741626941470/1123251582738370661/image.png)|
+|                [이규정](https://github.com/LKJ970524)                |                 [이은빈](https://github.com/ingbin-git)                  |         [정소희](https://github.com/haha41)         |         [황초원](https://github.com/chowonn)        |
+| :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+| ![이규정의 프로필 사진](https://cdn.discordapp.com/attachments/1120944741626941470/1123249641262170122/d46fc8f1208fb22d.jpg) | ![이은빈의 프로필 사진](https://pixabay.com/get/g80507c47773e4e541f34d383d42cf8c981a7e2f758f0e720e35e2f5633a5155a15ab8f2b2324dbcc31d16a12d61094218c0b75687fe9217ba132eeb8b6a2123eb841dc52b1249f38068292e0f34824e5_640.png) | ![정소희의 프로필 사진](https://cdn.discordapp.com/attachments/1120944741626941470/1123249875870556230/KakaoTalk_Photo_2023-06-27-22-53-31.png) | ![황초원의 프로필 사진](https://cdn.discordapp.com/attachments/1120944741626941470/1123251582738370661/image.png) |
 
 ### 💻 담당 기능
 | 이름       | 담당 기능          |
@@ -112,7 +103,7 @@
  ┗ 📜index.html
  ```
 
-#### 프로젝트 사용법 🚀
+### 🦾 프로젝트 사용법
 - 패키지 설치
 ```
 npm i 또는 npm install
