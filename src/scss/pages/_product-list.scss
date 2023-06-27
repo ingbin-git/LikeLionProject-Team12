@@ -220,10 +220,11 @@
   &__limit,
   &__only {
     display: inline-block;
-    @include textStyle(12px, 600, $gray-100);
+    @include textStyle(12px, 600, $content-color);
     @include paddingX(6px);
     @include paddingY(6px);
     border-radius: 4px;
+    background: $gray-100;
   }
 
   &__only {
