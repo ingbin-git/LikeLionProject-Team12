@@ -15,11 +15,254 @@
 </head>
 
 <body>
+  <div class="promotion">
+    <div class="promotion__wrapper">
+      <a href="" class="promotion__link">
+        지금 가입하고 인기상품 <strong>100원</strong>에 받아 가세요!
+      </a>
+      <button class="promotion__button">
+        <img src="/assets/cart/ic-cancel.svg" alt="" class="promotion__button__img" />
+      </button>
+    </div>
+  </div>
+  <div class="headerWrapper">
+    <header>
+      <h1 class="a11y">
+        칼리
+      </h1>
+      <div class="logo">
+        <img src="/assets/header/logo-kurly.svg" alt="" class="logo__img" />
+        <a href="/" class="logo__link__market primary-color">마켓칼리</a>
+        <span aria-hidden="true">ㅣ</span>
+        <a href="/" class="logo__link__beauty">뷰티칼리</a>
+        <img src="/assets/header/new.svg" alt="" class="logo__img__new" />
+      </div>
+      <form action="/" method="get" class="searchForm">
+        <fieldset>
+          <legend>검색</legend>
+          <div class="searchForm__group">
+            <div class="formInput">
+              <label for="search" class="a11y formInput__label">검색어</label>
+              <input id="search" class="formInput__input" type="search" required placeholder="검색어를 입력해주세요."
+                name="search" />
+            </div>
+            <button type="submit" class="searchButton">
+              <img src="/assets/header/Search.svg" alt="" />
+            </button>
+          </div>
+        </fieldset>
+      </form>
+      <div class="buttons">
+        <a href="" class="buttons__address" aria-label="배송지 등록">
+          <img src="/assets/header/Location.svg" alt="" class="buttons__address__img" />
+        </a>
+        <a href="" class="buttons__heart" aria-label="찜하기">
+          <img src="/assets/header/Heart.svg" alt="" class="buttons__heart__img" />
+        </a>
+        <a href="" class="buttons__cart" aria-label="장바구니">
+          <img src="/assets/header/Cart.svg" alt="" class="buttons__cart__img" />
+        </a>
+      </div>
+
+      <div class="memberOnly">
+        <ul class="memberOnly__wrapper">
+          <li>
+            <a href="/" class="primary-color">회원가입</a>
+          </li>
+          <li><span aria-hidden="true">ㅣ</span>
+            <a href="/">로그인</a>
+          </li>
+          <li><span aria-hidden="true">ㅣ</span>
+            <a href="/">고객센터
+              <img src="/assets/header/down.svg" alt="" class="memberOnly__down" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <nav>
+        <div class="menu">
+          <div class="menu__button">
+            <h2><a href="" class="menu__button__category">
+                <img src="/assets/header/Hamburger.svg" alt="" class="menu__button__img" />카테고리</a></h2>
+            <ul class="category">
+              <li class="category__list"><span class="sprite sprite__gift"></span><a href="#">선물하기</a></li>
+              <li class="category__list"><span class="sprite sprite__vegetable"></span><a href="#">채소</a></li>
+              <li class="category__list"><span class="sprite sprite__friut"></span><a href="#">과일&bull;견과&bull;쌀</a>
+              </li>
+              <li class="category__list"><span class="sprite sprite__fish"></span><a href="#">수산&bull;해산&bull;건어물</a>
+              </li>
+              <li class="category__list"><span class="sprite sprite__meat"></span><a href="#">정육&bull;계란</a></li>
+              <li class="category__list"><span class="sprite sprite__soup"></span><a href="#">국&bull;반찬&bull;메인요리</a>
+              </li>
+              <li class="category__list"><span class="sprite sprite__salad"></span><a href="#">샐러드&bull;간편식</a></li>
+              <li class="category__list"><span class="sprite sprite__noodles"></span><a href="#">면&bull;양념&bull;오일</a>
+              </li>
+              <li class="category__list"><span class="sprite sprite__water"></span><a
+                  href="#">생수&bull;음료&bull;우유&bull;커피</a></li>
+              <li class="category__list"><span class="sprite sprite__snack"></span><a href="#">간식&bull;과자&bull;떡</a>
+              </li>
+              <li class="category__list"><span class="sprite sprite__bakery"></span><a href="#">베이커리&bull;치즈&bull;델리</a>
+              </li>
+              <li class="category__list"><span class="sprite sprite__health"></span><a href="#">건강식품</a></li>
+              <li class="category__list"><span class="sprite sprite__wine"></span><a href="#">와인</a></li>
+              <li class="category__list"><span class="sprite sprite__tradition"></span><a href="#">전통주</a></li>
+              <li class="category__list"><span class="sprite sprite__living"></span><a href="#">생활용품&bull;리빙&bull;캠핑</a>
+              </li>
+              <li class="category__list"><span class="sprite sprite__skin"></span><a href="#">스킨케어&bull;메이크업</a></li>
+              <li class="category__list"><span class="sprite sprite__hair"></span><a href="#">헤어&bull;바디&bull;구강</a>
+              </li>
+              <li class="category__list"><span class="sprite sprite__kitchen"></span><a href="#">주방용품</a></li>
+              <li class="category__list"><span class="sprite sprite__appliances"></span><a href="#">가전제품</a></li>
+              <li class="category__list"><span class="sprite sprite__pet"></span><a href="#">반려동물</a></li>
+              <li class="category__list"><span class="sprite sprite__baby"></span><a href="#">베이비&bull;키즈&bull;완구</a>
+              </li>
+              <li class="category__list"><span class="sprite sprite__travel"></span><a href="#">여행&bull;티켓</a></li>
+            </ul>
+          </div>
+          
+          <h2 class="a11y">메뉴</h2>
+          <ul class="menu__list">
+            <li class="menu__item"><a href="/" class="menu__link">신상품</a></li>
+            <li class="menu__item"><a href="/views/product-list.html" class="menu__link">베스트</a></li>
+            <li class="menu__item"><a href="/" class="menu__link">알뜰쇼핑</a></li>
+            <li class="menu__item"><a href="/" class="menu__link">특가/혜택</a></li>
+          </ul>
+          <div class="menu__delivery">
+            <a href=""><span class="primary-color">샛별&bull;낮</span><span class="gray-500"> 배송안내</span></a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+  <!-- 제품 디테일 전체 영역 -->
+  <div class="product-wrapper">
+    <div class="productArea">
+      <main class="productDetail">
+        <div class="prod__img">
+          <img src="/assets/product/tangtang/thumbnail.svg" alt="탱탱 쫄면" />
+        </div>
+
+        <section class="productInfo">
+          <div class="prod__buy"> 
+            <div class="prod__delivery">
+              샛별배송
+            </div>
+            <div class="prod-header__title">
+              <h2 class="head__title">[풀무원] 탱탱쫄면 (4개입)</h2>
+              <p>튀기지 않아 부담 없는 매콤함</p>
+            </div>
+            <div class="prod__price">4,980<span>원</span></div>
+            <p class="prod__benefit">로그인 후, 적립 혜택이 제공됩니다.</p>
+          </div>
+          <div class="itemDescription">
+            <dl>
+              <dt class="itemDescription__list">배송</dt>
+              <dd class="itemDescription__contetnts">
+                <p>샛별배송</p>
+                <p class="itemDescription__info">23시 전 주문 시 내일 아침 7시 전 도착</p>
+                <p class="itemDescription__info">(대구 부산 울산 샛별배송 운영시간 별도 확인)</p>
+              </dd>
+            </dl>
+            <dl>
+              <dt class="itemDescription__list">판매자</dt>
+              <dd class="itemDescription__contetnts">칼리</dd>
+            </dl>
+            <dl>
+              <dt class="itemDescription__list">포장타입</dt>
+              <dd class="itemDescription__contetnts">
+                <p>상온 (종이포장)</p>
+                <p class="itemDescription__info">택배배송은 에코 포장이 스티로폼으로 대체됩니다.</p>
+              </dd>
+            </dl>
+            <dl>
+              <dt class="itemDescription__list">판매단위</dt>
+              <dd class="itemDescription__contetnts">1봉</dd>
+            </dl>
+            <dl>
+              <dt class="itemDescription__list">증량/용량</dt>
+              <dd class="itemDescription__contetnts">123g*4봉</dd>
+            </dl>
+            <dl>
+              <dt class="itemDescription__list">원산지</dt>
+              <dd class="itemDescription__contetnts">상세페이지 별도표기</dd>
+            </dl>
+            <dl>
+              <dt class="itemDescription__list">알레르기정보</dt>
+              <dd class="itemDescription__contetnts">
+                <p class="allergy__info">-대두, 밀, 쇠고기 함유</p>
+                <p class="allergy__info">
+                  -계란, 우유, 메밀, 땅콩, 고등어, 게, 돼지고기, 새우, 복숭아, 토마토, 아황산류, 호두, 잣, 닭고기, 오징어, 조개류(굴, 전복, 홍합 포함)를 사용한 제품과 같은 제조시설에서 제조</p>
+              </dd>
+            </dl>
+            <div class="SelectWrapper">
+              <p class="prod__select">상품선택</p>
+              <div class="select__info">
+                <div class="select__count">
+                  <div class="select__updown">
+                    <p class="select__name">[풀무원] 탱탱쫄면 (4개입)</p>
+                    <div class="count__btn">
+                    <button type="button" class="num-minus"><img src="/assets/main/Minus.svg" alt="수량 삭제" /></button>
+                    <span  class="count">1</span>
+                    <button type="button" class="num-plus"><img src="/assets/main/Plus.svg" alt="수량 추가" /></button>
+                  </div>
+                  </div>
+                  <span class="select__price">4,980원</span>
+                </div>
+              </div>
+            </div>
+            <div class="select__total">
+              <div class="select__totalprice">총 상품 금액:
+                <span>4,980</span>
+              </div>
+              <p class="login__benefit"><span class="mileage">적립</span>로그인 후, 적립 혜택 제공</p>
+            </div>
+            <div class="productBuy">
+              <button type="button" class="prod__heart">
+                <img src="/assets/product-detail/ic-heart.svg" alt="찜하기" />
+              </button>
+              <button type="button" class="prod__alaram">
+                <img src="/assets/product-detail/ic-disabled-alarm.svg" alt="재입고 시 알람" />
+              </button>
+              <button type="button" class="prod__cart">
+                장바구니 담기
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- 제품 디테일 영역 nav -->
+        <ul class="navTitles">
+          <li class="info">상품설명</li>
+          <li class="detail">상세정보</li>
+          <li class="review">후기<span>(1,000)</span></li>
+          <li class="qna">문의</li>
+        </ul>     
+        <div class="productContents">
+          <figure class="contents__info">
+            <img src="/assets/product/tangtang/thumbnail.svg" alt="탱탱 쫄면" />
+            <p>튀기지 않아 부담 없는 매콤함</p>
+            <figcaption>[풀무원] 탱탱쫄면</figcaption>
+          </figure>
+          <p class="prod__description">쫄면의 진가는 매콤새콤한 양념과 탱탱한 면발에서 찾을 수 있지요. 풀무원은 이 맛을 더 부담 없이 즐길 수 있도록 튀기지 않고 만든 탱탱쫄면을 선보입니다. 밀가루와 감자 전분을 적절히 배합해 탄력이 좋고, 입에 넣었을 때는 찰지게 씹히죠. 고추장을 넣어 숙성한 비빔장은 자연스럽고 깊은 맛을 냅니다. 간단하게 조리해 마지막 한 가닥까지 탱탱한 식감을 즐겨보세요. 취향에 따라 다양한 고명을 올려 드셔도 좋아요.</p>
+          <div class="poductPoint">
+            <h3 class="checkPoint">
+              <span>Karly's Check Point</span>
+            </h3>
+            <img src="/assets/product-detail/gv00000257758_1 1.svg" alt="칼리 체크 포인트" />
+            <img src="/assets/product-detail/gv10000257766_1 1.svg" alt="탱탱쫄면 상세정보" class="tagntang__detail"/>
+          </div>
+        </div>
+    </div>
+  </div>
+
   <section class="why__carly">
     <img class="why__carlyImg" src="../assets/product-detail/why-carly.png" alt="와이 칼리" />
   </section>
 
-  <section id="tabpanel-3" class="review" aria-labelledby="tab-3">
+  <section id="tabpanel-3" class="review__main" aria-labelledby="tab-3">
     <button class="reviewWrite__btn" aria-label="후기 작성 버튼">
       후기 작성하기
     </button>
@@ -272,7 +515,7 @@
     </div>
   </section>
 
-  <section id="tabpanel-4" class="qna" aria-labelledby="tab-4">
+  <section id="tabpanel-4" class="qna__main" aria-labelledby="tab-4">
     <h2 class="qna__title">상품 문의</h2>
     <button class="qna__btn" type="button">문의하기</button>
     <ul class="qna__list">
@@ -569,6 +812,12 @@
       <p>&copy; KURLY CORP. ALL RIGHTS RESERVED</p>
     </div>
   </footer>
+
+
+
+
+  
 </body>
 
 </html>
+

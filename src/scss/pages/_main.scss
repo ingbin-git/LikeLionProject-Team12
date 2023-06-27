@@ -37,10 +37,11 @@
   border: 1px solid $gray-200;
   @include padding(8px);
   text-align: center;
-  position: fixed;
+  position: absolute;
   right: rem(39px);
-  bottom: rem(30px);
   
+  top: rem(800px);
+  // margin-top: 300px;
 }
 
 .up__btn,
@@ -95,69 +96,74 @@
 
 .product {
   @include flexbox($justify: center);
-}
 
-.product__wrapper {
-  position: relative;
-}
+  &__wrapper {
+    position: relative;
+  }
+  
+  &__item {
+    @include paddingX(16px);
+    position: relative;
+  }
+  
+  &__img {
+    @include wh(249px, 320px);
+  }
 
-.product__item {
-  @include paddingX(16px);
-  position: relative;
-}
-
-.product__caption {
-  margin-top: rem(16px);
-}
-
-.product__name {
-  font-size: rem(16px);
-}
-
-.product__price {
-  display: inline-block;
-  font-size: rem(20px);
-  font-weight: 600;
-}
-
-.accentCart {
-  @include posRightBottom(25px, 130px);
-  @include wh(45px, 45px);
-  border: none;
-  background: transparent url(./../../assets/main/ic-add-cart.svg);
-}
-
-.product__sale {
-  height: rem(60px);
-  margin-bottom: rem(40px);
-}
-
-.product__regularPrice {
-  color: $gray-400;
-  font-size: rem(12px);
-  position: absolute;
-  bottom: 0;
-}
-
-.product__discountPercent {
-  display: inline-flex;
-  color: $accent-color;
-  font-size: rem(20px);
-  font-weight: 600;
-  padding-right: rem(8px);
-}
-
-.product__discountPrice {
-  text-decoration: none;
-}
-
-.product__more {
-  @include wh(60px, 60px);
-  position: absolute;
-  right: -15px;
-  top: 129px;
-  border: none;
-  background: transparent url(./../../assets/main/ic-product-swiper-arrow.svg) no-repeat;
+  &__caption {
+    margin-top: rem(16px);
+  }
+  
+  &__name {
+    font-size: rem(16px);
+    margin-bottom: rem(8px);
+  }
+  
+  &__price {
+    display: inline-block;
+    font-size: rem(20px);
+    font-weight: 600;
+  }
+  
+  .accentCart {
+    @include posRightTop(30px, 260px);
+    @include wh(45px, 45px);
+    border: none;
+    background: transparent url(./../../assets/main/ic-add-cart.svg);
+  }
+  
+  &__sale {
+    height: rem(60px);
+    margin-bottom: rem(40px);
+  }
+  
+  &__regularPrice {
+    color: $gray-400;
+    font-size: rem(12px);
+    position: absolute;
+    bottom: -5px;
+  }
+  
+  &__discountPercent {
+    display: inline-flex;
+    color: $accent-color;
+    font-size: rem(20px);
+    font-weight: 600;
+    padding-right: rem(8px);
+  }
+  
+  &__discountPrice {
+    text-decoration: none;
+  }
+  
+  &__more {
+    @include wh(60px, 60px);
+    position: absolute;
+    right: -15px;
+    top: 129px;
+    border: none;
+    background: transparent url(./../../assets/main/ic-product-swiper-arrow.svg) no-repeat;
+  }
 }
 
 .middleBanner { 
