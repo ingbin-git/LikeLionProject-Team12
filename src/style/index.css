@@ -537,6 +537,11 @@ body {
   top: 2.5rem;
 }
 
+.category__list:hover {
+  color: #5f0080;
+  background: #e1e1e1;
+}
+
 .category {
   width: 0;
   height: 0;
@@ -549,6 +554,10 @@ body {
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
+}
+
+.category__link {
+  padding-left: 8px;
 }
 
 .sprite {
