@@ -8,12 +8,12 @@
   }
 
   &__main {
-    margin-top: -50px;
-    margin-left: 250px;
+    margin-top: rem(-50px);
+    margin-left: rem(250px);
   }
 
   &__filter {
-    width: 220px;
+    width: rem(220px);
     position: absolute;
   }
 
@@ -90,7 +90,7 @@
   }
 
   &__fold {
-    padding-right: 4px;
+    padding-right: rem(4px);
   }
 
   &__checkbox {
@@ -141,16 +141,9 @@
 }
 
 .best {
-  &Title {
-    font-size: rem(28px);
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: rem(28px);
-  }
-
   &__group {
     @include flexbox($justify: center);
-    width: 800px;
+    width: rem(800px);
   }
 
   &__item {
@@ -163,9 +156,9 @@
   }
 
   &__caption {
-    height: 180px;
+    height: rem(180px);
     margin-top: rem(4px);
-    padding-top: 30px;
+    padding-top: rem(30px);
     position: relative;
   }
 
@@ -184,7 +177,7 @@
     color: $gray-400;
     font-size: rem(12px);
     position: absolute;
-    bottom: 25px;
+    bottom: rem(25px);
   }
 
   &__discountPercent {
@@ -201,7 +194,7 @@
     @include wh(60px, 60px);
     @include posRightTop(-15px, 129px);
     border: none;
-    background: transparent url(./../../assets/main/ic-product-swiper-arrow.svg) no-repeat;
+    background: transparent url(/assets/main/ic-product-swiper-arrow.svg) no-repeat;
   }
 
   &__delivery,
@@ -247,7 +240,7 @@
   &__onlyDetergent {
     @include paddingX(6px);
     @include paddingY(6px);
-    margin-top: 6px;
+    margin-top: rem(6px);
     display: inline-block;
     font-size: rem(12px);
     font-weight: 600;
@@ -262,34 +255,34 @@
 
 .accentCart_1 {
   @include wh(45px, 45px);
-  margin-left: 200px;
+  margin-left: rem(200px);
   position: absolute;
-  top: 410px;
+  top: rem(410px);
   border: none;
   background: transparent url(./../../assets/main/ic-add-cart.svg);
 }
 
 .accentCart_2 {
   @include wh(45px, 45px);
-  margin-left: 200px;
+  margin-left: rem(200px);
   position: absolute;
-  top: 920px;
+  top: rem(920px);
   border: none;
   background: transparent url(./../../assets/main/ic-add-cart.svg);
 }
 
 .accentCart_3 {
   @include wh(45px, 45px);
-  margin-left: 200px;
+  margin-left: rem(200px);
   position: absolute;
-  bottom: 355px;
+  bottom: rem(355px);
   border: none;
   background: transparent url(./../../assets/main/ic-add-cart.svg);
 }
 
 .page {
   @include flexbox($justify: center);
-  width: 800px;
+  width: rem(800px);
 
   &__number {
     @include paddingX(10px);
