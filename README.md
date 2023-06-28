@@ -5,6 +5,7 @@
 ## 🌈&nbsp;<span style="color: red">멋</span><span style="color: orange">쟁</span><span style="color: gold">이</span><span style="color: green">사</span><span style="color: blue">자</span><span style="color: navy">처</span><span style="color: purple">럼</span> 프로젝트 12조&nbsp;⛅️
 
 > 프로젝트 기간 : 2023년 6월 23일 ~ 2023년 6월 28일
+> 배포 주소 : https://12clock-karly.netlify.app/
 
 ### 🎥 시연 영상
 [![Video Label](https://cdn.discordapp.com/attachments/1120944741626941470/1123263961438093363/GIFMaker_me.gif)](https://youtu.be/ZZ9t4hgoNDM)
