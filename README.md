@@ -5,6 +5,7 @@
 ## 🌈&nbsp;<span style="color: red">멋</span><span style="color: orange">쟁</span><span style="color: gold">이</span><span style="color: green">사</span><span style="color: blue">자</span><span style="color: navy">처</span><span style="color: purple">럼</span> 프로젝트 12조&nbsp;⛅️
 
 > 프로젝트 기간 : 2023년 6월 23일 ~ 2023년 6월 28일
+
 > 배포 주소 : https://12clock-karly.netlify.app/
 
 ### 🎥 시연 영상
