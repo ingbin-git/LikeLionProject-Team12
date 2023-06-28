@@ -146,6 +146,10 @@
     font-weight: 600;
   }
 
+  &__item:hover {
+    color: $primary-color;
+  }
+
   &__delivery {
     @include paddingX(8px);
     @include paddingY(5px);
@@ -165,7 +169,7 @@
     width: rem(247px);
     height: auto;
     top: rem(40px);
-  }
+  }  
 }
 
 
