@@ -1,0 +1,688 @@
+@use "./../utils/" as *;
+
+.product {
+  &-wrapper {
+    @include paddingY(40px);
+    width: rem(1050px);
+    @include flexbox($justify: center);
+    @include autoMarginX;
+  }
+
+  &Area {
+    position: relative;
+  }
+
+  &Detail {
+    @include flexbox($justify: center);
+  }
+
+  &Buy {
+    @include flexbox;
+    gap: 12px;
+  }
+}
+
+.prod {
+  &__img img {
+    @include wh(400px, 514px);
+    margin-right: rem(85px);
+  }
+
+  &__buy {
+    @include flexbox($direction: column);
+    gap: 16px;
+    padding-bottom: rem(20px);
+  }
+
+  &__delivery {
+    @include textStyle(21px, 700, $gray-500);
+    line-height: 1.4;
+  }
+
+  &__price span {
+    @include textStyle(16px, 700, $content-color);
+    padding-left: rem(4px);
+    vertical-align: middle;
+  }
+
+  &__benefit {
+    @include textStyle(16px, 600, $primary-color);
+  }
+
+  &__heart {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__alaram {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &__cart {
+    @include textStyle(16px, 600, $white);
+    @include wh(424px, 54px);
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+    background: $primary-color;
+    border-radius: 4px;
+  }
+
+  &__description {
+    @include textStyle(16px, normal, $content-color);
+    padding-top: rem(28px);
+    border-top: 1px solid $gray-100;
+    line-height: 1.6;
+    margin-bottom: rem(96px);
+  }
+
+  &-header__title p {
+    @include textStyle(16px, 400, $gray-400);
+    line-height: 1.6;
+  }
+}
+
+.head__title,
+.prod__price {
+  @include textStyle(28px, 600, $content-color);
+  line-height: 1.5;
+}
+
+.item {
+  &Description {
+    width: rem(560px);
+    border-top: 1px solid $gray-100;
+    border-bottom: 1px solid $gray-100;
+  }
+
+  &Description dl {
+    @include paddingY(16px);
+    border-bottom: 1px solid $gray-100;
+    display: flex;
+  }
+
+  &Description:last-child {
+    border-bottom: none;
+  }
+
+  &Description__info {
+    @include textStyle(12px, 600, $gray-400);
+    line-height: 1.5;
+  }
+}
+
+.itemDescription__list,
+.prod__select {
+  @include padding(4px);
+  width: rem(128px);
+}
+
+.itemDescription__list,
+.itemDescription__contetnts,
+.prod__select,
+.select__name {
+  @include textStyle(12px, 600, $gray-500);
+  line-height: 1.5;
+}
+
+.allergy__info {
+  width: rem(432px);
+  color: $gray-500;
+  font-weight: normal;
+}
+
+.select {
+  &Wrapper {
+    @include flexbox;
+    @include paddingY(16px);
+    width: rem(560px);
+    border-bottom: 1px solid $gray-100;
+  }
+
+  &__info {
+    @include wh(432px, 84px);
+    position: relative;
+    border: 1px solid $gray-100;
+  }
+
+  &__count {
+    @include flexbox;
+  }
+
+  &__updown {
+    @include paddingY(12px);
+    @include paddingX(16px);
+  }
+
+  &__name {
+    margin-bottom: rem(12px);
+  }
+
+  &__price {
+    @include textStyle(12px, 600, $content-color);
+    @include posRightBottom($r: 12px, $b: 12px);
+    line-height: 1.5;
+  }
+
+  &__total {
+    @include paddingY(28px);
+    text-align: end;
+  }
+
+  &__totalprice {
+    margin-bottom: rem(8px);
+  }
+
+  &__totalprice span {
+    @include textStyle(28px, 600, $content-color);
+    margin-left: rem(17px);
+    line-height: 1.5;
+  }
+
+  &__totalprice::after {
+    content: '원';
+    color: $content-color;
+    @include textStyle(16px, 700, $content-color);
+    line-height: 1.4;
+  }
+}
+
+.count {
+  @include textStyle(16px, 600, $black);
+  @include marginX(8px);
+
+  &__btn button {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__btn {
+    @include flexbox($items: center);
+    @include wh(84px, 30px);
+    border: 1px solid $gray-200;
+  }
+}
+
+.select__totalprice,
+.login__benefit {
+  @include textStyle(16px, 600, $black);
+}
+
+.mileage {
+  @include textStyle(10px, normal, $white);
+  @include wh(34px, 24px);
+  @include paddingX(8px);
+  @include paddingY(4px);
+  border-radius: 12px;
+  background: $accent-color;
+  line-height: 1.6;
+  margin-right: rem(6px);
+}
+
+.nav {
+  &Titles {
+    @include flexbox;
+    margin-top: rem(48px);
+    margin-bottom: rem(40px);
+  }
+
+  &Titles li {
+    @include textStyle(16px, 600, $content-color);
+    @include wh(263px, 54px);
+    @include paddingY(16px);
+    text-align: center;
+    background: $gray-50;
+    border: 1px solid $gray-300;
+  }
+
+  &Titles li:first-child {
+    color: $primary-color;
+    border: 1px solid $gray-100;
+    border-bottom: none;
+  }
+
+  &Titles li:nth-child(2),
+  &Titles li:nth-child(3),
+  &Titles li:last-child {
+    border-right: none;
+    cursor: pointer;
+  }
+
+  &Titles li:last-child {
+    border-right: 1px solid $gray-300;
+  }
+}
+
+.contents {
+  &__info img {
+    @include wh(1050px, 670px);
+    margin-bottom: rem(76px);
+  }
+
+  &__info p {
+    @include textStyle(28px, 600, $black);
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__info figcaption {
+    @include textStyle(50px, 700, $content-color);
+    text-align: center;
+    margin-bottom: rem(36px);
+    line-height: 1.4;
+  }
+}
+
+.checkPoint {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  margin-bottom: rem(63px);
+
+  & span {
+    @include textStyle(50px, 700, $content-color);
+    position: relative;
+    line-height: 1.4;
+    z-index: 40;
+    background: $white;
+    @include paddingX(16px);
+    @include paddingY(0);
+  }
+
+  &::before {
+    width: 100%;
+    height: rem(1px);
+    @include posLeftTop($l: 0, $t: 37px);
+    content: '';
+    z-index: -1;
+    background: #D9D9D9;
+  }
+}
+
+.tagntang__detail {
+  padding-top: rem(96px);
+}
+
+.why {
+  &__carly {
+    width: rem(1050px);
+    @include autoMarginX;
+  }
+  
+  &__carlyImg {
+    width: 100%;
+    height: 100%;
+    margin-bottom: rem(52px);
+  }
+}
+
+.qna {
+  &__main {
+    position: relative;
+    width: rem(1050px);
+    margin-top: 0;
+    margin-bottom: rem(72px);
+    @include autoMarginX;
+  }
+
+  &__title {
+    @include textStyle(24px, 700, $black);
+  }
+
+  &__btn {
+    @include wh(155px, 45px);
+    @include flexbox($justify: center, $items: center);
+    @include posRightTop(10px, 10px);
+    border: none;
+    border-radius: rem(5px);
+    background-color: $primary-color;
+    color: $white;
+  }
+
+  &__list {
+    @include textStyle(12px, normal, $gray-500);
+    margin-top: rem(24px);
+    margin-bottom: rem(55px);
+    margin-left: rem(20px);
+    list-style-type: disc;
+    line-height: 1.5;
+  }
+}
+
+button {
+  all: unset;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sorting {
+  @include textStyle(16px, 600, $content-color);
+  @include flexbox;
+  height: rem(24px);
+  line-height: rem(24px);
+
+  &-registration {
+    color: $gray-300;
+  }
+
+  &-array {
+    color: $content-color;
+  }
+
+  &__recommend::after {
+    content: '';
+    height: 50%;
+    border-left: 1px solid $gray-300;
+    @include marginX(8px);
+  }
+}
+
+.notification {
+  @include paddingX(8px);
+  height: rem(18px);
+  line-height: rem(18px);
+  font-size: rem(12px);
+  font-weight: 600;
+  background-color: $gray-100;
+  border-radius: 1px;
+  margin-right: rem(20px);
+
+  &__container {
+    border-top: 1px solid $black;
+  }
+
+  &__summary {
+    @include paddingX(20px);
+    @include paddingY(17px);
+    border-bottom: 1px solid $gray-100;
+    color: $content-color;
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+
+  &__content {
+    background-color: $gray-50;
+    border-bottom: 1px solid $gray-100;
+    padding: rem(20px);
+    line-height: rem(18px);
+  }
+}
+
+.notification__content,
+.review__text {
+  white-space: pre-line;
+  font-size: rem(12px);
+}
+
+.review {
+  & span {
+    @include textStyle(12px, 400, $content-color);
+    padding-left: rem(8px);
+  }
+
+  &__main {
+    width: rem(1050px);
+    @include autoMarginX;
+    margin-top: 0;
+    margin-bottom: rem(72px);
+    position: relative;
+  }
+
+  &__title {
+    @include textStyle(28px, bold, $content-color);
+  }
+
+  &Write__btn {
+    @include wh(155px, 45px);
+    background-color: $primary-color;
+    color: $white;
+    border: 0;
+    border-radius: rem(4px);
+    position: absolute;
+    right: 0;
+  }
+
+  &__event {
+    margin-top: rem(24px);
+    line-height: 1.5;
+  }
+
+  &__wrapper {
+    margin-top: rem(56px);
+  }
+
+  &__wrapperTop {
+    @include flexbox($justify: space-between);
+    margin-bottom: rem(16px);
+  }
+
+  &__count {
+    @include marginY(3px);
+    font-size: rem(12px);
+    line-height: rem(18px);
+  }
+
+  &__content {
+    padding: rem(20px);
+    @include flexbox;
+    font-size: rem(12px);
+    border-bottom: 1px solid $gray-100;
+  }
+
+  &__writerInfo {
+    flex: 0 0 225px;
+  }
+
+  &__textContainer {
+    flex: 1 1 0%;
+  }
+
+  &__text {
+    @include marginY(20px);
+  }
+
+  &__date,
+  &__productName {
+    color: $gray-400;
+    font-weight: 600;
+  }
+
+  &-event__title {
+    font-weight: bold;
+    list-style: none;
+    margin-top: rem(30px);
+  }
+
+  &-event__content {
+    display: block;
+    @include textStyle(12px, bold, $gray-500);
+    margin-top: rem(2px);
+  }
+}
+
+.tag {
+  &__best {
+    @include textStyle(14px, bold, $white);
+    padding: 0 8px 0 8px;
+    height: rem(18px);
+    line-height: rem(18px);
+    background-color: $primary-color;
+    border-radius: 1px;
+    margin-right: rem(8px);
+  }
+  
+  &__membership {
+    @include textStyle(14px, bold, $primary-color);
+    padding: 0 8px;
+    height: rem(18px);
+    line-height: rem(18px);
+    background-color: $white;
+    border-radius: 1px;
+    border: 1px solid $primary-color;
+    margin-right: rem(8px);
+  }
+}
+
+.buttonGroup {
+  @include autoMarginX;
+  @include flexbox($justify: space-between);
+  margin-top: rem(16px);
+  width: rem(128px);
+}
+
+.prev,
+.next {
+  @include wh(56px, 56px);
+  border: 1px solid $gray-100;
+  border-radius: 4px;
+}
+
+.prev svg {
+  transform: rotate(180deg);
+  margin: rem(10px);
+}
+
+.next img {
+  margin: rem(10px);
+}
+
+.header__title {
+  text-align: center;
+}
+
+.inquiry {
+  &__listWrap {
+    border-top: 2px solid $content-color;
+  }
+
+  &__listHeader {
+    border-bottom: 2px solid $gray-500;
+    @include textStyle(16px, 600, $black);
+    font-style: normal;
+  }
+
+  &__notice {
+    border-bottom: 1px solid $gray-200;
+    @include textStyle(16px, 600, $content-color);
+  }
+
+  &__info {
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  &__noticeBox {
+    background-color: $gray-100;
+    font-size: rem(12px);
+    @include paddingX(8px);
+    border-radius: 1px;
+    margin-right: rem(20px);
+  }
+
+  &__title {
+    display: inline-block;
+    @include wh(782px, 58px);
+    line-height: rem(58px);
+    font-weight: 600;
+    padding-left: rem(20px);
+  }
+
+  &__titleSecret {
+    display: inline-block;
+    color: $gray-400;
+    height: rem(58px);
+    line-height: rem(58px);
+    padding-right: rem(20px);
+  }
+
+  &__who {
+    display: inline-block;
+    width: rem(80px);
+    text-align: center;
+    @include textStyle(16px, 600, $gray-400);
+  }
+
+  &__day {
+    display: inline-block;
+    width: rem(100px);
+    text-align: center;
+    @include textStyle(16px, 600, $gray-400);
+  }
+
+  &__answerState {
+    width: rem(55px);
+    text-align: center;
+    @include textStyle(13px, 600, $gray-400);
+  }
+
+  &__answerComplete {
+    width: rem(55px);
+    text-align: center;
+    @include textStyle(13px, 600, $primary-color);
+  }
+}
+
+.customer__post li {
+  border-bottom: 1px solid $gray-200;
+}
+
+.list {
+  &__question {
+    width: rem(974px);
+    @include flexbox;
+    margin-top: rem(20px);
+    margin-bottom: rem(40px);
+    font-style: normal;
+    @include textStyle(12px, 600, $content-color);
+    line-height: 1.5;
+    padding-left: rem(20px);
+  }
+
+  &__answer {
+    display: flex;
+    font-style: normal;
+    @include textStyle(12px, 600, $content-color);
+    line-height: 1.5;
+    width: rem(481px);
+    margin-right: rem(500px);
+    padding-left: rem(20px);
+  }
+
+  &__questionIcon {
+    @include wh(24px, 24px);
+    margin-right: rem(19px);
+  }
+
+  &__answerIcon {
+    @include wh(24px, 24px);
+    margin-right: rem(19px);
+  }
+
+  &__answerBox p {
+    margin-bottom: rem(8px);
+  }
+
+  &__answerBox {
+    @include wh(481px, 216px);
+    font-style: normal;
+    @include textStyle(12px, 600, $content-color);
+    line-height: 1.5;
+    margin-bottom: rem(20px);
+  }
+
+  &__answerDate {
+    font-style: normal;
+    @include textStyle(12px, 600, $gray-400);
+    line-height: 1.5;
+  }
+}
