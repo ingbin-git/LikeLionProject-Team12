@@ -354,7 +354,7 @@ body {
 }
 
 .gray-500 {
-  color: #424242;
+  color: #6b6b6b;
 }
 
 .promotion {
@@ -410,7 +410,7 @@ body {
   top: 44px;
 }
 .logo__link__beauty {
-  color: #545454;
+  color: #898989;
 }
 
 .searchForm {
@@ -528,7 +528,7 @@ body {
   padding-right: 0.5rem;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  border: 1px solid #595959;
+  border: 1px solid #a6a6a6;
   border-radius: 16px;
   font-size: 0.75rem;
 }
@@ -663,7 +663,7 @@ body {
   align-items: stretch;
   padding-top: 1.75rem;
   padding-bottom: 2rem;
-  border-bottom: 1px solid #545454;
+  border-bottom: 1px solid #898989;
 }
 .footer__service {
   display: flex;
@@ -793,7 +793,7 @@ body {
   background-color: #F9F9F9;
   text-align: center;
   font-size: 0.625rem;
-  color: #545454;
+  color: #898989;
 }
 
 .banner {
@@ -934,14 +934,14 @@ body {
   margin-bottom: 2.5rem;
 }
 .product__regularPrice {
-  color: #545454;
+  color: #898989;
   font-size: 0.75rem;
   position: absolute;
   bottom: -5px;
 }
 .product__discountPercent {
   display: inline-flex;
-  color: #A80000;
+  color: #fa622f;
   font-size: 1.25rem;
   font-weight: 600;
   padding-right: 0.5rem;
@@ -1024,7 +1024,7 @@ body {
   align-items: stretch;
 }
 .product__align {
-  color: #595959;
+  color: #a6a6a6;
 }
 .product__focus {
   color: #333333;
@@ -1036,7 +1036,7 @@ body {
   height: 0.875rem;
 }
 .product__alignDeco {
-  color: #595959;
+  color: #a6a6a6;
   font-weight: 400;
 }
 
@@ -1060,13 +1060,13 @@ body {
   border: none;
   background: transparent;
   font-size: 0.625rem;
-  color: #595959;
+  color: #a6a6a6;
 }
 .filter__mark::after {
   content: "1";
   padding-left: 0.5rem;
   font-size: 0.625rem;
-  color: #595959;
+  color: #a6a6a6;
 }
 .filter__fold {
   padding-right: 0.25rem;
@@ -1094,14 +1094,14 @@ body {
   content: "1";
   padding-left: 8px;
   font-size: 0.625rem;
-  color: #595959;
+  color: #a6a6a6;
 }
 .filter__brandPlus {
   width: 13.75rem;
   border: none;
   background: transparent;
   font-size: 0.75rem;
-  color: #595959;
+  color: #a6a6a6;
   font-weight: 600;
   padding-top: 0.5rem;
   padding-bottom: 0.75rem;
@@ -1143,7 +1143,7 @@ body {
   font-weight: 600;
 }
 .best__regularPrice {
-  color: #545454;
+  color: #898989;
   font-size: 0.75rem;
   position: absolute;
   bottom: 1.5625rem;
@@ -1152,7 +1152,7 @@ body {
   display: inline-flex;
   font-size: 1.25rem;
   font-weight: 600;
-  color: #A80000;
+  color: #fa622f;
   padding-right: 0.5rem;
 }
 .best__discountPrice {
@@ -1170,7 +1170,7 @@ body {
 .best__delivery, .best__info {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  color: #545454;
+  color: #898989;
   font-size: 0.75rem;
 }
 .best__delivery {
@@ -1196,7 +1196,7 @@ body {
 .best__deliveryDetergent, .best__infoDetergent {
   font-size: 0.75rem;
   font-weight: 400;
-  color: #545454;
+  color: #898989;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -1314,7 +1314,7 @@ body {
 .prod__delivery {
   font-size: 1.3125rem;
   font-weight: 700;
-  color: #424242;
+  color: #6b6b6b;
   line-height: 1.4;
 }
 .prod__price span {
@@ -1364,7 +1364,7 @@ body {
 .prod-header__title p {
   font-size: 1rem;
   font-weight: 400;
-  color: #545454;
+  color: #898989;
   line-height: 1.6;
 }
 
@@ -1393,7 +1393,7 @@ body {
 .itemDescription__info {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #545454;
+  color: #898989;
   line-height: 1.5;
 }
 
@@ -1412,13 +1412,13 @@ body {
 .select__name {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #424242;
+  color: #6b6b6b;
   line-height: 1.5;
 }
 
 .allergy__info {
   width: 27rem;
-  color: #424242;
+  color: #6b6b6b;
   font-weight: normal;
 }
 
@@ -1527,7 +1527,7 @@ body {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   border-radius: 12px;
-  background: #A80000;
+  background: #fa622f;
   line-height: 1.6;
   margin-right: 0.375rem;
 }
@@ -1550,7 +1550,7 @@ body {
   padding-bottom: 1rem;
   text-align: center;
   background: #F9F9F9;
-  border: 1px solid #595959;
+  border: 1px solid #a6a6a6;
 }
 .navTitles li:first-child {
   color: #5f0080;
@@ -1562,7 +1562,7 @@ body {
   cursor: pointer;
 }
 .navTitles li:last-child {
-  border-right: 1px solid #595959;
+  border-right: 1px solid #a6a6a6;
 }
 
 .contents__info img {
@@ -1664,7 +1664,7 @@ body {
 .qna__list {
   font-size: 0.75rem;
   font-weight: normal;
-  color: #424242;
+  color: #6b6b6b;
   margin-top: 1.5rem;
   margin-bottom: 3.4375rem;
   margin-left: 1.25rem;
@@ -1690,7 +1690,7 @@ button {
   line-height: 1.5rem;
 }
 .sorting-registration {
-  color: #595959;
+  color: #a6a6a6;
 }
 .sorting-array {
   color: #333333;
@@ -1698,7 +1698,7 @@ button {
 .sorting__recommend::after {
   content: "";
   height: 50%;
-  border-left: 1px solid #595959;
+  border-left: 1px solid #a6a6a6;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
@@ -1810,7 +1810,7 @@ button {
   margin-bottom: 1.25rem;
 }
 .review__date, .review__productName {
-  color: #545454;
+  color: #898989;
   font-weight: 600;
 }
 .review-event__title {
@@ -1822,7 +1822,7 @@ button {
   display: block;
   font-size: 0.75rem;
   font-weight: bold;
-  color: #424242;
+  color: #a6a6a6;
   margin-top: 0.125rem;
 }
 
@@ -1833,7 +1833,7 @@ button {
   padding: 0 8px 0 8px;
   height: 1.125rem;
   line-height: 1.125rem;
-  background-color: #5f0080;
+  background-color: #bd76ff;
   border-radius: 1px;
   margin-right: 0.5rem;
 }
@@ -1886,7 +1886,7 @@ button {
   border-top: 2px solid #333333;
 }
 .inquiry__listHeader {
-  border-bottom: 2px solid #424242;
+  border-bottom: 2px solid #6b6b6b;
   font-size: 1rem;
   font-weight: 600;
   color: #000000;
@@ -1920,7 +1920,7 @@ button {
 }
 .inquiry__titleSecret {
   display: inline-block;
-  color: #545454;
+  color: #898989;
   height: 3.625rem;
   line-height: 3.625rem;
   padding-right: 1.25rem;
@@ -1931,7 +1931,7 @@ button {
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
-  color: #545454;
+  color: #898989;
 }
 .inquiry__day {
   display: inline-block;
@@ -1939,14 +1939,14 @@ button {
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
-  color: #545454;
+  color: #898989;
 }
 .inquiry__answerState {
   width: 3.4375rem;
   text-align: center;
   font-size: 0.8125rem;
   font-weight: 600;
-  color: #545454;
+  color: #898989;
 }
 .inquiry__answerComplete {
   width: 3.4375rem;
@@ -2013,7 +2013,7 @@ button {
   font-style: normal;
   font-size: 0.75rem;
   font-weight: 600;
-  color: #545454;
+  color: #898989;
   line-height: 1.5;
 }
 
@@ -2247,7 +2247,7 @@ button {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-radius: 1px;
-  background: #A80000;
+  background: #fa622f;
   font-size: 0.75rem;
   font-weight: 600;
   color: #ffffff;
@@ -2265,7 +2265,7 @@ button {
 .couponInfo__list {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #545454;
+  color: #898989;
   line-height: 1.5;
 }
 
