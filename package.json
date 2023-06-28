@@ -6,10 +6,11 @@
   "scripts": {
     "start": "run-p watch server",
     "sass": "sass src/scss:src/style",
+    "main": "sass src/scss/index.scss src/style/main.css --no-source-map",
     "watch": "npm run sass -- --watch",
     "server": "live-server src",
     "clear": "rimraf src/style",
-    "build": "postcss src/style/index.css -o src/style/main.css"
+    "postcss": "postcss src/style/main.css -o src/style/main.css"
   },
   "keywords": [],
   "author": "",
@@ -19,6 +20,7 @@
     "live-server": "^1.2.2",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.24",
+    "postcss-cli": "^10.1.0",
     "postcss-combine-media-query": "^1.0.1",
     "rimraf": "^5.0.1",
     "sass": "^1.63.6"
